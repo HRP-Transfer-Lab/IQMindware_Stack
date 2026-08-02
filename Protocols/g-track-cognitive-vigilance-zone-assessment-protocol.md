@@ -254,8 +254,11 @@ validation-prior outputs.
 
 ## Public Attention Control Score
 
-The app displays a standardized Attention Control score on a 100/15 scale
-where available. The score is a non-diagnostic validation-prior score.
+The app displays an estimated standardized Attention Control score on a 100/15
+scale where available. The score is a non-diagnostic validation-prior score:
+100 is the validation-prior reference mean, 15 points is one reference standard
+deviation, and higher values indicate better task performance in the scored
+direction.
 
 Component scores:
 
@@ -263,19 +266,89 @@ Component scores:
 Conflict control:
   average lower-better robust z values for Stroop/Flanker RT conflict cost
   and accuracy conflict cost.
+  App field: publicScores.conflictControl.
+  User label: Conflict control.
 
 Sustained attention:
   SART engagement-vigilance index, oriented higher = steadier engagement.
+  App field: publicScores.sustainedStability.
+  User label: Sustained attention.
 
 Response efficiency:
   average higher-better robust z values for Stroop/Flanker throughput.
+  App field: publicScores.responseEfficiency.
+  User label: Response efficiency.
 
 Attention Control composite:
   average of available component z scores, transformed to 100 + 15*z.
+  App field: publicScores.composite.
+  User label: Attention Control Score.
 ```
 
 Scores are clipped to the app's public display range and should be interpreted
 as coaching signals, not IQ scores or clinical scores.
+
+If `publicScores.composite` is available, it is the primary score displayed on
+the G Track result screen, the G Track training graph, and the Attention Coach
+Proof graph. For compatibility with older result rows, app displays may fall
+back to the mean of the three available component standard scores. If no usable
+standardized attention score exists, the result screen shows `Score saved` and
+metric cards show `-`; it does not display `Collecting` or raw model
+probabilities.
+
+The same composite is also stored in the portable G Track proof score as
+`provisionalIndex`. This is a compatibility field for history/proof views and
+is not a separate psychological construct.
+
+## App Display and Proof Sync Contract
+
+The public user-facing Attention Control result screen contains:
+
+```text
+Attention Control Score:
+  publicScores.composite.displayStandardScore or publicScores.composite.standardScore.
+
+Conflict control card:
+  publicScores.conflictControl.displayStandardScore or standardScore.
+
+Sustained attention card:
+  publicScores.sustainedStability.displayStandardScore or standardScore.
+
+Response efficiency card:
+  publicScores.responseEfficiency.displayStandardScore or standardScore.
+
+Cognitive Zone panel:
+  publicScores.zoneProtocol.profile when available.
+  Engagement-vigilance is shown once as a compact secondary line.
+```
+
+The G Track My Results graph uses the same value order for Attention Control:
+
+```text
+1. publicScores.composite standard score
+2. mean of conflictControl, sustainedStability, and responseEfficiency standard scores
+3. provisionalIndex
+```
+
+The signed G Track proof summary used by Attention Coach exports scheduled
+G Track proof scores for the same signed-in email account. For
+`attention_control`, Attention Coach uses the same precedence order:
+
+```text
+1. publicScores.composite
+2. mean(publicScores.conflictControl,
+        publicScores.sustainedStability,
+        publicScores.responseEfficiency)
+3. provisionalIndex
+```
+
+Thus the pre-training Attention Control benchmark should populate both the G
+Track My Results Attention graph and the Attention Coach Proof Attention graph
+when cloud sync is enabled for the same email account.
+
+Zone Check readings are current-state readings. They may remain in account
+export data when present, but they are excluded from baseline/change
+calculation and from the scheduled pre/post/follow-up proof graph.
 
 ## Confidence
 
