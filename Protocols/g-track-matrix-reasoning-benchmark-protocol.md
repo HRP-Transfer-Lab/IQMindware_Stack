@@ -1,4 +1,4 @@
-# G Track Matrix Reasoning Benchmark Protocol
+# G Track Matrix Reasoning / Matrices IQ Test Protocol
 
 License: MIT
 
@@ -9,9 +9,10 @@ Status: Public high-level protocol specification
 ## Purpose
 
 The G Track Matrix Reasoning benchmark is a non-diagnostic fluid-reasoning
-assessment used in the G Track pre/post/follow-up battery. It estimates
-nonverbal abstract reasoning from matrix-completion items selected from the
-Open Matrices Item Bank (OMIB).
+assessment used in the G Track pre/post/follow-up battery. It is the matrices
+IQ-test component of G Track: a short, browser-based figural matrices test that
+estimates nonverbal abstract reasoning from matrix-completion items selected
+from the Open Matrices Item Bank (OMIB).
 
 The public construct label is:
 
@@ -37,10 +38,45 @@ The item source is the Open Matrices Item Bank:
   Article 41. https://doi.org/10.3390/jintelligence10030041
 - Source materials: https://osf.io/4km79/
 
-The OMIB study developed 220 figural matrix items and administered them to a
-large online source sample of German medical-school applicants. The published
-paper reports IRT item-response modelling and high reliability for the item
-bank. G Track uses selected OMIB items and their source-study item parameters.
+The OMIB study developed 220 figural matrix items and administered the source
+test sets to German medical-school applicants. The article reports 2,572
+applicants in the administered sample and a final analytic sample of 2,561
+participants after exclusions. G Track uses the final analytic sample size for
+the source-prior metadata:
+
+```text
+calibrationN = 2561
+```
+
+In the OMIB source study, each participant solved two practice items and 28
+scored figural matrix tasks without an item-level time limit. The item bank was
+evaluated with classical test theory, IRT item-response modelling, and
+reliability analyses. The source paper reports high internal consistency for
+the test sets and two-parameter logistic item parameters for the item bank.
+G Track uses selected OMIB items and their source-study item parameters.
+
+## Current App Implementation
+
+The current G Track implementation uses the OMIB source-study theta scale as
+the prior standardization frame:
+
+```text
+modelId = omib_matrix_2pl_eap
+modelVersion = v2
+calibrationLabel = omib_2pl_theta_source_prior_koch_2022
+```
+
+This replaced an earlier 33-person IQMindware launch calibration:
+
+```text
+old calibrationLabel = brevo_calibration_2026_wave1_pooled
+old calibrationN = 33
+```
+
+The replacement was made because the OMIB source-study calibration is the
+stronger prior estimate for standardized scoring. IQMindware baseline data can
+still be used later for app-specific recalibration, but the public Matrix Index
+is no longer based on the small launch sample.
 
 ## Forms
 
@@ -70,7 +106,8 @@ The hook form is scored but is kept separate from scheduled programme
 pre/post/follow-up interpretation.
 
 Each G Track form contains 16 matrix items. Forms are balanced across rule
-complexity so each form samples easier and harder items.
+complexity so each form samples easier and harder items from the OMIB source
+bank.
 
 ## User Task
 
@@ -192,9 +229,12 @@ for graphing and proof displays.
 
 ## Recalibration Policy
 
-The current Matrix Index is an OMIB source-study-prior estimate. IQMindware may
-replace or supplement it with G Track baseline recalibration once enough valid
-baseline completions have accumulated to estimate:
+The current Matrix Index is an OMIB source-study-prior estimate. This is the
+best current prior in the app because it comes from the original item-bank
+validation publication rather than from a small internal launch sample.
+
+IQMindware may replace or supplement it with G Track baseline recalibration
+once enough valid baseline completions have accumulated to estimate:
 
 - form effects;
 - sample composition;
