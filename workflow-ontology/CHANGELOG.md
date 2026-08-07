@@ -21,7 +21,14 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - Worked examples for AI-output verification and higher-education source synthesis.
 - Expected-route and boundary-case tests.
 - Dependency-free validation script.
+- Canonical `RESEARCH_VALIDATION_PLAN.md` covering the six-part W/D/F/P/O/I confidence model and staged ontology, behavioural, intervention and deployment validation.
+- Study programme index under `studies/`.
+- Study 001 content-validation scaffold.
+- Study 002 behavioural-validation scaffold.
+- Study 003 intervention-pilot scaffold.
 
 ### Status
 
 The initial records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production release has yet been issued.
+
+The next research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
