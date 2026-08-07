@@ -1,0 +1,28 @@
+{
+  "ontology_version": "0.1.0",
+  "scale": {
+    "0": "negligible",
+    "1": "low",
+    "2": "moderate",
+    "3": "high",
+    "4": "defining demand"
+  },
+  "records": [
+    {"demand_id": "distractor_density", "label": "Distractor density", "question": "How much irrelevant information competes with the target?", "candidate_functions": ["attention_signal"], "review_status": "draft"},
+    {"demand_id": "interruption_frequency", "label": "Interruption frequency", "question": "How often is the active task displaced?", "candidate_functions": ["attention_signal", "wm_relational_signal", "wm_binding_signal"], "review_status": "draft"},
+    {"demand_id": "task_switch_rate", "label": "Task-switch rate", "question": "How often must the governing rule or task set change?", "candidate_functions": ["attention_signal", "wm_relational_signal"], "review_status": "draft"},
+    {"demand_id": "concurrent_stream_load", "label": "Concurrent-stream load", "question": "How many information streams must be monitored at once?", "candidate_functions": ["attention_signal", "wm_binding_signal"], "review_status": "draft"},
+    {"demand_id": "vigilance_duration", "label": "Vigilance duration", "question": "How long must engagement remain stable during repetitive or low-event-rate monitoring?", "candidate_functions": ["attention_signal", "zone_context"], "review_status": "draft"},
+    {"demand_id": "relational_complexity", "label": "Relational complexity", "question": "How many dependencies, comparisons, transformations or ordered relations must remain active?", "candidate_functions": ["wm_relational_signal", "path_prediction", "reasoning"], "review_status": "draft"},
+    {"demand_id": "source_binding_load", "label": "Source and context binding load", "question": "How many claims, sources, roles, locations or contexts must remain correctly associated?", "candidate_functions": ["wm_binding_signal", "reasoning"], "review_status": "draft"},
+    {"demand_id": "evidence_sequence_length", "label": "Evidence sequence length", "question": "How much sequential evidence arrives before an interpretation can be formed?", "candidate_functions": ["attention_evidence", "wm_relational_evidence", "wm_binding_evidence", "reasoning_evidence"], "review_status": "draft"},
+    {"demand_id": "environmental_volatility", "label": "Environmental volatility", "question": "How often do reliability, rules or conditions change?", "candidate_functions": ["attention_evidence", "predictive_calibration", "path_prediction"], "review_status": "draft"},
+    {"demand_id": "planning_horizon", "label": "Planning horizon", "question": "How many steps or dependencies must be anticipated?", "candidate_functions": ["path_prediction", "reasoning"], "review_status": "draft"},
+    {"demand_id": "branching_load", "label": "Branching load", "question": "How many plausible routes or alternatives remain open?", "candidate_functions": ["path_prediction", "reasoning"], "review_status": "draft"},
+    {"demand_id": "time_pressure", "label": "Time pressure", "question": "How quickly must a response or decision be made?", "candidate_functions": ["attention_signal", "attention_commit", "reasoning_commit"], "review_status": "draft"},
+    {"demand_id": "error_consequence", "label": "Error consequence", "question": "What is the cost of being wrong?", "candidate_functions": ["attention_commit", "wm_binding_commit", "reasoning_commit"], "review_status": "draft"},
+    {"demand_id": "reversibility", "label": "Decision reversibility", "question": "Can the action be corrected or reversed later?", "candidate_functions": ["attention_commit", "path_commit", "reasoning_commit"], "review_status": "draft"},
+    {"demand_id": "handoff_density", "label": "Handoff density", "question": "How often does context move between people, systems or sessions?", "candidate_functions": ["wm_relational_signal", "wm_binding_signal"], "review_status": "draft"},
+    {"demand_id": "emotional_allostatic_load", "label": "Emotional or allostatic load", "question": "Do worry, threat, pain, fatigue or stress compete with task processing?", "candidate_functions": ["zone_context", "attention_signal"], "claims_boundary": "Contextual modifier only; does not identify a diagnosis or cause.", "review_status": "draft"}
+  ]
+}
