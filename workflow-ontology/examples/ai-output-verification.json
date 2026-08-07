@@ -1,0 +1,33 @@
+{
+  "example_id": "route_ai_output_verification_v0_1",
+  "ontology_version": "0.1.0",
+  "input": {
+    "niche_id": "work_ai_knowledge",
+    "workflow_stage_id": "ai_report_verify_before_release",
+    "reported_frictions": ["attention_dispersal", "source_context_swap", "premature_closure"],
+    "desired_outcomes": ["unsupported_claim_detection", "source_attribution_error_rate", "review_time"]
+  },
+  "derived_profile": {
+    "dominant_demands": ["source_binding_load", "relational_complexity", "distractor_density"],
+    "primary_functions": ["wm_binding_signal", "attention_signal"],
+    "future_functions": ["reasoning_evidence", "reasoning_commit"],
+    "intervention_loci": ["person", "task_interface", "team_process"]
+  },
+  "current_product_route": [
+    "G Track baseline: attention and visual binding",
+    "Attention Coach Signal Control",
+    "WM Coach Binding Memory Signal",
+    "G Track follow-up",
+    "Fresh delayed re-check"
+  ],
+  "workflow_support_route": [
+    "source-claim ledger",
+    "separate drafting and verification",
+    "explicit release checkpoint",
+    "disconfirmation checkpoint"
+  ],
+  "not_yet_available": ["Reasoning Evidence", "Reasoning Commit"],
+  "claims_boundary": "This route targets foundational attention and binding functions. Improvement in AI-output verification, reasoning or workplace performance must be tested rather than assumed.",
+  "governance_profile_id": "workplace_nonclinical_v1",
+  "review_status": "draft"
+}
