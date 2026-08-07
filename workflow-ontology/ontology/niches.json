@@ -1,0 +1,50 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "niche_id": "work_ai_knowledge",
+      "public_label": "AI-heavy knowledge work",
+      "description": "Workflows in which people generate, supervise, verify or integrate AI-assisted information and outputs.",
+      "typical_actors": ["analyst", "manager", "consultant", "developer", "researcher", "professional"],
+      "distinctive_constraints": ["rapid iteration", "source uncertainty", "interruptions", "plausible but unsupported outputs", "context switching"],
+      "default_governance_profile_id": "workplace_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "niche_id": "education_higher",
+      "public_label": "Higher education and independent study",
+      "description": "Learning and assessment workflows involving sustained study, source integration, memory, reasoning and performance under deadlines.",
+      "typical_actors": ["student", "tutor", "lecturer", "learning-support team"],
+      "distinctive_constraints": ["assessment deadlines", "source attribution", "delayed outcomes", "variable prior knowledge", "educational safeguarding"],
+      "default_governance_profile_id": "education_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "niche_id": "research_evidence",
+      "public_label": "Research and evidence work",
+      "description": "Workflows for finding, screening, coding, synthesising, analysing and interpreting scientific or professional evidence.",
+      "typical_actors": ["researcher", "reviewer", "analyst", "student researcher"],
+      "distinctive_constraints": ["high source density", "coding consistency", "uncertainty", "auditability", "reproducibility"],
+      "default_governance_profile_id": "research_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "niche_id": "health_service_pathway",
+      "public_label": "Health and service pathways",
+      "description": "Research-governed or partner-led workflows in which cognitive or cognitive-affective support is embedded within a defined health or service pathway.",
+      "typical_actors": ["service user", "patient", "practitioner", "researcher", "service lead"],
+      "distinctive_constraints": ["clinical boundary", "safety", "special-category data", "escalation", "regulated claims", "professional oversight"],
+      "default_governance_profile_id": "health_partner_research_v1",
+      "review_status": "draft"
+    },
+    {
+      "niche_id": "individual_professional",
+      "public_label": "Individual professional performance",
+      "description": "Self-directed, non-clinical use by individuals seeking measurement and targeted cognitive training for work or study demands.",
+      "typical_actors": ["individual professional", "student", "independent learner"],
+      "distinctive_constraints": ["user-selected goals", "private results", "limited organisational context"],
+      "default_governance_profile_id": "individual_nonclinical_v1",
+      "review_status": "draft"
+    }
+  ]
+}
