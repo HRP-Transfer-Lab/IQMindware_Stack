@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hrp-transfer-lab.org/schemas/release-manifest.schema.json",
+  "title": "Cognitive Workflow Ontology Release Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ontology_version",
+    "source_commit",
+    "created_at",
+    "included_files",
+    "record_counts",
+    "validation_status",
+    "evidence_review_cutoff",
+    "known_limitations"
+  ],
+  "properties": {
+    "ontology_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "source_commit": {"type": "string", "minLength": 7},
+    "created_at": {"type": "string", "format": "date-time"},
+    "included_files": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "record_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "validation_status": {"enum": ["draft", "passed", "failed"]},
+    "evidence_review_cutoff": {"type": "string", "format": "date"},
+    "approved_by": {"type": "array", "items": {"type": "string"}},
+    "known_limitations": {"type": "array", "items": {"type": "string"}},
+    "sha256sums_file": {"type": ["string", "null"]}
+  }
+}
