@@ -1,0 +1,18 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {"workflow_support_id": "protected_focus_window", "locus": "organisation_system", "label": "Protected focus window", "description": "Reduce interruption during a defined high-demand production or verification block.", "review_status": "draft"},
+    {"workflow_support_id": "notification_control", "locus": "task_interface", "label": "Notification and interruption control", "description": "Suppress or batch non-critical prompts while the active task model must remain stable.", "review_status": "draft"},
+    {"workflow_support_id": "visible_task_state", "locus": "task_interface", "label": "Visible task-state record", "description": "Externalise the current goal, stage, unresolved issues and next action to support re-entry.", "review_status": "draft"},
+    {"workflow_support_id": "source_claim_ledger", "locus": "task_interface", "label": "Source–claim ledger", "description": "Keep each claim linked to its source, population, context and evidential status.", "review_status": "draft"},
+    {"workflow_support_id": "source_claim_matrix", "locus": "task_interface", "label": "Source–claim matrix", "description": "Compare sources and claims systematically during synthesis.", "review_status": "draft"},
+    {"workflow_support_id": "separate_drafting_verification", "locus": "team_process", "label": "Separate drafting and verification stages", "description": "Prevent fluent production from silently substituting for independent checking.", "review_status": "draft"},
+    {"workflow_support_id": "release_checkpoint", "locus": "team_process", "label": "Explicit release checkpoint", "description": "Define the evidence and role requirements for releasing or acting on an output.", "review_status": "draft"},
+    {"workflow_support_id": "structured_handoff", "locus": "team_process", "label": "Structured handoff", "description": "Transfer goal, state, sources, unresolved issues, decisions and next actions in a standard form.", "review_status": "draft"},
+    {"workflow_support_id": "reentry_cue", "locus": "task_interface", "label": "Re-entry cue", "description": "Provide a concise reconstruction prompt after interruption, delay or handoff.", "review_status": "draft"},
+    {"workflow_support_id": "decision_sufficiency_gate", "locus": "task_interface", "label": "Decision-sufficiency gate", "description": "Ask whether further information would materially change the action, safety or interpretation.", "review_status": "draft"},
+    {"workflow_support_id": "disconfirmation_checkpoint", "locus": "team_process", "label": "Disconfirmation checkpoint", "description": "Require one serious alternative or failure test before consequential closure.", "review_status": "draft"},
+    {"workflow_support_id": "workload_reduction", "locus": "organisation_system", "label": "Reduce concurrent workload", "description": "Reduce active cases, tasks or streams when system demand exceeds a workable range.", "review_status": "draft"},
+    {"workflow_support_id": "decision_rights_clarity", "locus": "organisation_system", "label": "Clarify decision rights", "description": "Specify who decides, who reviews and when escalation is required.", "review_status": "draft"}
+  ]
+}
