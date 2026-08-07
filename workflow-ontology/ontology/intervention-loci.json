@@ -1,0 +1,37 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "locus_id": "person",
+      "public_label": "Individual measurement or training",
+      "description": "Support the person’s capacity, control policy, strategy use or self-monitoring.",
+      "examples": ["G Track baseline", "Attention Coach", "WM Coach", "guided strategy"],
+      "rule": "Use only when a person-level function is plausibly relevant and workflow redesign alone is unlikely to resolve the problem.",
+      "review_status": "draft"
+    },
+    {
+      "locus_id": "task_interface",
+      "public_label": "Task or interface redesign",
+      "description": "Reduce avoidable cognitive load or make relevant structure, sources, states and decision boundaries more visible.",
+      "examples": ["notification control", "source-claim ledger", "visible task state", "re-entry cue", "decision checklist"],
+      "rule": "Prefer when the task or interface creates unnecessary load across otherwise capable users.",
+      "review_status": "draft"
+    },
+    {
+      "locus_id": "team_process",
+      "public_label": "Team or process redesign",
+      "description": "Improve communication, hand-offs, review stages, role clarity and coordination.",
+      "examples": ["structured handoff", "separate drafting and verification", "review checkpoint", "escalation protocol"],
+      "rule": "Prefer when errors cluster around hand-offs, role ambiguity, missing checks or coordination failures.",
+      "review_status": "draft"
+    },
+    {
+      "locus_id": "organisation_system",
+      "public_label": "Organisation or system redesign",
+      "description": "Change incentives, authority, staffing, workload, policy or workflow architecture.",
+      "examples": ["protected focus periods", "staffing change", "decision-rights clarification", "reduced concurrent caseload", "automation"],
+      "rule": "Prefer when strain is systemic, widespread or created by organisational conditions rather than individual variation.",
+      "review_status": "draft"
+    }
+  ]
+}
