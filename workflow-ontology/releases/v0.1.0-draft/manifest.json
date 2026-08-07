@@ -1,0 +1,42 @@
+{
+  "ontology_version": "0.1.0",
+  "source_commit": "PENDING_FINAL_BRANCH_COMMIT",
+  "created_at": "2026-08-07T00:00:00Z",
+  "included_files": [
+    "ontology/niches.json",
+    "ontology/workflow-archetypes.json",
+    "ontology/workflow-stages.json",
+    "ontology/demand-dimensions.json",
+    "ontology/friction-signatures.json",
+    "ontology/intervention-loci.json",
+    "ontology/outcome-measures.json",
+    "mappings/demand-function-mappings.json",
+    "mappings/governance-profiles.json",
+    "mappings/workflow-supports.json",
+    "evidence/evidence-sources.json",
+    "evidence/evidence-claims.json"
+  ],
+  "record_counts": {
+    "niches": 5,
+    "workflow_archetypes": 10,
+    "workflow_stages": 5,
+    "demand_dimensions": 16,
+    "friction_signatures": 15,
+    "intervention_loci": 4,
+    "outcome_measures": 16,
+    "governance_profiles": 5,
+    "evidence_sources": 8,
+    "evidence_claims": 6
+  },
+  "validation_status": "draft",
+  "evidence_review_cutoff": "2026-08-07",
+  "approved_by": [],
+  "known_limitations": [
+    "Workflow-stage mappings have not yet undergone external expert review.",
+    "Relevance values are provisional ontology weights, not psychometric coefficients or effect estimates.",
+    "No production route engine has yet been validated against these records.",
+    "Health and service mappings remain partner-led or research-governed only.",
+    "The current release covers a small demonstrator catalogue rather than a comprehensive occupational taxonomy."
+  ],
+  "sha256sums_file": null
+}
