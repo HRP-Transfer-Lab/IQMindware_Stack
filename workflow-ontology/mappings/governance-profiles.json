@@ -1,0 +1,45 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "governance_profile_id": "individual_nonclinical_v1",
+      "label": "Individual non-clinical use",
+      "eligible_route": "self_service",
+      "requirements": ["plain-language intended use", "delete/export route", "no diagnosis", "no official IQ claim", "optional research consent separated from product use"],
+      "prohibited_uses": ["employment selection", "educational admission", "insurance decisions", "clinical diagnosis"],
+      "review_status": "draft"
+    },
+    {
+      "governance_profile_id": "workplace_nonclinical_v1",
+      "label": "Workplace cognitive-support pilot",
+      "eligible_route": "bounded_pilot",
+      "requirements": ["voluntary participation", "aggregate-first reporting", "purpose limitation", "role-based access", "no punitive ranking", "DPIA screening", "human oversight"],
+      "prohibited_uses": ["recruitment", "promotion", "disciplinary action", "covert productivity scoring", "mental-health risk inference"],
+      "review_status": "draft"
+    },
+    {
+      "governance_profile_id": "education_nonclinical_v1",
+      "label": "Education and learner-support pilot",
+      "eligible_route": "bounded_pilot",
+      "requirements": ["voluntary and age-appropriate participation", "privacy-protective defaults", "aggregate-first reporting", "support not selection", "clear teacher/tutor access rules"],
+      "prohibited_uses": ["admission decisions", "grading", "disciplinary action", "diagnosis", "special-educational-needs classification without proper assessment"],
+      "review_status": "draft"
+    },
+    {
+      "governance_profile_id": "research_nonclinical_v1",
+      "label": "Non-clinical research study",
+      "eligible_route": "research_protocol",
+      "requirements": ["protocol version", "ethics review where required", "participant information", "consent", "data-management plan", "analysis provenance", "publication review"],
+      "prohibited_uses": ["unreviewed high-stakes decisions", "silent secondary use", "claims beyond study design"],
+      "review_status": "draft"
+    },
+    {
+      "governance_profile_id": "health_partner_research_v1",
+      "label": "Health or care partner/research route",
+      "eligible_route": "partner_only",
+      "requirements": ["defined intended use", "clinical or service leadership", "research/service governance", "lawful basis", "special-category data controls", "safety and escalation plan", "claims review", "professional oversight"],
+      "prohibited_uses": ["direct consumer treatment recommendation", "automated clinical eligibility", "diagnosis from cognitive scores", "replacement of healthcare advice"],
+      "review_status": "draft"
+    }
+  ]
+}
