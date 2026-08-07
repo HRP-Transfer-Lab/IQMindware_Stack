@@ -44,7 +44,7 @@
         {"function_id": "wm_binding_signal", "relevance": 0.95, "evidence_level": "plausible", "source_ids": ["luck_vogel_1997_vwm", "wheeler_treisman_2002_binding"]},
         {"function_id": "reasoning_evidence", "relevance": 0.75, "evidence_level": "plausible", "note": "Reasoning module is in development."}
       ],
-      "intervention_loci": ["person", "task_interface", "education_nonclinical_v1"],
+      "intervention_loci": ["person", "task_interface", "team_process"],
       "workflow_support_ids": ["protected_focus_window", "source_claim_matrix", "visible_task_state", "separate_drafting_verification"],
       "outcome_ids": ["gtrack_attention_change", "gtrack_complex_span_change", "gtrack_binding_change", "source_attribution_error_rate", "workflow_completion", "delayed_recheck"],
       "governance_profile_id": "education_nonclinical_v1",
