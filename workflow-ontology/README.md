@@ -60,9 +60,9 @@ The ontology does not diagnose individuals and does not assume that every workfl
 
 ```text
 person
- task / interface
- team / process
- organisation / system
+task / interface
+team / process
+organisation / system
 ```
 
 Where avoidable workflow design is the primary source of cognitive strain, redesign should take priority over training.
@@ -84,7 +84,7 @@ Evidence, Commit, Path Prediction and explicit Reasoning modules remain under de
 
 ```text
 workflow-ontology/
-├── docs/        method, evidence, release and website-import rules
+├── docs/        method, evidence, validation, release and website-import rules
 ├── schemas/     JSON Schema contracts
 ├── ontology/    canonical concepts and dimensions
 ├── mappings/    many-to-many evidence and governance mappings
@@ -92,8 +92,40 @@ workflow-ontology/
 ├── examples/    worked workflow-stage records
 ├── tests/       expected routes and boundary cases
 ├── scripts/     validation and release tooling
+├── studies/     staged content, behavioural and intervention validation
 └── releases/    immutable release manifests
 ```
+
+## Research validation programme
+
+The canonical staged research plan is:
+
+- [`docs/RESEARCH_VALIDATION_PLAN.md`](docs/RESEARCH_VALIDATION_PLAN.md)
+
+It separates six evidence dimensions:
+
+```text
+W — workflow representation
+D — cognitive-demand mapping
+F — cognitive-function mapping
+P — protocol fit
+O — workflow outcome evidence
+I — implementation readiness
+```
+
+These dimensions must not be collapsed into one generic evidence score.
+
+The study sequence is indexed at:
+
+- [`studies/README.md`](studies/README.md)
+
+Current study scaffolds:
+
+1. [`studies/001-content-validation/`](studies/001-content-validation/) — workflow, demand, function and intervention-locus validation;
+2. [`studies/002-behavioural-validation/`](studies/002-behavioural-validation/) — prospective prediction of workflow performance;
+3. [`studies/003-intervention-pilot/`](studies/003-intervention-pilot/) — cognitive training, workflow redesign and combined-route evaluation.
+
+The first research objective is to validate the ontology’s workflow and mapping assumptions. It is not yet to claim that an IQ Mindware route causes improved organisational or educational outcomes.
 
 ## First target niches
 
@@ -115,6 +147,8 @@ route_engine_version
 product_availability_version
 copy_version
 ```
+
+A route should also retain or be traceable to its six-part research evidence profile once that schema is implemented.
 
 ## Public-methods boundary
 
