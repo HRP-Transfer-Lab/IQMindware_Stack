@@ -1,0 +1,73 @@
+{
+  "ontology_version": "0.1.0",
+  "cases": [
+    {
+      "case_id": "ai_verification_binding_route",
+      "input": {
+        "workflow_stage_id": "ai_report_verify_before_release",
+        "friction_ids": ["source_context_swap", "premature_closure"]
+      },
+      "expected": {
+        "must_include_functions": ["wm_binding_signal"],
+        "may_include_functions": ["attention_signal", "reasoning_evidence", "reasoning_commit"],
+        "must_include_loci": ["task_interface", "team_process"],
+        "must_include_supports": ["source_claim_ledger", "release_checkpoint"],
+        "governance_profile_id": "workplace_nonclinical_v1",
+        "must_not_claim": ["improves workplace performance", "prevents AI errors", "diagnoses attention problems"]
+      }
+    },
+    {
+      "case_id": "he_source_synthesis_relational_binding_route",
+      "input": {
+        "workflow_stage_id": "he_assignment_integrate_sources",
+        "friction_ids": ["relation_loss", "source_context_swap"]
+      },
+      "expected": {
+        "must_include_functions": ["wm_relational_signal", "wm_binding_signal"],
+        "may_include_functions": ["attention_signal", "reasoning_evidence"],
+        "must_include_loci": ["person", "task_interface"],
+        "governance_profile_id": "education_nonclinical_v1",
+        "must_not_claim": ["raises grades", "treats exam anxiety", "diagnoses a working-memory deficit"]
+      }
+    },
+    {
+      "case_id": "research_screening_vigilance_route",
+      "input": {
+        "workflow_stage_id": "research_screen_studies",
+        "friction_ids": ["vigilance_lapse", "partial_match_acceptance"]
+      },
+      "expected": {
+        "must_include_functions": ["zone_context", "attention_signal"],
+        "may_include_functions": ["wm_binding_signal"],
+        "must_include_loci": ["task_interface", "team_process"],
+        "governance_profile_id": "research_nonclinical_v1",
+        "must_not_claim": ["replaces dual screening", "detects fatigue", "validates screening competence"]
+      }
+    },
+    {
+      "case_id": "health_route_requires_partner_governance",
+      "input": {
+        "workflow_stage_id": "health_between_session_complete_support",
+        "friction_ids": ["attention_dispersal"]
+      },
+      "expected": {
+        "governance_profile_id": "health_partner_research_v1",
+        "eligible_route": "partner_only",
+        "must_not_resolve_to": ["self_service_treatment", "diagnosis", "clinical_eligibility"]
+      }
+    },
+    {
+      "case_id": "systemic_interruptions_not_training_only",
+      "input": {
+        "workflow_stage_id": "project_resume_after_interruption",
+        "friction_ids": ["poor_reentry", "task_set_loss"],
+        "organisation_pattern": "widespread"
+      },
+      "expected": {
+        "must_include_loci": ["task_interface", "organisation_system"],
+        "must_include_supports": ["notification_control", "visible_task_state", "reentry_cue"],
+        "must_not_resolve_to": ["person_only"]
+      }
+    }
+  ]
+}
