@@ -1,0 +1,20 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {"friction_id": "signal_loss", "public_label": "Important information is missed among competing input", "candidate_functions": ["attention_signal"], "alternative_loci": ["task_interface", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "attention_dispersal", "public_label": "Focus fragments across several active streams", "candidate_functions": ["attention_signal"], "alternative_loci": ["task_interface", "team_process", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "vigilance_lapse", "public_label": "Engagement deteriorates during repetitive monitoring", "candidate_functions": ["zone_context", "attention_signal"], "alternative_loci": ["task_interface", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "task_set_loss", "public_label": "The governing rule is lost after an interruption or switch", "candidate_functions": ["attention_signal", "wm_relational_signal"], "alternative_loci": ["task_interface", "team_process"], "review_status": "draft"},
+    {"friction_id": "relation_loss", "public_label": "Dependencies or comparisons are lost as the task develops", "candidate_functions": ["wm_relational_signal"], "alternative_loci": ["task_interface", "team_process"], "review_status": "draft"},
+    {"friction_id": "wrong_lag_or_sequence", "public_label": "A recent step is confused with the required earlier step", "candidate_functions": ["wm_relational_signal"], "alternative_loci": ["task_interface"], "review_status": "draft"},
+    {"friction_id": "source_context_swap", "public_label": "Correct information is attached to the wrong source, role or context", "candidate_functions": ["wm_binding_signal"], "alternative_loci": ["task_interface", "team_process"], "review_status": "draft"},
+    {"friction_id": "partial_match_acceptance", "public_label": "A plausible partial match is accepted as complete", "candidate_functions": ["wm_binding_signal", "reasoning"], "alternative_loci": ["task_interface"], "review_status": "draft"},
+    {"friction_id": "stale_model_persistence", "public_label": "An earlier interpretation continues after conditions change", "candidate_functions": ["attention_evidence", "predictive_calibration", "path_prediction"], "alternative_loci": ["team_process", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "overreaction_to_noise", "public_label": "One anomalous event causes an excessive update", "candidate_functions": ["attention_evidence", "predictive_calibration"], "alternative_loci": ["team_process"], "review_status": "draft"},
+    {"friction_id": "premature_closure", "public_label": "Action occurs before diagnostic evidence is sufficient", "candidate_functions": ["attention_commit", "reasoning_commit"], "alternative_loci": ["team_process", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "excessive_checking", "public_label": "Review continues after the decision-relevant evidence is sufficient", "candidate_functions": ["attention_commit", "reasoning_commit"], "alternative_loci": ["team_process", "organisation_system"], "review_status": "draft"},
+    {"friction_id": "short_horizon", "public_label": "Immediate steps are managed but downstream effects are missed", "candidate_functions": ["path_prediction", "reasoning"], "alternative_loci": ["task_interface", "team_process"], "review_status": "draft"},
+    {"friction_id": "over_inference", "public_label": "A conclusion exceeds what the evidence supports", "candidate_functions": ["reasoning", "reasoning_evidence"], "alternative_loci": ["team_process"], "review_status": "draft"},
+    {"friction_id": "poor_reentry", "public_label": "Context must be reconstructed after each interruption, shift or handoff", "candidate_functions": ["wm_relational_signal", "wm_binding_signal"], "alternative_loci": ["task_interface", "team_process", "organisation_system"], "review_status": "draft"}
+  ]
+}
