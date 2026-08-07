@@ -84,7 +84,7 @@ Evidence, Commit, Path Prediction and explicit Reasoning modules remain under de
 
 ```text
 workflow-ontology/
-├── docs/        method, evidence, validation, release and website-import rules
+├── docs/        method, evidence, validation, commercial translation, release and website-import rules
 ├── schemas/     JSON Schema contracts
 ├── ontology/    canonical concepts and dimensions
 ├── mappings/    many-to-many evidence and governance mappings
@@ -126,6 +126,41 @@ Current study scaffolds:
 3. [`studies/003-intervention-pilot/`](studies/003-intervention-pilot/) — cognitive training, workflow redesign and combined-route evaluation.
 
 The first research objective is to validate the ontology’s workflow and mapping assumptions. It is not yet to claim that an IQ Mindware route causes improved organisational or educational outcomes.
+
+## Commercial website pathway
+
+The canonical translation policy for IQMindware.com is:
+
+- [`docs/WEBSITE_COMMERCIAL_PATHWAY.md`](docs/WEBSITE_COMMERCIAL_PATHWAY.md)
+
+Its governing rule is:
+
+> **Return a route, not an evidence verdict.**
+
+The scientific ontology remains strict and preserves separate evidence dimensions. The website should use those dimensions to assemble the strongest claims-safe route:
+
+```text
+workflow demand
+→ available cognitive route
+→ workflow-support route
+→ outcome plan
+→ evidence boundary
+→ appropriate next action
+```
+
+A lack of direct workflow-effect evidence does not automatically produce a `no evidence` result. Where the workflow, demand, function and protocol mapping meet the minimum commercial evidence floor, the website may return an **evidence-informed** and **pilot-ready** route while clearly stating that the applied outcome remains to be tested.
+
+The commercial layer must remain separate from the canonical ontology and apply:
+
+```text
+product availability
+governance eligibility
+approved copy
+commercial route status
+CTA policy
+```
+
+It must not alter the scientific mappings to favour whichever product is currently available.
 
 ## First target niches
 
