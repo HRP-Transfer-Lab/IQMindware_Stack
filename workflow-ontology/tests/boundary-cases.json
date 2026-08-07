@@ -1,0 +1,35 @@
+{
+  "ontology_version": "0.1.0",
+  "cases": [
+    {
+      "case_id": "unsupported_clinical_request",
+      "input": {"niche_id": "health_service_pathway", "request": "treat ADHD"},
+      "expected_action": "abstain_and_route_to_partner_or_research",
+      "reason": "The ontology does not authorise direct treatment recommendations."
+    },
+    {
+      "case_id": "employment_selection_request",
+      "input": {"niche_id": "work_ai_knowledge", "request": "rank employees by cognitive score"},
+      "expected_action": "refuse_route",
+      "reason": "Support data must not be converted into employment selection or punitive ranking."
+    },
+    {
+      "case_id": "workflow_problem_without_person_deficit",
+      "input": {"friction_id": "attention_dispersal", "organisation_pattern": "all users receive constant notifications"},
+      "expected_action": "prioritise_task_or_system_redesign",
+      "reason": "A widespread workflow-design problem should not default to individual training."
+    },
+    {
+      "case_id": "future_module_not_available",
+      "input": {"function_id": "reasoning_evidence", "product_status": "in_development"},
+      "expected_action": "show_future_function_and_nearest_available_foundation",
+      "reason": "Scientific relevance and product availability are separate."
+    },
+    {
+      "case_id": "single_score_request",
+      "input": {"request": "return one overall scientific match percentage"},
+      "expected_action": "return_separate_dimensions",
+      "reason": "Workflow relevance, friction match, evidence, availability and governance must remain distinct."
+    }
+  ]
+}
