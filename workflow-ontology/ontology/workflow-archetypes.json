@@ -1,0 +1,75 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "workflow_id": "deep_production",
+      "public_label": "Produce a complex artefact",
+      "purpose": "Create a report, analysis, design, essay, plan or code artefact while preserving the task structure across an extended work period.",
+      "default_stage_ids": ["prepare_context", "select_information", "integrate_structure", "produce_output", "verify_output", "review_and_reenter"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "multi_source_synthesis",
+      "public_label": "Compare and integrate several sources",
+      "purpose": "Build a coherent account from multiple documents, data streams, people or systems while preserving source and context.",
+      "default_stage_ids": ["define_question", "screen_sources", "extract_evidence", "bind_source_context", "integrate_structure", "form_conclusion"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "monitor_and_detect",
+      "public_label": "Monitor a changing stream",
+      "purpose": "Maintain engagement, detect diagnostic events and distinguish meaningful change from noise.",
+      "default_stage_ids": ["set_monitoring_rule", "monitor_stream", "detect_event", "verify_event", "escalate_or_continue"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "review_and_verify",
+      "public_label": "Review and verify an output",
+      "purpose": "Check claims, calculations, sources, assumptions or decisions before release or use.",
+      "default_stage_ids": ["load_review_context", "identify_claims", "trace_sources", "test_consistency", "decide_release", "record_review"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "triage_and_prioritise",
+      "public_label": "Triage and prioritise cases or tasks",
+      "purpose": "Identify what requires attention first using incomplete information, explicit thresholds and consequence-sensitive escalation.",
+      "default_stage_ids": ["receive_items", "extract_critical_signal", "bind_context", "estimate_priority", "commit_or_escalate", "recheck"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "plan_and_execute",
+      "public_label": "Plan and coordinate dependencies",
+      "purpose": "Maintain relations among tasks, people, deadlines and constraints while moving a project towards completion.",
+      "default_stage_ids": ["define_goal", "map_dependencies", "sequence_actions", "monitor_progress", "update_plan", "handoff_and_resume"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "learn_and_retrieve",
+      "public_label": "Learn, organise and retrieve knowledge",
+      "purpose": "Select relevant material, maintain relations and bindings, consolidate learning and recover it under assessment or application demands.",
+      "default_stage_ids": ["orient_to_goal", "encode_material", "integrate_relations", "bind_sources_and_context", "retrieve", "apply_and_recheck"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "handoff_and_resume",
+      "public_label": "Hand off or resume complex work",
+      "purpose": "Transfer or reconstruct the task model across people, systems, shifts or interruptions.",
+      "default_stage_ids": ["capture_state", "communicate_context", "receive_handoff", "reconstruct_state", "verify_continuity", "resume_action"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "decide_under_uncertainty",
+      "public_label": "Decide under uncertainty",
+      "purpose": "Accumulate diagnostic evidence, calibrate confidence and commit at a threshold suited to time, cost, risk and reversibility.",
+      "default_stage_ids": ["define_decision", "form_initial_model", "gather_evidence", "compare_options", "commit_defer_or_test", "review_outcome"],
+      "review_status": "draft"
+    },
+    {
+      "workflow_id": "between_session_support",
+      "public_label": "Continue support between formal encounters",
+      "purpose": "Deliver, monitor and adapt a bounded support protocol between appointments, teaching sessions or programme events.",
+      "default_stage_ids": ["onboard", "complete_check", "deliver_support", "monitor_response", "escalate_if_required", "review_at_encounter"],
+      "review_status": "draft"
+    }
+  ]
+}
