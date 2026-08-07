@@ -1,0 +1,93 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "source_id": "wu_2016_mftm",
+      "citation": "Wu, T., Dufford, A. J., Mackie, M. A., Egan, L. J., & Fan, J. (2016). The capacity of cognitive control estimated from a perceptual decision making task. Scientific Reports, 6, 34025.",
+      "doi_or_url": "https://doi.org/10.1038/srep34025",
+      "study_type": "task-development-and-capacity-study",
+      "population": "healthy young adults",
+      "constructs": ["masked majority function", "cognitive control capacity", "information rate"],
+      "outcomes": ["MFT-M performance", "capacity estimate"],
+      "limitations": ["laboratory task", "does not establish workplace transfer"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "zhang_2024_attention_training",
+      "citation": "Zhang, H., Fan, S., Yang, J., Yi, J., Guan, L., He, H., Zhang, X., Luo, Y., & Guan, Q. (2024). Attention control training and transfer effects on cognitive tasks. Neuropsychologia, 200, 108910.",
+      "doi_or_url": "https://doi.org/10.1016/j.neuropsychologia.2024.108910",
+      "study_type": "randomised-training-study",
+      "population": "healthy young adults",
+      "constructs": ["MFT-M attention-control training"],
+      "outcomes": ["selected attention outcomes", "verbal-learning acquisition", "ERP outcomes"],
+      "limitations": ["single direct training study", "not uniform across all executive outcomes", "everyday focus not established"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "koch_2022_omib",
+      "citation": "Koch, M., Spinath, F. M., Greiff, S., & Becker, N. (2022). Development and validation of the Open Matrices Item Bank. Journal of Intelligence, 10(3), 41.",
+      "doi_or_url": "https://doi.org/10.3390/jintelligence10030041",
+      "study_type": "item-bank-development-and-validation",
+      "population": "medical-school applicants",
+      "constructs": ["figural matrix reasoning", "fluid reasoning", "IRT"],
+      "outcomes": ["220 calibrated royalty-free matrix items", "2PL parameters", "internal consistency"],
+      "limitations": ["exact G Track form and longitudinal change sensitivity require separate validation"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "unsworth_2005_automated_span",
+      "citation": "Unsworth, N., Heitz, R. P., Schrock, J. C., & Engle, R. W. (2005). An automated version of the operation span task. Behavior Research Methods, 37, 498–505.",
+      "doi_or_url": "https://doi.org/10.3758/BF03192720",
+      "study_type": "task-method-study",
+      "population": "adults",
+      "constructs": ["complex span", "working memory capacity"],
+      "outcomes": ["automated complex-span method"],
+      "limitations": ["G Track uses a custom symmetry-span-style implementation"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "conway_2005_span_review",
+      "citation": "Conway, A. R. A., Kane, M. J., Bunting, M. F., Hambrick, D. Z., Wilhelm, O., & Engle, R. W. (2005). Working memory span tasks: A methodological review and user's guide. Psychonomic Bulletin & Review, 12, 769–786.",
+      "doi_or_url": "https://doi.org/10.3758/BF03196772",
+      "study_type": "methodological-review",
+      "population": "general",
+      "constructs": ["complex span", "working memory capacity"],
+      "outcomes": ["methodological guidance"],
+      "limitations": ["does not validate the exact G Track implementation"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "luck_vogel_1997_vwm",
+      "citation": "Luck, S. J., & Vogel, E. K. (1997). The capacity of visual working memory for features and conjunctions. Nature, 390, 279–281.",
+      "doi_or_url": "https://doi.org/10.1038/36846",
+      "study_type": "experimental-paradigm-study",
+      "population": "adults",
+      "constructs": ["visual working memory", "feature conjunctions"],
+      "outcomes": ["change-detection performance"],
+      "limitations": ["exact G Track implementation requires validation"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "wheeler_treisman_2002_binding",
+      "citation": "Wheeler, M. E., & Treisman, A. M. (2002). Binding in short-term visual memory. Journal of Experimental Psychology: General, 131(1), 48–64.",
+      "doi_or_url": "https://doi.org/10.1037/0096-3445.131.1.48",
+      "study_type": "experimental-paradigm-study",
+      "population": "adults",
+      "constructs": ["visual binding", "short-term memory"],
+      "outcomes": ["binding and change-detection performance"],
+      "limitations": ["does not establish workflow or training transfer"],
+      "review_status": "approved"
+    },
+    {
+      "source_id": "hrp_paired_control_vigilance_2026",
+      "citation": "HRP Transfer Lab (2026). Paired Stroop–Flanker–SART study: internal secondary analysis and protocol-development package.",
+      "doi_or_url": "https://github.com/HRP-Transfer-Lab/flow-zone-zone-validation",
+      "study_type": "secondary-analysis-internal-recovery",
+      "population": "public paired-task dataset",
+      "constructs": ["control profiles", "engagement-vigilance", "short-task recovery"],
+      "outcomes": ["four-component exploratory model", "abbreviation concordance", "mixed trait-state structure"],
+      "limitations": ["not independent prospective validation", "not a diagnosis or intervention selector"],
+      "review_status": "approved"
+    }
+  ]
+}
