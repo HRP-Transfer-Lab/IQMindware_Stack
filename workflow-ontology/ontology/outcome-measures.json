@@ -1,0 +1,21 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {"outcome_id": "training_task_change", "level": "app_learning", "label": "Change within the trained app task", "interpretation": "Local learning only; not evidence of broader transfer by itself.", "review_status": "draft"},
+    {"outcome_id": "gtrack_attention_change", "level": "cognitive_measure", "label": "Change on separate G Track attention measures", "interpretation": "Near-transfer evidence when protocol and timing are comparable.", "review_status": "draft"},
+    {"outcome_id": "gtrack_complex_span_change", "level": "cognitive_measure", "label": "Change on the G Track complex-span-style measure", "interpretation": "Broader working-memory transfer outcome; exact implementation remains provisional.", "review_status": "draft"},
+    {"outcome_id": "gtrack_binding_change", "level": "cognitive_measure", "label": "Change on the G Track visual-binding measure", "interpretation": "Binding transfer outcome; exact implementation remains provisional.", "review_status": "draft"},
+    {"outcome_id": "gtrack_matrix_change", "level": "cognitive_measure", "label": "Change on the OMIB Matrix Reasoning Benchmark", "interpretation": "Farther-transfer benchmark; not an official IQ change score.", "review_status": "draft"},
+    {"outcome_id": "zone_context_stability", "level": "context", "label": "Comparability of cognitive/vigilance context across measurement sessions", "interpretation": "Contextualises scores; does not identify the cause of a state pattern.", "review_status": "draft"},
+    {"outcome_id": "unsupported_claim_detection", "level": "functional_task", "label": "Detection of unsupported or weakly sourced claims", "interpretation": "Task-specific workflow outcome requiring a defined test protocol.", "review_status": "draft"},
+    {"outcome_id": "source_attribution_error_rate", "level": "functional_task", "label": "Source-attribution error rate", "interpretation": "Measures whether claims, evidence or roles remain correctly bound to context.", "review_status": "draft"},
+    {"outcome_id": "interruption_reentry_time", "level": "functional_task", "label": "Time required to recover task context after interruption", "interpretation": "Requires a versioned workflow simulation or field measure.", "review_status": "draft"},
+    {"outcome_id": "handoff_reconstruction_errors", "level": "workflow", "label": "Errors or omissions when reconstructing context after handoff", "interpretation": "Team/process outcome; should not be attributed solely to individual capacity.", "review_status": "draft"},
+    {"outcome_id": "review_time", "level": "workflow", "label": "Time required for a defined review stage", "interpretation": "Interpret jointly with review quality; faster is not always better.", "review_status": "draft"},
+    {"outcome_id": "rework_rate", "level": "workflow", "label": "Rate of work returned for correction", "interpretation": "May reflect person, task, process or organisational causes.", "review_status": "draft"},
+    {"outcome_id": "workflow_completion", "level": "workflow", "label": "Completion of the defined workflow or programme", "interpretation": "Engagement or implementation outcome, not cognitive efficacy alone.", "review_status": "draft"},
+    {"outcome_id": "programme_adherence", "level": "service", "label": "Completion of scheduled programme activities", "interpretation": "Implementation outcome; must not be equated with effectiveness.", "review_status": "draft"},
+    {"outcome_id": "practitioner_review_burden", "level": "service", "label": "Practitioner or staff time required for review", "interpretation": "Operational outcome requiring accurate time accounting.", "review_status": "draft"},
+    {"outcome_id": "delayed_recheck", "level": "delayed", "label": "Fresh outcome evidence after a defined delay", "interpretation": "Stronger persistence evidence than same-session success.", "review_status": "draft"}
+  ]
+}
