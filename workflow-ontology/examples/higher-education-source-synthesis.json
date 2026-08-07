@@ -1,0 +1,35 @@
+{
+  "example_id": "route_he_source_synthesis_v0_1",
+  "ontology_version": "0.1.0",
+  "input": {
+    "niche_id": "education_higher",
+    "workflow_stage_id": "he_assignment_integrate_sources",
+    "reported_frictions": ["attention_dispersal", "relation_loss", "source_context_swap", "poor_reentry"],
+    "desired_outcomes": ["source_attribution_error_rate", "workflow_completion", "delayed_recheck"]
+  },
+  "derived_profile": {
+    "dominant_demands": ["relational_complexity", "source_binding_load", "evidence_sequence_length"],
+    "primary_functions": ["wm_relational_signal", "wm_binding_signal"],
+    "secondary_functions": ["attention_signal"],
+    "future_functions": ["reasoning_evidence"],
+    "intervention_loci": ["person", "task_interface", "team_process"]
+  },
+  "current_product_route": [
+    "G Track baseline: attention, complex span and visual binding",
+    "WM Coach Relational Memory Signal",
+    "WM Coach Binding Memory Signal",
+    "Optional Attention Coach Signal Control",
+    "G Track follow-up",
+    "Fresh delayed re-check"
+  ],
+  "workflow_support_route": [
+    "protected focus window",
+    "source-claim matrix",
+    "visible task state",
+    "separate drafting and verification"
+  ],
+  "not_yet_available": ["Reasoning Evidence"],
+  "claims_boundary": "This is non-clinical cognitive support. Improved assignment quality or grades are workflow outcomes to test, not promised effects.",
+  "governance_profile_id": "education_nonclinical_v1",
+  "review_status": "draft"
+}
