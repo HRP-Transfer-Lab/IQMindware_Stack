@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hrp-transfer-lab.org/schemas/workflow-stage.schema.json",
+  "title": "Cognitive Workflow Stage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "workflow_stage_id",
+    "workflow_id",
+    "niche_ids",
+    "stage_label",
+    "workflow_goal",
+    "demand_profile",
+    "likely_frictions",
+    "function_mappings",
+    "intervention_loci",
+    "outcome_ids",
+    "governance_profile_id",
+    "ontology_version",
+    "review_status"
+  ],
+  "properties": {
+    "workflow_stage_id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "workflow_id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "niche_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "stage_label": {"type": "string", "minLength": 3},
+    "workflow_goal": {"type": "string", "minLength": 10},
+    "stage_sequence_position": {"type": ["integer", "null"], "minimum": 1},
+    "demand_profile": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 4}
+    },
+    "likely_frictions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "function_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["function_id", "relevance", "evidence_level"],
+        "properties": {
+          "function_id": {"type": "string"},
+          "relevance": {"type": "number", "minimum": 0, "maximum": 1},
+          "evidence_level": {"enum": ["strong", "moderate", "plausible", "insufficient", "not_eligible"]},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "intervention_loci": {"type": "array", "uniqueItems": true, "items": {"enum": ["person", "task_interface", "team_process", "organisation_system"]}},
+    "workflow_support_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "outcome_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "governance_profile_id": {"type": "string"},
+    "claims_boundary": {"type": "string"},
+    "source_ids": {"type": "array", "items": {"type": "string"}},
+    "ontology_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "record_version": {"type": "string"},
+    "review_status": {"enum": ["draft", "expert_reviewed", "approved", "deprecated", "retired"]},
+    "reviewed_by": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "format": "date"},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
