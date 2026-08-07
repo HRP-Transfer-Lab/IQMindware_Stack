@@ -1,0 +1,65 @@
+{
+  "ontology_version": "0.1.0",
+  "records": [
+    {
+      "claim_id": "attention_signal_mftm_construct",
+      "claim": "Masked Majority Function training directly exercises extraction of a majority relation under visual interference, uncertainty and limited exposure time.",
+      "claim_type": "mechanism_fit",
+      "evidence_level": "strong",
+      "source_ids": ["wu_2016_mftm"],
+      "approved_public_wording": "Attention Coach is closely aligned with goals involving signal extraction under visual interference and time pressure.",
+      "required_caveat": "This construct fit does not establish improvement in every form of attention or everyday focus.",
+      "review_status": "approved"
+    },
+    {
+      "claim_id": "attention_training_selected_transfer",
+      "claim": "MFT-M attention-control training has initial randomised evidence of transfer to selected attention-task conditions and verbal-learning acquisition trials.",
+      "claim_type": "training_benefit",
+      "evidence_level": "moderate",
+      "source_ids": ["zhang_2024_attention_training"],
+      "approved_public_wording": "Initial controlled research found transfer to selected attention measures and verbal-learning trials.",
+      "required_caveat": "Independent replication, delayed follow-up and workflow outcomes remain needed.",
+      "review_status": "approved"
+    },
+    {
+      "claim_id": "omib_matrix_source_validity",
+      "claim": "The Open Matrices Item Bank provides a validated, calibrated source of figural matrix items.",
+      "claim_type": "measurement_source",
+      "evidence_level": "strong",
+      "source_ids": ["koch_2022_omib"],
+      "approved_public_wording": "G Track uses matrix items from the validated Open Matrices Item Bank.",
+      "required_caveat": "The selected G Track form, longitudinal sensitivity and score interpretation require implementation-specific validation; it is not an official IQ test.",
+      "review_status": "approved"
+    },
+    {
+      "claim_id": "complex_span_paradigm_basis",
+      "claim": "Complex-span tasks provide an established paradigm for maintaining information while performing an interleaved processing task.",
+      "claim_type": "measurement_source",
+      "evidence_level": "strong",
+      "source_ids": ["unsworth_2005_automated_span", "conway_2005_span_review"],
+      "approved_public_wording": "The G Track complex-span-style task is based on established working-memory methods.",
+      "required_caveat": "The exact G Track symmetry-span-style implementation remains provisional and non-diagnostic.",
+      "review_status": "approved"
+    },
+    {
+      "claim_id": "visual_binding_paradigm_basis",
+      "claim": "Visual change-detection and binding paradigms provide an established basis for measuring feature and feature-location conjunction memory.",
+      "claim_type": "measurement_source",
+      "evidence_level": "strong",
+      "source_ids": ["luck_vogel_1997_vwm", "wheeler_treisman_2002_binding"],
+      "approved_public_wording": "The G Track binding task is based on established visual working-memory binding paradigms.",
+      "required_caveat": "The exact digital implementation and workflow relevance require separate validation.",
+      "review_status": "approved"
+    },
+    {
+      "claim_id": "zone_profile_internal_status",
+      "claim": "The current paired-task secondary analysis supports an exploratory four-component description of task-active control and a related but non-identical engagement-vigilance dimension.",
+      "claim_type": "internal_validation",
+      "evidence_level": "moderate",
+      "source_ids": ["hrp_paired_control_vigilance_2026"],
+      "approved_public_wording": "G Track provides a provisional behavioural context estimate that becomes more informative across repeated sessions.",
+      "required_caveat": "The profiles are not validated natural kinds, diagnoses, brain states or proven intervention selectors.",
+      "review_status": "approved"
+    }
+  ]
+}
