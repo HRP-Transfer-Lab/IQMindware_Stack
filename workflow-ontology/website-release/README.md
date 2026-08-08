@@ -60,8 +60,14 @@ tests/website-route-cases.json
 manifest.json
     Release-candidate scope, versions, production gates and limitations.
 
+REVIEW_CHECKLIST.md
+    Human scientific, claims, governance and website-import sign-off gates.
+
 scripts/validate_website_release.py
     Dependency-free cross-reference and availability validator.
+
+scripts/run_website_route_cases.py
+    Executes the static availability, fallback and governance cases.
 
 scripts/build_website_release.py
     Builds a deterministic import bundle after validation.
@@ -89,6 +95,14 @@ These routes are evidence-informed configurations. They are not claims that the 
 6. State the current applied-evidence boundary.
 7. Route health-related or high-stakes uses to partner/research governance.
 8. Never use Zone Check or cognitive scores for selection, diagnosis or punitive ranking.
+```
+
+## Validation commands
+
+```bash
+python workflow-ontology/scripts/validate_registry.py
+python workflow-ontology/website-release/scripts/validate_website_release.py
+python workflow-ontology/website-release/scripts/run_website_route_cases.py
 ```
 
 ## Production path
