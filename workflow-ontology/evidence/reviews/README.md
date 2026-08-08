@@ -64,6 +64,31 @@ Companion records:
 ../live-signal-reasoning-source-additions.candidate.json
 ```
 
+### Explicit reasoning, cognitive restructuring and reappraisal
+
+[`EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md`](EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md)
+
+This review separates:
+
+```text
+formal and relational reasoning
+professional belief calibration
+non-clinical evidence-sensitive reframing
+cognitive restructuring in CBT-type interventions
+cognitive reappraisal
+behavioural-experiment belief updating
+LLM-assisted delivery research
+```
+
+Companion records:
+
+```text
+../explicit-reasoning-intervention-families.candidate.json
+../explicit-reasoning-cbt-sources.candidate.json
+```
+
+The governing correction is that cognitive restructuring is an applied explicit-reasoning intervention family, not merely another SMART-style wrapper. Clinical evidence is retained as condition-specific category evidence and does not validate the generic IQ Mindware Reasoning app.
+
 ## Review-status meanings
 
 ```text
@@ -87,3 +112,5 @@ The claim or mapping should no longer be used.
 ## Prepublication policy
 
 Quality arXiv, PsyArXiv and bioRxiv sources may influence model design and research priorities. They must remain visibly labelled as preprints and cannot alone validate a product, clinical route or consequential use.
+
+Dialogue datasets and synthetic therapy-session frameworks are design evidence only. They do not establish therapeutic efficacy, safety or equivalence to a qualified clinician.
