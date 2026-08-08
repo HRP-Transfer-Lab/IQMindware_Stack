@@ -46,6 +46,13 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - `EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md` distinguishing formal relational reasoning, professional belief calibration, non-clinical evidence-sensitive reframing, clinical cognitive restructuring and cognitive reappraisal.
 - `explicit-reasoning-intervention-families.candidate.json` with separate candidate records for formal reasoning, belief calibration, reframing, behavioural experiments, condition-specific restructuring, reappraisal and LLM-assisted delivery.
 - `explicit-reasoning-cbt-sources.candidate.json` with peer-reviewed component, process and meta-analytic sources plus a clearly labelled prepublication dialogue-design watchlist.
+- `website-release/`, a narrow first IQMindware.com release-candidate package based only on products confirmed as commercially available now.
+- `website-release/product-availability.json` locking G Track with Zone Check, Attention Coach Signal and WM Coach Relational/Binding Signal as the live commercial catalogue.
+- `website-release/route-templates.json` with six curated first-release routes for focus, synthesis, verification, interruption re-entry, higher-education source work and objective progress tracking.
+- `website-release/route-copy.json` with candidate public headings, module labels, status labels and claims boundaries.
+- `website-release/tests/website-route-cases.json` covering live-module enforcement, coming-soon fallbacks, matrix measurement-first handling, Zone Check boundaries and health-partner routing.
+- `website-release/scripts/validate_website_release.py` and `build_website_release.py` for deterministic validation, checksums and later website import.
+- GitHub Actions validation of both the canonical ontology registries and the narrow website release candidate.
 
 ### Changed
 
@@ -65,23 +72,29 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - Cognitive reappraisal is kept separate from cognitive restructuring and from generic executive-function or reasoning training.
 - Clinical cognitive-restructuring evidence is retained as condition-specific category evidence and cannot be transferred directly to the generic IQ Mindware Reasoning app.
 - The non-clinical public route is labelled **Evidence-Sensitive Reframing** and explicitly excludes therapy, diagnosis and treatment claims.
+- The owner-confirmed public release state is now explicit: **G Track with Zone Check, Attention Coach Signal and WM Coach Signal are available for sale now; all Evidence, Calibration, Commit, Path Prediction and Explicit Reasoning modules are coming soon.**
+- The website import contract now requires separate canonical-science and commercial-overlay bundles, version locks, checksum verification and fail-closed handling when a coming-soon module would otherwise be treated as live.
 
 ### Status
 
-The initial ontology and route records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production release has yet been issued.
+The initial ontology and scientific route records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production evidence release has yet been issued.
 
-The next evidence priorities are:
+The new website package is `iqm-website-slice-v0.1.0-rc1`: a release candidate, not a production import. It deliberately permits only the current live product set in available route steps and labels the remainder of the stack as coming soon.
+
+The next evidence and release priorities are:
 
 1. human review of the live-Signal and Reasoning candidate overrides;
 2. CBT-qualified review of the cognitive-restructuring evidence and governance boundaries;
 3. structured review of the ten G Track measurement records;
 4. review of the fifteen initial training-fit mappings;
-5. promotion-oriented review of the remaining full-stack capacity-by-mode cells;
-6. conversion of accepted candidate sources and judgements into canonical atomic records;
-7. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
-8. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning;
-9. prototype validation of the low-risk Evidence-Sensitive Reframing scaffold before any clinical-route development.
+5. human scientific and claims review of the six website release-candidate routes;
+6. promotion-oriented review of the remaining full-stack capacity-by-mode cells;
+7. conversion of accepted candidate sources and judgements into canonical atomic records;
+8. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
+9. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning;
+10. immutable evidence and commercial release bundles with checksums and lock files;
+11. import into a non-production IQMindware.com preview before public launch.
 
 The next workflow-research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
 
-The commercial website pathway may nevertheless classify an adequately specified route as **evidence-informed** and **pilot-ready** where the workflow, demand, function, available protocol, outcome and governance requirements meet the documented minimum commercial evidence floor.
+The commercial website pathway may classify an adequately specified route as **evidence-informed** and **pilot-ready** where the workflow, demand, function, available protocol, outcome and governance requirements meet the documented minimum commercial evidence floor. It must still state that direct applied benefit remains to be tested.
