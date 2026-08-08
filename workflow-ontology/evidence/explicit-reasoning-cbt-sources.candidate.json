@@ -1,0 +1,199 @@
+{
+  "registry_version": "0.1.0-candidate",
+  "status": "candidate_not_for_production",
+  "review_cutoff": "2026-08-08",
+  "extends": [
+    "evidence-sources.json",
+    "vertical-stack-sources.candidate.json",
+    "live-signal-reasoning-source-additions.candidate.json"
+  ],
+  "purpose": "Candidate peer-reviewed and prepublication sources distinguishing formal relational reasoning, cognitive restructuring, cognitive reappraisal and evidence-sensitive reframing.",
+  "records": [
+    {
+      "source_id": "may_2022_smart_meta",
+      "citation": "May, R. J., Tyndall, I., McTiernan, A., Roderique-Davies, G., & McLoughlin, S. (2022). The impact of the SMART program on cognitive and academic skills: A systematic review and meta-analysis. British Journal of Educational Technology, 53, 1244-1261.",
+      "doi_or_url": "https://doi.org/10.1111/bjet.13192",
+      "publication_status": "peer_reviewed",
+      "study_type": "systematic-review-and-meta-analysis",
+      "population": "five school-based studies with 195 analysed participants",
+      "role": ["SMART", "derived relational responding", "nonverbal IQ", "far-transfer claim"],
+      "key_findings": [
+        "moderate pooled effect on nonverbal IQ, g = 0.57",
+        "insufficient evidence for other cognitive or academic domains",
+        "all included primary-outcome studies were rated high risk of bias"
+      ],
+      "limitations": [
+        "small evidence base",
+        "high risk of bias",
+        "immediate post-tests",
+        "does not validate the IQ Mindware Reasoning protocol"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "ciharova_2021_cr_depression",
+      "citation": "Ciharova, M., Furukawa, T. A., Efthimiou, O., Karyotaki, E., Miguel, C., Noma, H., Cipriani, A., Riper, H., & Cuijpers, P. (2021). Cognitive restructuring, behavioral activation and cognitive-behavioral therapy in the treatment of adult depression: A network meta-analysis. Journal of Consulting and Clinical Psychology, 89(6), 563-574.",
+      "doi_or_url": "https://doi.org/10.1037/ccp0000654",
+      "publication_status": "peer_reviewed",
+      "study_type": "network-meta-analysis",
+      "population": "45 studies with 3382 adults with depression",
+      "role": ["cognitive restructuring", "behavioural activation", "CBT", "depression"],
+      "key_findings": [
+        "no evidence of differential effectiveness among cognitive restructuring, behavioural activation and combined CBT",
+        "all three interventions outperformed care as usual and waiting list"
+      ],
+      "limitations": [
+        "face-to-face individual interventions",
+        "condition-specific category evidence",
+        "does not validate a generic digital reasoning app"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "papola_2024_gad_nma",
+      "citation": "Papola, D., et al. (2024). Psychotherapies for generalized anxiety disorder in adults: A systematic review and network meta-analysis of randomized clinical trials. JAMA Psychiatry, 81(3), 250-259.",
+      "doi_or_url": "https://doi.org/10.1001/jamapsychiatry.2023.3971",
+      "publication_status": "peer_reviewed",
+      "study_type": "systematic-review-and-network-meta-analysis",
+      "population": "65 randomized trials with 5048 adults with generalized anxiety disorder",
+      "role": ["CBT", "cognitive restructuring", "generalized anxiety disorder", "durability"],
+      "key_findings": [
+        "CBT had the strongest and most durable evidence",
+        "pure cognitive restructuring was not decisively active when isolated"
+      ],
+      "limitations": [
+        "condition-specific psychotherapy evidence",
+        "interventions varied in content and delivery",
+        "does not validate IQ Mindware"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "furukawa_2024_cbti_components",
+      "citation": "Furukawa, Y., et al. (2024). Components and delivery formats of cognitive behavioral therapy for chronic insomnia in adults: A systematic review and component network meta-analysis. JAMA Psychiatry, 81(4), 357-365.",
+      "doi_or_url": "https://doi.org/10.1001/jamapsychiatry.2023.5060",
+      "publication_status": "peer_reviewed",
+      "study_type": "component-network-meta-analysis",
+      "population": "241 trials with 31452 adults with chronic insomnia",
+      "role": ["CBT-I", "cognitive restructuring", "remission", "component evidence"],
+      "key_findings": [
+        "cognitive restructuring was associated with higher remission",
+        "cognitive restructuring was associated with improved subjective sleep quality"
+      ],
+      "limitations": [
+        "component effects may interact with other treatment elements",
+        "condition-specific evidence",
+        "does not establish efficacy of a generic reasoning task"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "braun_2015_socratic",
+      "citation": "Braun, J. D., Strunk, D. R., Sasso, K. E., & Cooper, A. A. (2015). Therapist use of Socratic questioning predicts session-to-session symptom change in cognitive therapy for depression. Behaviour Research and Therapy, 70, 32-37.",
+      "doi_or_url": "https://doi.org/10.1016/j.brat.2015.05.004",
+      "publication_status": "peer_reviewed",
+      "study_type": "process-outcome-study",
+      "population": "55 adults receiving cognitive therapy for depression",
+      "role": ["Socratic questioning", "guided discovery", "cognitive therapy", "symptom change"],
+      "key_findings": ["therapist Socratic questioning predicted next-session symptom change"],
+      "limitations": ["observational process analysis", "not a randomized component trial", "therapist-delivered clinical treatment"],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "vittorio_2022_socratic_mediation",
+      "citation": "Vittorio, L. N., Murphy, S. T., Braun, J. D., & Strunk, D. R. (2022). Using Socratic questioning to promote cognitive change and achieve depressive symptom reduction: Evidence of cognitive change as a mediator. Behaviour Research and Therapy, 150, 104035.",
+      "doi_or_url": "https://doi.org/10.1016/j.brat.2022.104035",
+      "publication_status": "peer_reviewed",
+      "study_type": "process-mediation-study",
+      "population": "123 clients receiving cognitive therapy for depression",
+      "role": ["Socratic questioning", "cognitive change", "mediation", "depression"],
+      "key_findings": ["cognitive change mediated the relationship between Socratic questioning and subsequent depressive-symptom change"],
+      "limitations": ["process evidence rather than randomized dismantling", "therapist-delivered treatment", "does not establish digital equivalence"],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "mcmanus_2012_thought_records_experiments",
+      "citation": "McManus, F., Van Doorn, K., & Yiend, J. (2012). Examining the effects of thought records and behavioral experiments in instigating belief change. Journal of Behavior Therapy and Experimental Psychiatry, 43(1), 540-547.",
+      "doi_or_url": "https://doi.org/10.1016/j.jbtep.2011.07.003",
+      "publication_status": "peer_reviewed",
+      "study_type": "randomized-analogue-experiment",
+      "population": "91 non-clinical participants",
+      "role": ["thought records", "behavioural experiments", "belief change", "anxiety"],
+      "key_findings": ["both thought records and behavioural experiments produced beneficial changes relative to control across belief, anxiety, behaviour and symptom-related measures"],
+      "limitations": ["analogue non-clinical design", "brief intervention", "not an IQ Mindware study"],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "yovel_2014_cr_defusion",
+      "citation": "Yovel, I., Mor, N., & Shakarov, H. (2014). Examination of the core cognitive components of cognitive behavioral therapy and acceptance and commitment therapy: An analogue investigation. Behavior Therapy, 45(4), 482-494.",
+      "doi_or_url": "https://doi.org/10.1016/j.beth.2014.02.007",
+      "publication_status": "peer_reviewed",
+      "study_type": "randomized-analogue-experiment",
+      "population": "142 participants",
+      "role": ["cognitive restructuring", "cognitive defusion", "distress", "mechanism distinction"],
+      "key_findings": ["brief cognitive restructuring and defusion both reduced distress relative to a negative-thought-focused control", "improvement was associated with theoretically distinct strategies"],
+      "limitations": ["analogue study", "brief exposure", "does not establish clinical or product efficacy"],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "toh_2024_reappraisal_ef",
+      "citation": "Toh, W. X., Keh, J. S., Gross, J. J., & Carstensen, L. L. (2024). The role of executive function in cognitive reappraisal: A meta-analytic review. Emotion, 24(7), 1563-1581.",
+      "doi_or_url": "https://doi.org/10.1037/emo0001373",
+      "publication_status": "peer_reviewed",
+      "study_type": "meta-analysis",
+      "population": "59 independent samples with 4703 participants",
+      "role": ["cognitive reappraisal", "executive function", "inhibition", "updating", "shifting"],
+      "key_findings": ["small associations between reappraisal and inhibition, updating and shifting, r = .13-.19"],
+      "limitations": ["association is not intervention evidence", "reappraisal measures and tasks were heterogeneous", "does not equate executive-function training with reappraisal training"],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "crisp_2025_preprint",
+      "citation": "Zhou, J., et al. (2025). Crisp: Cognitive Restructuring of Negative Thoughts through Multi-turn Supportive Dialogues. arXiv:2504.17238.",
+      "doi_or_url": "https://arxiv.org/abs/2504.17238",
+      "publication_status": "preprint",
+      "study_type": "dataset-and-model-paper",
+      "population": "multi-turn supportive dialogue data",
+      "role": ["cognitive restructuring", "LLM dialogue", "multi-turn support", "dataset"],
+      "key_findings": ["proposes data and models for multi-turn cognitive-restructuring dialogue"],
+      "limitations": ["not peer reviewed", "does not establish clinical efficacy or safety", "model performance is not therapeutic outcome evidence"],
+      "review_status": "prepublication_watchlist",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "socratic_inquiry_2026_preprint",
+      "citation": "Zhang, M., et al. (2026). The Art of Socratic Inquiry: A Framework for Proactive Template-Guided Therapeutic Conversation Generation. arXiv:2602.01598.",
+      "doi_or_url": "https://arxiv.org/abs/2602.01598",
+      "publication_status": "preprint",
+      "study_type": "dialogue-generation-framework",
+      "population": "synthetic and/or curated therapeutic dialogue material",
+      "role": ["Socratic inquiry", "template-guided dialogue", "LLM", "proactive questioning"],
+      "key_findings": ["proposes a structured framework for generating Socratic-style therapeutic conversations"],
+      "limitations": ["not peer reviewed", "does not establish efficacy, safety or therapist equivalence", "not an IQ Mindware trial"],
+      "review_status": "prepublication_watchlist",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "odra_2026_preprint",
+      "citation": "Rodriguez-Juan, J., et al. (2026). ODRA: Synthesizing Cognitive Behavioral Therapy Sessions with Structured Chain-of-Thought and Dynamic Patient Resistance. arXiv:2608.04524.",
+      "doi_or_url": "https://arxiv.org/abs/2608.04524",
+      "publication_status": "preprint",
+      "study_type": "synthetic-dialogue-framework",
+      "population": "synthetic CBT-session data",
+      "role": ["CBT dialogue", "dynamic resistance", "synthetic data", "LLM"],
+      "key_findings": ["proposes a framework for generating structured CBT sessions with dynamic patient resistance"],
+      "limitations": ["not peer reviewed", "synthetic plausibility is not treatment evidence", "chain-of-thought generation does not establish safe clinical reasoning"],
+      "review_status": "prepublication_watchlist",
+      "last_reviewed": "2026-08-08"
+    }
+  ]
+}
