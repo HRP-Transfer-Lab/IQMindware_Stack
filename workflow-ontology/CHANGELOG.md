@@ -34,18 +34,34 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - `measurement-registry.json` with ten draft G Track measurement and longitudinal-interpretation records.
 - `training-fit-mappings.json` with fifteen draft goal-to-route mappings across G Track, Attention Coach Signal and WM Coach Signal.
 - Source-document provenance and SHA-256 records for the Training-Fit Registry and broader Stack Evidence discovery table.
+- `GT_ATTENTION_ZONE_EVIDENCE_REVIEW_v0.1.md` with peer-reviewed evidence, an arXiv/bioRxiv watchlist, scoring recommendations and a prospective validation plan.
+- `FULL_VERTICAL_STACK_MODE_EVIDENCE_REVIEW_v0.1.md` extending the evidence review from Attention Control through explicit Reasoning, including formal reasoning, belief calibration and evidence-sensitive reframing.
+- `vertical-stack-mode-matrix.candidate.json` with the 20 capacity-by-mode cells across Signal, Evidence, Predictive Calibration and Commit.
+- `vertical-stack-sources.candidate.json` with peer-reviewed sources and an explicitly labelled prepublication watchlist for the full-stack review.
+- Candidate application records separating non-clinical evidence-sensitive reframing, professional belief calibration and health/research interpretation-bias routes.
 
 ### Changed
 
 - First commercial niche wording broadened from AI-heavy work to **professional and AI-assisted work**, with AI treated as a context modifier rather than the entire professional category.
 - Working-memory evidence is decomposed into strong mechanism fit, moderate/small untrained-WM benefit, unvalidated exact WM Coach effects and no established fluid-intelligence transfer.
 - Attention evidence is decomposed into strong MFT-M mechanism fit, moderate/emerging direct training evidence and unestablished sustained everyday-focus transfer.
+- The Evidence Registry Build Plan now includes a separate full-stack candidate phase before workflow and governed application evidence.
+- Predictive Calibration is fixed as a cross-cutting derived profile rather than a fourth gameplay component.
+- Explicit Reasoning is separated into formal validity, sequential evidence evaluation, belief calibration, conclusion timing and domain-semantic application.
+- Reframing is separated into a non-clinical evidence-sensitive reasoning route and a health/research-governed interpretation-bias or reappraisal route.
 
 ### Status
 
 The initial ontology and route records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production release has yet been issued.
 
-The next evidence priority is structured review of the ten G Track measurement records and fifteen initial training-fit mappings, followed by exact WM Coach metadata and records for the relative-frame and optic-flow Attention Coach extensions.
+The next evidence priorities are:
+
+1. structured review of the ten G Track measurement records;
+2. review of the fifteen initial training-fit mappings;
+3. expert review of the 20 full-stack capacity-by-mode cells;
+4. conversion of accepted candidate sources and judgements into canonical atomic records;
+5. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
+6. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning.
 
 The next workflow-research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
 
