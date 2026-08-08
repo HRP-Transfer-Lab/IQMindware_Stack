@@ -1,0 +1,220 @@
+{
+  "registry_version": "0.1.0-candidate",
+  "status": "candidate_not_for_production",
+  "review_cutoff": "2026-08-08",
+  "applies_to": [
+    "reasoning_signal",
+    "reasoning_evidence",
+    "reasoning_calibration",
+    "reasoning_commit"
+  ],
+  "purpose": "Separate formal relational reasoning, professional belief calibration, evidence-sensitive reframing, clinical cognitive restructuring and cognitive reappraisal within the IQ Mindware explicit Reasoning architecture.",
+  "governing_rule": "Cognitive restructuring is an applied explicit-reasoning intervention family, not merely a SMART-style wrapper and not a generic reasoning-capacity score.",
+  "supersedes_broad_interpretations_of": [
+    "reasoning_domain_semantic_reframing",
+    "reasoning_interpretation_bias_partner_route",
+    "reasoning_belief_calibration_professional"
+  ],
+  "records": [
+    {
+      "id": "formal_relational_reasoning",
+      "lineage": "formal_relational",
+      "parent_cells": ["reasoning_signal", "reasoning_evidence"],
+      "scope": "nonclinical_education_professional",
+      "construct_basis": "strong",
+      "category_intervention_evidence": "low_to_moderate_emerging",
+      "exact_protocol": "not_established",
+      "product_status": "in_development",
+      "source_ids": [
+        "trippas_2018_belief_bias",
+        "nesbit_liu_2025_argument_mapping",
+        "may_2022_smart_meta"
+      ],
+      "core_operations": [
+        "recover abstract relations",
+        "compose relations",
+        "test formal validity",
+        "distinguish valid, invalid and cannot-tell outcomes",
+        "recover structure across symbolic, nonsense-semantic and domain-semantic wrappers"
+      ],
+      "public_claim": "The formal Reasoning route is designed to practise recovery and use of relational structure across symbolic and verbal forms.",
+      "caveat": "SMART and adjacent instructional evidence provide an emerging rationale, but the exact IQ Mindware protocol and broad transfer remain unvalidated.",
+      "governance": "individual_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "professional_belief_calibration",
+      "lineage": "argument_evaluation_and_metacognition",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "professional_education_research",
+      "construct_basis": "strong",
+      "category_intervention_evidence": "moderate_adjacent",
+      "exact_protocol": "not_established",
+      "product_status": "pilot_concept",
+      "source_ids": [
+        "trippas_2018_belief_bias",
+        "carpenter_2019_metacognition",
+        "nesbit_liu_2025_argument_mapping",
+        "gesiarz_2019_motivation"
+      ],
+      "core_operations": [
+        "separate validity from believability",
+        "separate source quality from familiarity",
+        "weight independent evidence",
+        "search for disconfirmation",
+        "calibrate confidence",
+        "accept, reject, defer or test"
+      ],
+      "public_claim": "A professional Reasoning route may train explicit separation of validity, believability, evidence strength and confidence.",
+      "caveat": "The route is evidence-informed and suitable for pilot evaluation; it is not proven to improve consequential professional judgement.",
+      "governance": "workplace_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "nonclinical_evidence_sensitive_reframing",
+      "lineage": "explicit_appraisal_revision",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "low_risk_work_study_performance",
+      "construct_basis": "moderate_to_strong",
+      "category_intervention_evidence": "moderate_adjacent_and_analogue",
+      "exact_protocol": "not_established",
+      "product_status": "pilot_concept",
+      "source_ids": [
+        "mcmanus_2012_thought_records_experiments",
+        "yovel_2014_cr_defusion",
+        "braun_2015_socratic",
+        "vittorio_2022_socratic_mediation"
+      ],
+      "core_operations": [
+        "separate event from interpretation",
+        "identify the active prediction",
+        "examine evidence and alternatives",
+        "re-estimate probability and confidence",
+        "select a small safe discriminating test",
+        "update after the outcome"
+      ],
+      "public_claim": "Evidence-Sensitive Reframing may practise generating, comparing and testing alternative appraisals in low-risk work, study or performance scenarios.",
+      "caveat": "This is non-clinical cognitive skills practice, not psychotherapy, diagnosis or treatment.",
+      "governance": "individual_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "behavioural_experiment_belief_update",
+      "lineage": "prediction_test_and_outcome_update",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit", "path_evidence", "path_commit"],
+      "scope": "nonclinical_or_condition_specific_under_separate_protocol",
+      "construct_basis": "moderate_to_strong",
+      "category_intervention_evidence": "moderate_adjacent",
+      "exact_protocol": "not_established",
+      "product_status": "research_component",
+      "source_ids": [
+        "mcmanus_2012_thought_records_experiments",
+        "braun_2015_socratic",
+        "vittorio_2022_socratic_mediation"
+      ],
+      "core_operations": [
+        "state competing predictions",
+        "select a test that discriminates among models",
+        "specify safety and stopping rules",
+        "compare predicted and observed outcomes",
+        "make local rather than indiscriminate global revision"
+      ],
+      "public_claim": "A behavioural-probe component may test whether an appraisal predicts what actually happens and support proportionate model revision.",
+      "caveat": "A probe must be safe, genuinely discriminating and appropriate to the use context; clinical behavioural experiments require governed protocols.",
+      "governance": "individual_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "clinical_cognitive_restructuring_depression",
+      "lineage": "cbt_cognitive_restructuring",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "depression_partner_research_only",
+      "construct_basis": "strong_clinical_category",
+      "category_intervention_evidence": "moderate_to_strong_condition_specific",
+      "exact_protocol": "not_established",
+      "product_status": "partner_research_only",
+      "source_ids": [
+        "ciharova_2021_cr_depression",
+        "braun_2015_socratic",
+        "vittorio_2022_socratic_mediation"
+      ],
+      "public_claim": "A condition-specific partner protocol may investigate explicit cognitive restructuring as part of evidence-based depression support.",
+      "caveat": "Clinical category evidence does not validate the generic IQ Mindware Reasoning app; professional oversight, safety governance and direct protocol evaluation are required.",
+      "governance": "health_partner_research_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "clinical_cognitive_restructuring_gad",
+      "lineage": "cbt_cognitive_restructuring",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "generalized_anxiety_partner_research_only",
+      "construct_basis": "strong_clinical_rationale",
+      "category_intervention_evidence": "full_cbt_supported_isolated_cr_uncertain",
+      "exact_protocol": "not_established",
+      "product_status": "partner_research_only",
+      "source_ids": ["papola_2024_gad_nma"],
+      "public_claim": "A partner-led GAD protocol may include cognitive restructuring within a broader evidence-based CBT pathway.",
+      "caveat": "Evidence is stronger for full CBT than isolated cognitive restructuring; no self-service IQ Mindware treatment claim is eligible.",
+      "governance": "health_partner_research_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "clinical_cognitive_restructuring_insomnia",
+      "lineage": "cbti_cognitive_restructuring",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "chronic_insomnia_partner_research_only",
+      "construct_basis": "strong_condition_specific_rationale",
+      "category_intervention_evidence": "moderate_component_evidence",
+      "exact_protocol": "not_established",
+      "product_status": "partner_research_only",
+      "source_ids": ["furukawa_2024_cbti_components"],
+      "public_claim": "A governed CBT-I pathway may use cognitive restructuring to address sleep-related appraisals as one protocol component.",
+      "caveat": "Component evidence is condition-specific and does not validate the generic Reasoning Coach or establish a stand-alone digital treatment.",
+      "governance": "health_partner_research_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "cognitive_reappraisal",
+      "lineage": "emotion_regulation_reinterpretation",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration"],
+      "scope": "separate_nonclinical_or_health_governed_route",
+      "construct_basis": "strong",
+      "category_intervention_evidence": "moderate_heterogeneous",
+      "exact_protocol": "not_established",
+      "product_status": "separate_protocol_required",
+      "source_ids": [
+        "toh_2024_reappraisal_ef",
+        "bosshard_gomez_2024_reappraisal",
+        "cui_2024_reappraisal"
+      ],
+      "core_operations": [
+        "reinterpret emotional meaning",
+        "generate alternative appraisal",
+        "change expected emotional consequence"
+      ],
+      "public_claim": "A separately specified reappraisal route may practise reinterpretation of emotional meaning in a bounded non-clinical or governed context.",
+      "caveat": "Reappraisal is related to but not identical with cognitive restructuring, and executive-function involvement does not validate a generic Reasoning app as reappraisal training.",
+      "governance": "individual_nonclinical_v1",
+      "review_status": "draft"
+    },
+    {
+      "id": "llm_assisted_cognitive_restructuring",
+      "lineage": "digital_dialogue_delivery",
+      "parent_cells": ["reasoning_evidence", "reasoning_calibration", "reasoning_commit"],
+      "scope": "research_only_pending_safety_and_efficacy",
+      "construct_basis": "plausible_delivery_architecture",
+      "category_intervention_evidence": "insufficient_for_general_clinical_efficacy",
+      "exact_protocol": "not_established",
+      "product_status": "research_only",
+      "source_ids": [
+        "crisp_2025_preprint",
+        "socratic_inquiry_2026_preprint",
+        "odra_2026_preprint"
+      ],
+      "public_claim": "LLM systems may support research on structured Socratic and cognitive-restructuring dialogue under explicit human review.",
+      "caveat": "Prepublication dialogue and synthetic-data results do not establish therapeutic efficacy, safety or equivalence to a qualified clinician.",
+      "governance": "health_partner_research_v1",
+      "review_status": "draft"
+    }
+  ]
+}
