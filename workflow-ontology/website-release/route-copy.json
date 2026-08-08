@@ -1,0 +1,62 @@
+{
+  "copy_version": "0.1.0-rc1",
+  "status": "candidate_human_copy_review_pending",
+  "headings": {
+    "foundational_route_available": "A relevant foundational route is available",
+    "attention_wm_route_available": "A relevant attention and working-memory route is available",
+    "verification_route_available": "An evidence-informed verification route is available",
+    "reentry_route_available": "A cognitive-support and workflow re-entry route is available",
+    "measurement_route_available": "A measurement-first route is available"
+  },
+  "module_labels": {
+    "gtrack_attention_baseline": "G Track attention baseline",
+    "gtrack_full_baseline": "G Track baseline",
+    "gtrack_full_followup": "G Track follow-up",
+    "gtrack_attention_followup": "G Track attention follow-up",
+    "attention_signal": "Attention Coach — Signal Control",
+    "wm_relational_signal": "WM Coach — Relational Memory Signal",
+    "wm_binding_signal": "WM Coach — Binding Memory Signal",
+    "matched_live_training_optional": "Optional matched live training route",
+    "delayed_recheck": "Fresh delayed re-check"
+  },
+  "coming_soon_labels": {
+    "attention_evidence": "Attention Evidence Control — coming soon",
+    "attention_calibration": "Attention Predictive Calibration — coming soon",
+    "attention_commit": "Attention Decision Timing — coming soon",
+    "reasoning_evidence": "Reasoning Evidence — coming soon",
+    "reasoning_calibration": "Belief Calibration — coming soon",
+    "reasoning_commit": "Reasoning Commit — coming soon",
+    "path_signal": "Path Prediction — coming soon"
+  },
+  "evidence_boundaries": {
+    "focus_everyday_not_established": "Attention Coach targets controlled signal extraction under visual interference. Consistent improvement in sustained everyday focus has not yet been established.",
+    "synthesis_workflow_effect_not_established": "The current apps target relevant attention, relational-memory and binding-memory operations. Improvement in professional synthesis quality has not yet been established.",
+    "verification_effect_not_established": "The current apps target relevant foundational attention and binding functions. Direct improvement in report or AI-output verification has not yet been established.",
+    "reentry_effect_not_established": "Training may address relevant foundational functions, but interruption control and visible task state should be tested alongside it. Faster real-work re-entry has not yet been established.",
+    "education_outcome_not_established": "The route provides non-clinical cognitive practice and separate measurement. It does not guarantee assignment, examination or grade improvement.",
+    "change_not_broad_proof": "A baseline-to-follow-up difference is not by itself proof of broad cognitive improvement; practice effects, measurement uncertainty and comparable testing conditions must be considered."
+  },
+  "status_copy": {
+    "available_now": "Available now",
+    "evidence_informed": "Evidence-informed",
+    "pilot_ready": "Pilot-ready",
+    "measurement_first": "Measurement-first",
+    "coming_soon": "Coming soon",
+    "research_collaboration": "Research collaboration"
+  },
+  "global_product_status": {
+    "available_now": [
+      "G Track, including Zone Check",
+      "Attention Coach — Signal Control",
+      "WM Coach — Relational Memory Signal and Binding Memory Signal"
+    ],
+    "coming_soon": [
+      "Evidence modes",
+      "Predictive Calibration profiles",
+      "Commit / Decision Timing modes",
+      "Path Prediction",
+      "Explicit Reasoning and applied reasoning routes"
+    ],
+    "approved_public_statement": "G Track, Attention Coach Signal and WM Coach Signal are available now. Evidence, calibration, commitment, path-prediction and explicit-reasoning modules are coming soon and remain under staged development and validation."
+  }
+}
