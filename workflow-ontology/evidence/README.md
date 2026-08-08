@@ -32,6 +32,20 @@ vertical-stack-mode-matrix.candidate.json
 
 vertical-stack-sources.candidate.json
     Candidate peer-reviewed and prepublication sources for the full stack.
+
+live-signal-reasoning-overrides.candidate.json
+    Promotion-oriented overrides for live Signal modes and the explicit-reasoning measurement model.
+
+live-signal-reasoning-source-additions.candidate.json
+    Source additions for the live-Signal and explicit-reasoning audit.
+
+explicit-reasoning-intervention-families.candidate.json
+    Separates formal relational reasoning, professional belief calibration,
+    non-clinical reframing, clinical cognitive restructuring and reappraisal.
+
+explicit-reasoning-cbt-sources.candidate.json
+    Candidate peer-reviewed and prepublication sources for explicit restructuring,
+    Socratic questioning, behavioural experiments, CBT components and reappraisal.
 ```
 
 Candidate files are not production registries. They support expert review, schema development and later promotion into atomic source, claim, protocol and mapping records.
@@ -107,13 +121,52 @@ Machine-readable companions:
 - [`vertical-stack-mode-matrix.candidate.json`](vertical-stack-mode-matrix.candidate.json)
 - [`vertical-stack-sources.candidate.json`](vertical-stack-sources.candidate.json)
 
-The full-stack review preserves three boundaries:
+### Live Signal and explicit-reasoning measurement audit
+
+[`reviews/LIVE_SIGNAL_AND_REASONING_MEASUREMENT_REVIEW_v0.1.md`](reviews/LIVE_SIGNAL_AND_REASONING_MEASUREMENT_REVIEW_v0.1.md)
+
+This review audits the three commercially available Signal implementations and specifies a multi-parameter explicit-reasoning measurement model.
+
+Machine-readable companions:
+
+- [`live-signal-reasoning-overrides.candidate.json`](live-signal-reasoning-overrides.candidate.json)
+- [`live-signal-reasoning-source-additions.candidate.json`](live-signal-reasoning-source-additions.candidate.json)
+
+### Explicit reasoning, cognitive restructuring and reappraisal
+
+[`reviews/EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md`](reviews/EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md)
+
+This review corrects the interpretation of the Reasoning layer. It separates:
+
+```text
+formal / relational reasoning
+professional belief calibration
+non-clinical evidence-sensitive reframing
+cognitive restructuring in CBT-type interventions
+cognitive reappraisal
+behavioural-experiment belief updating
+LLM-assisted delivery research
+```
+
+Machine-readable companions:
+
+- [`explicit-reasoning-intervention-families.candidate.json`](explicit-reasoning-intervention-families.candidate.json)
+- [`explicit-reasoning-cbt-sources.candidate.json`](explicit-reasoning-cbt-sources.candidate.json)
+
+The governing distinction is:
+
+> **Cognitive restructuring is an applied explicit-reasoning intervention family, not merely a SMART-style wrapper and not a generic Reasoning-capacity score.**
+
+Clinical cognitive-restructuring evidence remains category- and condition-specific. It cannot be used as direct evidence for the generic IQ Mindware Reasoning app.
+
+The full-stack reviews preserve four boundaries:
 
 1. the five capacities have defensible construct families, but their exact implementations are not equally validated;
 2. Predictive Calibration is a cross-cutting derived profile, not a fourth gameplay task;
-3. non-clinical reframing, professional belief calibration and health-governed interpretation-bias work are separate application classes.
+3. formal relational reasoning, professional belief calibration, cognitive restructuring and reappraisal are related but distinct protocol families;
+4. non-clinical reframing and health-governed clinical applications require separate claims, outcomes and governance.
 
-Neither active review approves public claims or promotes canonical records automatically. Their purpose is to support expert review and the next machine-readable revision.
+No review document approves public claims or promotes canonical records automatically. Reviews support named human expert assessment and the next machine-readable revision.
 
 ## Product scope for the first evidence release
 
@@ -160,6 +213,18 @@ Commit
 
 The candidate matrix is intended to guide research prioritisation and honest website status labels. It must not cause the website to imply that roadmap modules are already available or validated.
 
+The explicit Reasoning family has two broad development branches:
+
+```text
+REASONING CORE
+formal structure, argument evidence, belief calibration and conclusion timing
+
+APPLIED REASONING
+non-clinical evidence-sensitive reframing and separately governed clinical protocols
+```
+
+The generic Reasoning score must not be presented as a measure of clinical cognitive-restructuring skill.
+
 ## Prepublication policy
 
 arXiv, PsyArXiv and bioRxiv sources may be retained as `prepublication_watchlist` records when they contribute useful models, open analyses, unusually dense data or direct challenges to measurement assumptions.
@@ -172,6 +237,8 @@ validate an exact product implementation
 justify a clinical or consequential route
 override stronger peer-reviewed contrary evidence
 ```
+
+Dialogue datasets, synthetic therapy sessions and LLM-generated Socratic conversations are design evidence only. They do not establish therapeutic efficacy, safety or clinician equivalence.
 
 ## Production policy
 
