@@ -1,0 +1,198 @@
+{
+  "registry_version": "0.1.0-rc1",
+  "status": "owner_confirmed_release_candidate",
+  "confirmed_at": "2026-08-08",
+  "scope": "Commercial availability for the first IQMindware.com workflow website release candidate.",
+  "governing_rule": "Only modules marked available_now may appear as live training or measurement steps. Coming-soon modules may be named only as future targets or roadmap items.",
+  "products": [
+    {
+      "product_id": "g_track",
+      "public_name": "G Track",
+      "sales_status": "available_for_sale_now",
+      "product_status": "available_now",
+      "role": "Baseline, follow-up and delayed cognitive measurement.",
+      "available_components": [
+        {
+          "component_id": "gtrack_attention_battery",
+          "public_name": "Attention battery",
+          "status": "available_now",
+          "measurement_ids": [
+            "gtrack_sart_engagement_vigilance",
+            "gtrack_sart_inhibitory_stability",
+            "gtrack_stroop_conflict_control",
+            "gtrack_flanker_selective_attention",
+            "gtrack_attention_combined_profile"
+          ]
+        },
+        {
+          "component_id": "gtrack_zone_check",
+          "public_name": "Zone Check",
+          "status": "available_now",
+          "measurement_ids": [
+            "gtrack_zone_estimate"
+          ],
+          "boundary": "Provisional behavioural context estimate; not a diagnosis, brain-state detector or proven intervention selector."
+        },
+        {
+          "component_id": "gtrack_working_memory",
+          "public_name": "Working-memory measures",
+          "status": "available_now",
+          "measurement_ids": [
+            "gtrack_wm_complex_span",
+            "gtrack_wm_visual_binding"
+          ]
+        },
+        {
+          "component_id": "gtrack_matrix_reasoning",
+          "public_name": "Matrix Reasoning Benchmark",
+          "status": "available_now",
+          "measurement_ids": [
+            "gtrack_matrix_omib"
+          ],
+          "boundary": "Not an official IQ test or validated IQ-change score."
+        },
+        {
+          "component_id": "gtrack_longitudinal_comparison",
+          "public_name": "Baseline and follow-up comparison",
+          "status": "available_now",
+          "measurement_ids": [
+            "gtrack_prepost_change"
+          ],
+          "boundary": "Repeated testing requires practice-effect controls, comparable conditions and uncertainty-aware interpretation."
+        }
+      ],
+      "product_boundary": "G Track provides provisional non-diagnostic performance estimates and separate progress checks."
+    },
+    {
+      "product_id": "attention_coach",
+      "public_name": "Attention Coach",
+      "sales_status": "available_for_sale_now",
+      "product_status": "available_now",
+      "role": "Train Attention Control at Signal level.",
+      "available_components": [
+        {
+          "component_id": "attention_signal",
+          "public_name": "Signal Control",
+          "status": "available_now",
+          "function_ids": [
+            "attention_signal"
+          ],
+          "boundary": "Evidence is strongest for the trained masked-majority mechanism and selected cognitive-task transfer; everyday and workflow benefits are not established."
+        }
+      ],
+      "coming_soon_components": [
+        {
+          "component_id": "attention_evidence",
+          "public_name": "Evidence Control",
+          "status": "coming_soon",
+          "nearest_available_foundation": "attention_signal"
+        },
+        {
+          "component_id": "attention_calibration",
+          "public_name": "Predictive Calibration",
+          "status": "coming_soon",
+          "delivery_form": "derived_profile",
+          "nearest_available_foundation": "attention_signal"
+        },
+        {
+          "component_id": "attention_commit",
+          "public_name": "Decision Timing",
+          "status": "coming_soon",
+          "nearest_available_foundation": "attention_signal"
+        }
+      ]
+    },
+    {
+      "product_id": "wm_coach",
+      "public_name": "WM Coach",
+      "sales_status": "available_for_sale_now",
+      "product_status": "available_now",
+      "role": "Train Relational Memory and Binding Memory at Signal level.",
+      "available_components": [
+        {
+          "component_id": "wm_relational_signal",
+          "public_name": "Relational Memory — Signal",
+          "status": "available_now",
+          "function_ids": [
+            "wm_relational_signal"
+          ],
+          "boundary": "The trained operation is clearly defined, but the exact app's reliability and benefits on untrained memory, reasoning or workflows are not yet established."
+        },
+        {
+          "component_id": "wm_binding_signal",
+          "public_name": "Binding Memory — Signal",
+          "status": "available_now",
+          "function_ids": [
+            "wm_binding_signal"
+          ],
+          "boundary": "The paradigm basis is strong, but exact-app reliability and broader source-memory or workflow benefits are not established."
+        }
+      ],
+      "coming_soon_components": [
+        {
+          "component_id": "wm_relational_evidence",
+          "public_name": "Relational Memory — Evidence",
+          "status": "coming_soon",
+          "nearest_available_foundation": "wm_relational_signal"
+        },
+        {
+          "component_id": "wm_relational_calibration",
+          "public_name": "Relational Memory — Predictive Calibration",
+          "status": "coming_soon",
+          "delivery_form": "derived_profile",
+          "nearest_available_foundation": "wm_relational_signal"
+        },
+        {
+          "component_id": "wm_relational_commit",
+          "public_name": "Relational Memory — Commit",
+          "status": "coming_soon",
+          "nearest_available_foundation": "wm_relational_signal"
+        },
+        {
+          "component_id": "wm_binding_evidence",
+          "public_name": "Binding Memory — Evidence",
+          "status": "coming_soon",
+          "nearest_available_foundation": "wm_binding_signal"
+        },
+        {
+          "component_id": "wm_binding_calibration",
+          "public_name": "Binding Memory — Predictive Calibration",
+          "status": "coming_soon",
+          "delivery_form": "derived_profile",
+          "nearest_available_foundation": "wm_binding_signal"
+        },
+        {
+          "component_id": "wm_binding_commit",
+          "public_name": "Binding Memory — Commit",
+          "status": "coming_soon",
+          "nearest_available_foundation": "wm_binding_signal"
+        }
+      ]
+    }
+  ],
+  "coming_soon_product_families": [
+    {
+      "product_id": "pathway_reasoning_coach",
+      "public_name": "Pathway–Reasoning Coach",
+      "status": "coming_soon",
+      "modules": [
+        "path_signal",
+        "path_evidence",
+        "path_calibration",
+        "path_commit",
+        "reasoning_signal",
+        "reasoning_evidence",
+        "reasoning_calibration",
+        "reasoning_commit"
+      ],
+      "boundary": "The scientific architecture and candidate evidence matrix are available; the commercial product and exact protocols are not yet validated or for sale."
+    }
+  ],
+  "routing_rules": [
+    "Never display a coming-soon component as an available route step.",
+    "When a goal maps most directly to a coming-soon component, show the target module and its nearest available foundation separately.",
+    "G Track may be recommended as measurement-first even when no current training module directly addresses the goal.",
+    "Zone Check may contextualise a session but must not determine clinical, employment, educational-selection or other consequential decisions.",
+    "Matrix reasoning may be measured before and after a programme but must not be promised as a training benefit."
+  ]
+}
