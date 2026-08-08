@@ -1,0 +1,30 @@
+{
+  "lock_version": "0.1.0",
+  "status": "template_not_for_production",
+  "ontology_release": "TO_BE_SET",
+  "evidence_release": "TO_BE_SET",
+  "commercial_release": "iqm-website-slice-v0.1.0-rc2",
+  "route_builder_config": "0.1.0-rc2",
+  "copy_version": "0.1.0-rc2",
+  "source_repository": "HRP-Transfer-Lab/IQMindware_Stack",
+  "source_branch_or_tag": "TO_BE_PINNED_TO_IMMUTABLE_TAG_OR_COMMIT",
+  "source_commits": {
+    "ontology": "TO_BE_SET",
+    "evidence": "TO_BE_SET",
+    "commercial": "TO_BE_SET"
+  },
+  "manifest_hashes": {
+    "canonical": "TO_BE_SET",
+    "commercial": "TO_BE_SET"
+  },
+  "file_hashes": {},
+  "imported_at": "TO_BE_SET",
+  "approved_for_production": false,
+  "approval_roles": {
+    "product_owner": null,
+    "scientific_reviewer": null,
+    "claims_governance_reviewer": null,
+    "website_implementation_reviewer": null
+  },
+  "fail_closed": true
+}
