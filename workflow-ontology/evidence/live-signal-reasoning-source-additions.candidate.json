@@ -1,0 +1,326 @@
+{
+  "registry_version": "0.2.0-candidate",
+  "status": "candidate_not_for_production",
+  "review_cutoff": "2026-08-08",
+  "extends": [
+    "evidence-sources.json",
+    "vertical-stack-sources.candidate.json"
+  ],
+  "purpose": "Verified peer-reviewed and prepublication source additions used in the live Signal and explicit-reasoning measurement review.",
+  "records": [
+    {
+      "source_id": "he_2022_adaptive_mftm",
+      "citation": "He, X., Qiu, B., Deng, Y., Liu, T., Chen, Y., & Zhang, W. (2022). Adaptive assessment of the capacity of cognitive control. Quarterly Journal of Experimental Psychology, 75(1), 43–52.",
+      "doi_or_url": "https://doi.org/10.1177/17470218211030838",
+      "publication_status": "peer_reviewed",
+      "study_type": "adaptive-task-validation",
+      "population": "40 healthy young adults aged 18–26",
+      "role": [
+        "adaptive MFT-M",
+        "computerised adaptive testing",
+        "test-retest reliability",
+        "assessment efficiency"
+      ],
+      "key_findings": [
+        "adaptive scores were highly correlated with original-administration scores",
+        "the adaptive version showed high test-retest reliability",
+        "fewer than 216 trials and about 20 minutes were required compared with 864 trials and about 86 minutes",
+        "source code and data were made available"
+      ],
+      "limitations": [
+        "small healthy-young-adult sample",
+        "does not validate the IQ Mindware browser implementation",
+        "does not validate relative-frame or optic-flow variants",
+        "assessment study rather than training-transfer study"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "jaeggi_2010_nback_validity",
+      "citation": "Jaeggi, S. M., Buschkuehl, M., Perrig, W. J., & Meier, B. (2010). The concurrent validity of the N-back task as a working memory measure. Memory, 18(4), 394–412.",
+      "doi_or_url": "https://doi.org/10.1080/09658211003702171",
+      "publication_status": "peer_reviewed",
+      "study_type": "psychometric-and-concurrent-validity-study",
+      "population": "adult samples across three experiments",
+      "role": [
+        "n-back validity",
+        "working memory",
+        "individual differences",
+        "reliability"
+      ],
+      "key_findings": [
+        "n-back was useful as an experimental working-memory task",
+        "the studied versions were not judged useful as individual-differences working-memory measures partly because of insufficient reliability",
+        "higher-load n-back performance related to higher cognitive functions"
+      ],
+      "limitations": [
+        "task versions differ from WM Coach",
+        "does not imply that all n-back implementations have poor reliability",
+        "does not validate relational or majority-relation n-back"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "redick_lindsey_2013_nback_meta",
+      "citation": "Redick, T. S., & Lindsey, D. R. (2013). Complex span and n-back measures of working memory: A meta-analysis. Psychonomic Bulletin & Review, 20, 1102–1113.",
+      "doi_or_url": "https://doi.org/10.3758/s13423-013-0453-9",
+      "publication_status": "peer_reviewed",
+      "study_type": "meta-analysis",
+      "population": "20 studies with 2,178 participants in the main task-comparison literature",
+      "role": [
+        "complex span",
+        "n-back",
+        "working-memory measurement",
+        "construct overlap"
+      ],
+      "key_findings": [
+        "complex span and n-back were weakly correlated on average",
+        "substantial heterogeneity was present",
+        "the paradigms should not be used interchangeably as working-memory measures"
+      ],
+      "limitations": [
+        "low observed correlations include task-specific and measurement-error variance",
+        "does not rule out a higher-order latent working-memory factor",
+        "does not validate or invalidate the exact WM Coach implementation"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "ripp_2022_wm_no_transfer",
+      "citation": "Ripp, I., Emch, M., Wu, Q., Lizarraga, A., Udale, R., von Bastian, C. C., Koch, K., & Yakushev, I. (2022). Adaptive working memory training does not produce transfer effects in cognition and neuroimaging. Translational Psychiatry, 12, 512.",
+      "doi_or_url": "https://doi.org/10.1038/s41398-022-02272-7",
+      "publication_status": "peer_reviewed",
+      "study_type": "prospective-randomised-controlled-training-study",
+      "population": "55 healthy adults aged 50–64",
+      "role": [
+        "adaptive n-back training",
+        "near transfer",
+        "far transfer",
+        "neuroimaging"
+      ],
+      "key_findings": [
+        "eight weeks of adaptive n-back training produced practice effects",
+        "the study found no supported transfer effects across its cognitive and neuroimaging outcomes"
+      ],
+      "limitations": [
+        "middle-aged healthy sample",
+        "specific n-back programme",
+        "does not test relational-wrapper or Trident-G transfer protocols",
+        "does not validate WM Coach"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "dai_2019_vwm_reliability",
+      "citation": "Dai, M., Li, Y., Gan, S., & Du, F. (2019). The reliability of estimating visual working memory capacity. Scientific Reports, 9, 1155.",
+      "doi_or_url": "https://doi.org/10.1038/s41598-019-39044-1",
+      "publication_status": "peer_reviewed",
+      "study_type": "test-retest-reliability-study",
+      "population": "healthy adults",
+      "role": [
+        "visual working memory",
+        "change detection",
+        "K capacity",
+        "test-retest reliability"
+      ],
+      "key_findings": [
+        "test-retest correlations for K by set size ranged from approximately 0.50 to 0.76",
+        "reliability tended to increase with set size",
+        "same-time-of-day retesting could improve reliability"
+      ],
+      "limitations": [
+        "lateralised change-detection task rather than the IQ Mindware task",
+        "reliability varied by set size",
+        "does not establish binding-training transfer"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "zhao_2023_change_localization",
+      "citation": "Zhao, C., Vogel, E., & Awh, E. (2023). Change localization: A highly reliable and sensitive measure of capacity in visual working memory. Attention, Perception, & Psychophysics, 85(5), 1681–1694.",
+      "doi_or_url": "https://doi.org/10.3758/s13414-022-02586-0",
+      "publication_status": "peer_reviewed",
+      "study_type": "task-development-and-psychometric-validation",
+      "population": "healthy adult samples across multiple experiments",
+      "role": [
+        "visual working memory",
+        "change localisation",
+        "reliability",
+        "measurement efficiency"
+      ],
+      "key_findings": [
+        "change localisation captured strongly overlapping individual-difference variance with change detection",
+        "split-half reliability was high and typically around 0.90 or above in the reported experiments",
+        "approximately 50–75 trials could achieve strong reliability",
+        "localisation offered lower chance performance and greater dynamic range than binary detection"
+      ],
+      "limitations": [
+        "measures capacity rather than the exact conjunction n-back process",
+        "does not validate WM Coach",
+        "does not establish training transfer"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "mcmaster_2022_swap_cue_variability",
+      "citation": "McMaster, J. M. V., Tomić, I., Schneegans, S., & Bays, P. M. (2022). Swap errors in visual working memory are fully explained by cue-feature variability. Cognitive Psychology, 137, 101493.",
+      "doi_or_url": "https://doi.org/10.1016/j.cogpsych.2022.101493",
+      "publication_status": "peer_reviewed",
+      "study_type": "experimental-and-computational-error-model-study",
+      "population": "healthy adults",
+      "role": [
+        "visual working memory",
+        "swap errors",
+        "cue-feature variability",
+        "retrieval selection"
+      ],
+      "key_findings": [
+        "swap errors increased with variability in memory for cue features",
+        "changes in swap frequency could be quantitatively predicted from cue-feature recall variability",
+        "swap responses need not reflect cue-independent binding failure"
+      ],
+      "limitations": [
+        "continuous cued-recall tasks differ from the IQ Mindware task",
+        "does not rule out other causes in other paradigms",
+        "does not establish training transfer"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "radmard_2025_swap_preprint",
+      "citation": "Radmard, P., Bays, P. M., & Lengyel, M. (2025). A flexible Bayesian non-parametric mixture model reveals multiple dependencies of swap errors in visual working memory. arXiv:2505.01178.",
+      "doi_or_url": "https://doi.org/10.48550/arXiv.2505.01178",
+      "publication_status": "preprint",
+      "study_type": "computational-reanalysis-and-model-development",
+      "population": "reanalysed human visual-working-memory datasets",
+      "role": [
+        "swap-error modelling",
+        "Bayesian non-parametric mixture model",
+        "encoding and retrieval dependencies"
+      ],
+      "key_findings": [
+        "the model recovered multiple dependencies in swap behaviour",
+        "the results raise the possibility that prior interpretations of swap errors were incomplete",
+        "possible encoding contributions were identified alongside cueing and retrieval accounts"
+      ],
+      "limitations": [
+        "not peer reviewed",
+        "descriptive model rather than intervention evidence",
+        "not the exact IQ Mindware task"
+      ],
+      "review_status": "prepublication_watchlist",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "oleary_fletcher_2024_belief_updating",
+      "citation": "O'Leary, A. P., & Fletcher, W. (2024). Thinking about believing: Can metacognitive reflection encourage belief updating? Journal of Intelligence, 12(5), 47.",
+      "doi_or_url": "https://doi.org/10.3390/jintelligence12050047",
+      "publication_status": "peer_reviewed",
+      "study_type": "belief-updating-experiment",
+      "population": "adult participants",
+      "role": [
+        "metacognitive reflection",
+        "counterevidence",
+        "belief updating"
+      ],
+      "key_findings": [
+        "reflection on counterevidence was associated with belief updating",
+        "the additional metacognitive-reflection manipulation provided limited incremental evidence"
+      ],
+      "limitations": [
+        "single study",
+        "not a formal reasoning item-bank validation",
+        "not an IQ Mindware training study",
+        "does not establish workflow transfer"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "kim_2024_natural_frequencies",
+      "citation": "Kim, S. (2024). Natural frequencies improve public understanding of medical test results: An experimental study on various Bayesian inference tasks with multiple scoring methods and non-Bayesian reasoning strategies. Medical Decision Making, 44(8), 890–899.",
+      "doi_or_url": "https://doi.org/10.1177/0272989X241275191",
+      "publication_status": "peer_reviewed",
+      "study_type": "reasoning-format-experiment",
+      "population": "adult public sample",
+      "role": [
+        "Bayesian reasoning",
+        "natural frequencies",
+        "representation format",
+        "numeracy"
+      ],
+      "key_findings": [
+        "natural-frequency formats improved Bayesian inference relative to conditional-probability formats across multiple problems and scoring approaches",
+        "higher-numeracy participants benefited more",
+        "participants used multiple non-Bayesian strategies depending on task and format"
+      ],
+      "limitations": [
+        "representation-format study rather than training-transfer evidence",
+        "medical-test scenarios may not generalise to every reasoning domain",
+        "does not validate Reasoning Coach"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "guo_2022_metacognitive_prompts",
+      "citation": "Guo, L. (2022). Using metacognitive prompts to enhance self-regulated learning and learning outcomes: A meta-analysis of experimental studies in computer-based learning environments. Journal of Computer Assisted Learning, 38(3), 811–832.",
+      "doi_or_url": "https://doi.org/10.1111/jcal.12650",
+      "publication_status": "peer_reviewed",
+      "study_type": "meta-analysis",
+      "population": "learners in computer-based learning environments",
+      "role": [
+        "metacognitive prompts",
+        "self-regulated learning",
+        "learning outcomes",
+        "digital delivery design"
+      ],
+      "key_findings": [
+        "metacognitive prompts improved self-regulated-learning activities with g approximately 0.50",
+        "learning outcomes improved with g approximately 0.40",
+        "effects varied with feedback, specificity and adaptability"
+      ],
+      "limitations": [
+        "educational prompting rather than cognitive-capacity training",
+        "heterogeneous interventions and outcomes",
+        "does not validate a Reasoning Coach calibration profile"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "swaryandini_2025_debiasing_meta",
+      "citation": "Swaryandini, G., Graham, J., Griffith, S., et al. (2025). Systematic review and meta-analysis of educational approaches to reduce cognitive biases among students. Nature Human Behaviour, 9, 2510–2538.",
+      "doi_or_url": "https://doi.org/10.1038/s41562-025-02253-y",
+      "publication_status": "peer_reviewed",
+      "study_type": "systematic-review-and-meta-analysis-of-rcts",
+      "population": "students across 54 randomised controlled trials; 10,941 participants",
+      "role": [
+        "debiasing education",
+        "cognitive biases",
+        "critical thinking",
+        "training transfer"
+      ],
+      "key_findings": [
+        "educational interventions produced a small targeted debiasing effect, g = 0.26",
+        "some biases were difficult to change",
+        "depth and transfer beyond classroom tasks remained uncertain"
+      ],
+      "limitations": [
+        "all included studies had unclear or high risk of bias",
+        "some publication-bias risk",
+        "heterogeneous interventions",
+        "does not establish real-world decision improvement or validate IQ Mindware"
+      ],
+      "review_status": "candidate",
+      "last_reviewed": "2026-08-08"
+    }
+  ]
+}
