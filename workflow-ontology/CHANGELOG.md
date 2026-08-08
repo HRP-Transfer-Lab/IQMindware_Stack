@@ -28,11 +28,25 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - Study 003 intervention-pilot scaffold.
 - Canonical `WEBSITE_COMMERCIAL_PATHWAY.md` defining how strict research evidence is translated into constructive, claims-safe website routes rather than binary `proven` or `no evidence` outputs.
 - Commercial route statuses, minimum evidence floor, abstention rules, mandatory result structure, product-availability fallback policy and worked AI-verification and higher-education examples.
+- Canonical `evidence/README.md` and `EVIDENCE_REGISTRY_BUILD_PLAN.md` for the website evidence-table programme.
+- Expanded evidence-source registry covering MFT-M, G Track tasks, working-memory training, attention training, transfer and clinical-adjacent category evidence.
+- Expanded atomic claims registry with separate measurement, implementation, training-benefit, conflicting-evidence and claims-boundary records.
+- `measurement-registry.json` with ten draft G Track measurement and longitudinal-interpretation records.
+- `training-fit-mappings.json` with fifteen draft goal-to-route mappings across G Track, Attention Coach Signal and WM Coach Signal.
+- Source-document provenance and SHA-256 records for the Training-Fit Registry and broader Stack Evidence discovery table.
+
+### Changed
+
+- First commercial niche wording broadened from AI-heavy work to **professional and AI-assisted work**, with AI treated as a context modifier rather than the entire professional category.
+- Working-memory evidence is decomposed into strong mechanism fit, moderate/small untrained-WM benefit, unvalidated exact WM Coach effects and no established fluid-intelligence transfer.
+- Attention evidence is decomposed into strong MFT-M mechanism fit, moderate/emerging direct training evidence and unestablished sustained everyday-focus transfer.
 
 ### Status
 
-The initial records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production release has yet been issued.
+The initial ontology and route records are `draft` unless specifically marked `approved` at the evidence-source or evidence-claim level. No production release has yet been issued.
 
-The next research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
+The next evidence priority is structured review of the ten G Track measurement records and fifteen initial training-fit mappings, followed by exact WM Coach metadata and records for the relative-frame and optic-flow Attention Coach extensions.
+
+The next workflow-research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
 
 The commercial website pathway may nevertheless classify an adequately specified route as **evidence-informed** and **pilot-ready** where the workflow, demand, function, available protocol, outcome and governance requirements meet the documented minimum commercial evidence floor.
