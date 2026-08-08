@@ -1,5 +1,5 @@
 {
-  "copy_version": "0.1.0-rc1",
+  "copy_version": "0.1.0-rc2",
   "status": "candidate_human_copy_review_pending",
   "headings": {
     "foundational_route_available": "A relevant foundational route is available",
@@ -7,6 +7,14 @@
     "verification_route_available": "An evidence-informed verification route is available",
     "reentry_route_available": "A cognitive-support and workflow re-entry route is available",
     "measurement_route_available": "A measurement-first route is available"
+  },
+  "workflow_explanations": {
+    "individual_focus_under_competing_information_v1": "Focused work requires relevant information to remain selected while competing input is resisted. The current route targets foundational signal control and uses separate attention measures to examine change.",
+    "professional_multi_source_synthesis_v1": "Multi-source synthesis requires sustained selection, maintenance of comparisons and accurate source-context binding while a coherent account is built.",
+    "report_review_and_verification_v1": "Review and verification require relevant claims to be selected, kept attached to their sources and checked before a sufficiently supported release decision is made.",
+    "complex_task_reentry_v1": "Complex-task re-entry requires the goal, current stage, unresolved relations and source context to be reconstructed after interruption or delay.",
+    "higher_education_source_synthesis_v1": "Evidence-based assignments require learners to sustain attention, preserve comparisons among claims and keep each claim attached to its source and context.",
+    "objective_cognitive_progress_tracking_v1": "A measurement-first route establishes a baseline, repeats separate measures after a defined interval and interprets change with practice effects and uncertainty in view."
   },
   "module_labels": {
     "gtrack_attention_baseline": "G Track attention baseline",
@@ -23,10 +31,29 @@
     "attention_evidence": "Attention Evidence Control — coming soon",
     "attention_calibration": "Attention Predictive Calibration — coming soon",
     "attention_commit": "Attention Decision Timing — coming soon",
+    "wm_relational_evidence": "Relational Memory Evidence — coming soon",
+    "wm_relational_calibration": "Relational Memory Predictive Calibration — coming soon",
+    "wm_relational_commit": "Relational Memory Commit — coming soon",
+    "wm_binding_evidence": "Binding Memory Evidence — coming soon",
+    "wm_binding_calibration": "Binding Memory Predictive Calibration — coming soon",
+    "wm_binding_commit": "Binding Memory Commit — coming soon",
+    "path_signal": "Path Prediction — coming soon",
+    "path_evidence": "Path Prediction Evidence — coming soon",
+    "path_calibration": "Path Prediction Calibration — coming soon",
+    "path_commit": "Path Prediction Commit — coming soon",
+    "reasoning_signal": "Explicit Reasoning — coming soon",
     "reasoning_evidence": "Reasoning Evidence — coming soon",
     "reasoning_calibration": "Belief Calibration — coming soon",
-    "reasoning_commit": "Reasoning Commit — coming soon",
-    "path_signal": "Path Prediction — coming soon"
+    "reasoning_commit": "Reasoning Commit — coming soon"
+  },
+  "coming_soon_explanations": {
+    "attention_evidence": "The planned Evidence Control mode will add sequential evidence accumulation and adaptation when reliability changes.",
+    "attention_calibration": "Predictive Calibration will be a derived profile showing whether confidence and updating track evidence quality.",
+    "attention_commit": "Decision Timing will test proportionate stopping under changing evidence, time, cost and risk.",
+    "reasoning_evidence": "The planned Reasoning Evidence mode will evaluate arguments, alternatives and disconfirming evidence sequentially.",
+    "reasoning_calibration": "Belief Calibration will test whether confidence is proportionate to validity and evidence quality.",
+    "reasoning_commit": "Reasoning Commit will distinguish accept, reject, defer and test decisions under uncertainty.",
+    "path_signal": "Path Prediction will train discrimination among expected, rare, blocked and invalid transitions."
   },
   "evidence_boundaries": {
     "focus_everyday_not_established": "Attention Coach targets controlled signal extraction under visual interference. Consistent improvement in sustained everyday focus has not yet been established.",
@@ -42,7 +69,15 @@
     "pilot_ready": "Pilot-ready",
     "measurement_first": "Measurement-first",
     "coming_soon": "Coming soon",
-    "research_collaboration": "Research collaboration"
+    "research_collaboration": "Research collaboration",
+    "not_eligible": "Not eligible for this use"
+  },
+  "cta_copy": {
+    "Start with G Track": "Start with G Track",
+    "Discuss a bounded pilot": "Discuss a bounded pilot",
+    "Discuss a verification pilot": "Discuss a verification pilot",
+    "Discuss an education pilot": "Discuss an education pilot",
+    "Take a G Track baseline": "Take a G Track baseline"
   },
   "global_product_status": {
     "available_now": [
