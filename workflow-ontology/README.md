@@ -87,14 +87,59 @@ workflow-ontology/
 ├── docs/        method, evidence, validation, commercial translation, release and website-import rules
 ├── schemas/     JSON Schema contracts
 ├── ontology/    canonical concepts and dimensions
-├── mappings/    many-to-many evidence and governance mappings
-├── evidence/    source and claim records
+├── mappings/    many-to-many workflow, function and governance mappings
+├── evidence/    source, claim, measurement and training-fit registries
 ├── examples/    worked workflow-stage records
 ├── tests/       expected routes and boundary cases
 ├── scripts/     validation and release tooling
 ├── studies/     staged content, behavioural and intervention validation
 └── releases/    immutable release manifests
 ```
+
+## Evidence registry
+
+The canonical current-product evidence layer is indexed at:
+
+- [`evidence/README.md`](evidence/README.md)
+
+Its machine-readable files are:
+
+```text
+evidence/evidence-sources.json
+    source metadata, populations, constructs, outcomes and limitations
+
+evidence/evidence-claims.json
+    atomic claims, approved public wording and required caveats
+
+evidence/measurement-registry.json
+    G Track measurement-source and exact-implementation status
+
+evidence/training-fit-mappings.json
+    user-goal to current-product route mappings
+```
+
+The governing build plan is:
+
+- [`docs/EVIDENCE_REGISTRY_BUILD_PLAN.md`](docs/EVIDENCE_REGISTRY_BUILD_PLAN.md)
+
+The registry separates:
+
+```text
+workflow-demand support
+function mapping
+measurement/source validity
+exact implementation validity
+training-benefit evidence
+workflow-transfer evidence
+```
+
+These must not be collapsed into one generic evidence score.
+
+The human-readable Training-Fit Registry is the reviewed seed for current-product claims. The broader IQM Stack Evidence document is a discovery backlog and must be regraded claim by claim before import. Source-document provenance is recorded at:
+
+- [`evidence/reviews/SOURCE_DOCUMENTS.md`](evidence/reviews/SOURCE_DOCUMENTS.md)
+
+Only approved records may enter a tagged production release.
 
 ## Research validation programme
 
@@ -164,7 +209,7 @@ It must not alter the scientific mappings to favour whichever product is current
 
 ## First target niches
 
-1. AI-heavy knowledge work
+1. Professional and AI-assisted work
 2. Higher education and independent study
 3. Research and evidence work
 4. Health and service pathways — partner-led or research-governed only
