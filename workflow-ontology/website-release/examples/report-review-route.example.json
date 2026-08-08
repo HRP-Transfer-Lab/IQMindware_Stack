@@ -1,0 +1,69 @@
+{
+  "route_id": "report_review_and_verification_v1",
+  "heading": "An evidence-informed verification route is available",
+  "status_labels": [
+    "Available now",
+    "Evidence-informed",
+    "Pilot-ready"
+  ],
+  "workflow_explanation": "Review and verification require relevant claims to be selected, kept attached to their sources and checked before a sufficiently supported release decision is made.",
+  "available_protocol_route": [
+    {"step_id": "gtrack_full_baseline", "label": "G Track baseline", "availability": "available_now"},
+    {"step_id": "attention_signal", "label": "Attention Coach — Signal Control", "availability": "available_now"},
+    {"step_id": "wm_binding_signal", "label": "WM Coach — Binding Memory Signal", "availability": "available_now"},
+    {"step_id": "gtrack_full_followup", "label": "G Track follow-up", "availability": "available_now"},
+    {"step_id": "delayed_recheck", "label": "Fresh delayed re-check", "availability": "available_now"}
+  ],
+  "coming_soon_targets": [
+    {"component_id": "attention_evidence", "label": "Attention Evidence Control — coming soon", "availability": "coming_soon", "nearest_available_foundation": "attention_signal"},
+    {"component_id": "reasoning_evidence", "label": "Reasoning Evidence — coming soon", "availability": "coming_soon", "nearest_available_foundation": null},
+    {"component_id": "reasoning_commit", "label": "Reasoning Commit — coming soon", "availability": "coming_soon", "nearest_available_foundation": null}
+  ],
+  "evidence_cards": [
+    {
+      "evidence_card_id": "attention_signal",
+      "public_name": "Attention Coach — Signal Control",
+      "display_summary": [
+        "Published MFT-M foundation",
+        "Exact implementation under staged validation",
+        "Initial controlled transfer evidence",
+        "Workflow benefit to be tested"
+      ]
+    },
+    {
+      "evidence_card_id": "wm_binding_signal",
+      "public_name": "WM Coach — Binding Memory Signal",
+      "display_summary": [
+        "Established visual-binding foundation",
+        "Exact task under staged validation",
+        "Broad transfer evidence is conflicting",
+        "Source-memory and workflow benefit to be tested"
+      ]
+    }
+  ],
+  "workflow_supports": [
+    {"workflow_support_id": "protected_focus_window", "label": "Protected focus window", "locus": "organisation_system"},
+    {"workflow_support_id": "source_claim_ledger", "label": "Source–claim ledger", "locus": "task_interface"},
+    {"workflow_support_id": "separate_drafting_verification", "label": "Separate drafting and verification stages", "locus": "team_process"},
+    {"workflow_support_id": "release_checkpoint", "label": "Explicit release checkpoint", "locus": "team_process"},
+    {"workflow_support_id": "disconfirmation_checkpoint", "label": "Disconfirmation checkpoint", "locus": "team_process"}
+  ],
+  "outcomes": [
+    {"outcome_id": "gtrack_attention_change", "label": "Change on separate G Track attention measures", "level": "cognitive_measure"},
+    {"outcome_id": "gtrack_binding_change", "label": "Change on the G Track visual-binding measure", "level": "cognitive_measure"},
+    {"outcome_id": "unsupported_claim_detection", "label": "Detection of unsupported or weakly sourced claims", "level": "functional_task"},
+    {"outcome_id": "source_attribution_error_rate", "label": "Source-attribution error rate", "level": "functional_task"},
+    {"outcome_id": "review_time", "label": "Time required for a defined review stage", "level": "workflow"},
+    {"outcome_id": "rework_rate", "label": "Rate of work returned for correction", "level": "workflow"},
+    {"outcome_id": "delayed_recheck", "label": "Fresh outcome evidence after a defined delay", "level": "delayed"}
+  ],
+  "evidence_boundary": "The current apps target relevant foundational attention and binding functions. Direct improvement in report or AI-output verification has not yet been established.",
+  "primary_cta": "Discuss a verification pilot",
+  "versions": {
+    "ontology": "0.1.0",
+    "evidence": "0.1.0-rc2",
+    "availability": "0.1.0-rc1",
+    "route_config": "0.1.0-rc2",
+    "copy": "0.1.0-rc2"
+  }
+}
