@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iqmindware.com/schemas/rendered-route.schema.json",
+  "title": "Rendered IQ Mindware route result",
+  "type": "object",
+  "required": [
+    "route_id",
+    "heading",
+    "status_labels",
+    "workflow_explanation",
+    "available_protocol_route",
+    "coming_soon_targets",
+    "evidence_cards",
+    "workflow_supports",
+    "outcomes",
+    "evidence_boundary",
+    "primary_cta",
+    "versions"
+  ],
+  "properties": {
+    "route_id": {"type": "string"},
+    "heading": {"type": "string"},
+    "status_labels": {"type": "array", "items": {"type": "string"}},
+    "workflow_explanation": {"type": "string"},
+    "available_protocol_route": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step_id", "label", "availability"],
+        "properties": {
+          "step_id": {"type": "string"},
+          "label": {"type": "string"},
+          "availability": {"const": "available_now"}
+        }
+      }
+    },
+    "coming_soon_targets": {"type": "array"},
+    "evidence_cards": {"type": "array"},
+    "workflow_supports": {"type": "array"},
+    "outcomes": {"type": "array"},
+    "evidence_boundary": {"type": "string"},
+    "primary_cta": {"type": "string"},
+    "versions": {
+      "type": "object",
+      "required": ["ontology", "evidence", "availability", "route_config", "copy"]
+    }
+  },
+  "additionalProperties": false
+}
