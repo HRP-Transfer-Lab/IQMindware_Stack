@@ -30,3 +30,6 @@ jobs:
 
       - name: Validate website release candidate
         run: python workflow-ontology/website-release/scripts/validate_website_release.py
+
+      - name: Execute website route and boundary cases
+        run: python workflow-ontology/website-release/scripts/run_website_route_cases.py
