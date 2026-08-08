@@ -27,3 +27,6 @@ jobs:
 
       - name: Validate ontology registries
         run: python workflow-ontology/scripts/validate_registry.py
+
+      - name: Validate website release candidate
+        run: python workflow-ontology/website-release/scripts/validate_website_release.py
