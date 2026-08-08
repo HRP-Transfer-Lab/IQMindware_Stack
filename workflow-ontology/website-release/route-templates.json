@@ -1,261 +1,112 @@
 {
-  "registry_version": "0.1.0-rc1",
+  "registry_version": "0.1.0-rc2",
   "status": "release_candidate_human_copy_review_pending",
   "scope": "Curated first-release routes using only products confirmed as commercially available now.",
   "routes": [
     {
       "route_id": "individual_focus_under_competing_information_v1",
+      "route_builder_primary_need": "focus_under_competing_information",
       "audience": "individual",
-      "niche_ids": [
-        "individual_professional"
-      ],
-      "user_goal_ids": [
-        "focus_under_competing_information",
-        "extract_signal_from_noise",
-        "accuracy_under_brief_exposure"
-      ],
-      "route_status": [
-        "available_now",
-        "evidence_informed"
-      ],
+      "niche_ids": ["individual_professional"],
+      "user_goal_ids": ["focus_under_competing_information", "extract_signal_from_noise", "accuracy_under_brief_exposure"],
+      "route_status": ["available_now", "evidence_informed"],
       "heading_key": "foundational_route_available",
-      "available_protocol_route": [
-        "gtrack_attention_baseline",
-        "attention_signal",
-        "gtrack_attention_followup",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "individual_focus_under_competing_information_v1",
+      "available_protocol_route": ["gtrack_attention_baseline", "attention_signal", "gtrack_attention_followup", "delayed_recheck"],
       "target_functions_in_development": [],
-      "workflow_support_ids": [
-        "protected_focus_window",
-        "notification_control"
-      ],
-      "outcome_ids": [
-        "training_task_change",
-        "gtrack_attention_change",
-        "zone_context_stability",
-        "delayed_recheck"
-      ],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_zone_check", "attention_signal", "gtrack_longitudinal_comparison"],
+      "workflow_support_ids": ["protected_focus_window", "notification_control"],
+      "outcome_ids": ["training_task_change", "gtrack_attention_change", "zone_context_stability", "delayed_recheck"],
       "governance_profile_id": "individual_nonclinical_v1",
       "evidence_boundary_key": "focus_everyday_not_established",
       "primary_cta": "Start with G Track"
     },
     {
       "route_id": "professional_multi_source_synthesis_v1",
+      "route_builder_primary_need": "multi_source_synthesis",
       "audience": "organisation_or_individual",
-      "niche_ids": [
-        "individual_professional",
-        "research_evidence"
-      ],
+      "niche_ids": ["individual_professional", "research_evidence"],
       "workflow_archetype_id": "multi_source_synthesis",
-      "route_status": [
-        "available_now",
-        "evidence_informed",
-        "pilot_ready"
-      ],
+      "route_status": ["available_now", "evidence_informed", "pilot_ready"],
       "heading_key": "attention_wm_route_available",
-      "available_protocol_route": [
-        "gtrack_full_baseline",
-        "attention_signal",
-        "wm_relational_signal",
-        "wm_binding_signal",
-        "gtrack_full_followup",
-        "delayed_recheck"
-      ],
-      "target_functions_in_development": [
-        "reasoning_evidence",
-        "reasoning_calibration"
-      ],
-      "workflow_support_ids": [
-        "protected_focus_window",
-        "source_claim_matrix",
-        "visible_task_state",
-        "separate_drafting_verification"
-      ],
-      "outcome_ids": [
-        "training_task_change",
-        "gtrack_attention_change",
-        "gtrack_complex_span_change",
-        "gtrack_binding_change",
-        "source_attribution_error_rate",
-        "workflow_completion",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "professional_multi_source_synthesis_v1",
+      "available_protocol_route": ["gtrack_full_baseline", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_full_followup", "delayed_recheck"],
+      "target_functions_in_development": ["reasoning_evidence", "reasoning_calibration"],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_working_memory", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_longitudinal_comparison"],
+      "workflow_support_ids": ["protected_focus_window", "source_claim_matrix", "visible_task_state", "separate_drafting_verification"],
+      "outcome_ids": ["training_task_change", "gtrack_attention_change", "gtrack_complex_span_change", "gtrack_binding_change", "source_attribution_error_rate", "workflow_completion", "delayed_recheck"],
       "governance_profile_id": "workplace_nonclinical_v1",
       "evidence_boundary_key": "synthesis_workflow_effect_not_established",
       "primary_cta": "Discuss a bounded pilot"
     },
     {
       "route_id": "report_review_and_verification_v1",
+      "route_builder_primary_need": "review_and_verify",
       "audience": "organisation",
-      "niche_ids": [
-        "work_ai_knowledge"
-      ],
-      "workflow_stage_ids": [
-        "ai_report_verify_before_release"
-      ],
-      "route_status": [
-        "available_now",
-        "evidence_informed",
-        "pilot_ready"
-      ],
+      "niche_ids": ["work_ai_knowledge"],
+      "workflow_stage_ids": ["ai_report_verify_before_release"],
+      "route_status": ["available_now", "evidence_informed", "pilot_ready"],
       "heading_key": "verification_route_available",
-      "available_protocol_route": [
-        "gtrack_full_baseline",
-        "attention_signal",
-        "wm_binding_signal",
-        "gtrack_full_followup",
-        "delayed_recheck"
-      ],
-      "target_functions_in_development": [
-        "attention_evidence",
-        "reasoning_evidence",
-        "reasoning_commit"
-      ],
-      "workflow_support_ids": [
-        "protected_focus_window",
-        "source_claim_ledger",
-        "separate_drafting_verification",
-        "release_checkpoint",
-        "disconfirmation_checkpoint"
-      ],
-      "outcome_ids": [
-        "training_task_change",
-        "gtrack_attention_change",
-        "gtrack_binding_change",
-        "unsupported_claim_detection",
-        "source_attribution_error_rate",
-        "review_time",
-        "rework_rate",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "report_review_and_verification_v1",
+      "available_protocol_route": ["gtrack_full_baseline", "attention_signal", "wm_binding_signal", "gtrack_full_followup", "delayed_recheck"],
+      "target_functions_in_development": ["attention_evidence", "reasoning_evidence", "reasoning_commit"],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_working_memory", "attention_signal", "wm_binding_signal", "gtrack_longitudinal_comparison"],
+      "workflow_support_ids": ["protected_focus_window", "source_claim_ledger", "separate_drafting_verification", "release_checkpoint", "disconfirmation_checkpoint"],
+      "outcome_ids": ["training_task_change", "gtrack_attention_change", "gtrack_binding_change", "unsupported_claim_detection", "source_attribution_error_rate", "review_time", "rework_rate", "delayed_recheck"],
       "governance_profile_id": "workplace_nonclinical_v1",
       "evidence_boundary_key": "verification_effect_not_established",
       "primary_cta": "Discuss a verification pilot"
     },
     {
       "route_id": "complex_task_reentry_v1",
+      "route_builder_primary_need": "resume_after_interruption",
       "audience": "organisation_or_individual",
-      "niche_ids": [
-        "individual_professional",
-        "work_ai_knowledge"
-      ],
-      "workflow_stage_ids": [
-        "project_resume_after_interruption"
-      ],
-      "route_status": [
-        "available_now",
-        "evidence_informed",
-        "pilot_ready"
-      ],
+      "niche_ids": ["individual_professional", "work_ai_knowledge"],
+      "workflow_stage_ids": ["project_resume_after_interruption"],
+      "route_status": ["available_now", "evidence_informed", "pilot_ready"],
       "heading_key": "reentry_route_available",
-      "available_protocol_route": [
-        "gtrack_full_baseline",
-        "attention_signal",
-        "wm_relational_signal",
-        "wm_binding_signal",
-        "gtrack_full_followup"
-      ],
-      "target_functions_in_development": [
-        "attention_evidence",
-        "path_signal"
-      ],
-      "workflow_support_ids": [
-        "notification_control",
-        "visible_task_state",
-        "reentry_cue",
-        "protected_focus_window"
-      ],
-      "outcome_ids": [
-        "gtrack_attention_change",
-        "gtrack_complex_span_change",
-        "gtrack_binding_change",
-        "interruption_reentry_time",
-        "source_attribution_error_rate",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "complex_task_reentry_v1",
+      "available_protocol_route": ["gtrack_full_baseline", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_full_followup"],
+      "target_functions_in_development": ["attention_evidence", "path_signal"],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_working_memory", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_longitudinal_comparison"],
+      "workflow_support_ids": ["notification_control", "visible_task_state", "reentry_cue", "protected_focus_window"],
+      "outcome_ids": ["gtrack_attention_change", "gtrack_complex_span_change", "gtrack_binding_change", "interruption_reentry_time", "source_attribution_error_rate", "delayed_recheck"],
       "governance_profile_id": "workplace_nonclinical_v1",
       "evidence_boundary_key": "reentry_effect_not_established",
       "primary_cta": "Discuss a bounded pilot"
     },
     {
       "route_id": "higher_education_source_synthesis_v1",
+      "route_builder_primary_need": "higher_education_source_synthesis",
       "audience": "education",
-      "niche_ids": [
-        "education_higher"
-      ],
-      "workflow_stage_ids": [
-        "he_assignment_integrate_sources"
-      ],
-      "route_status": [
-        "available_now",
-        "evidence_informed",
-        "pilot_ready"
-      ],
+      "niche_ids": ["education_higher"],
+      "workflow_stage_ids": ["he_assignment_integrate_sources"],
+      "route_status": ["available_now", "evidence_informed", "pilot_ready"],
       "heading_key": "attention_wm_route_available",
-      "available_protocol_route": [
-        "gtrack_full_baseline",
-        "attention_signal",
-        "wm_relational_signal",
-        "wm_binding_signal",
-        "gtrack_full_followup",
-        "delayed_recheck"
-      ],
-      "target_functions_in_development": [
-        "reasoning_evidence",
-        "reasoning_calibration"
-      ],
-      "workflow_support_ids": [
-        "protected_focus_window",
-        "source_claim_matrix",
-        "visible_task_state",
-        "separate_drafting_verification"
-      ],
-      "outcome_ids": [
-        "training_task_change",
-        "gtrack_attention_change",
-        "gtrack_complex_span_change",
-        "gtrack_binding_change",
-        "source_attribution_error_rate",
-        "workflow_completion",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "higher_education_source_synthesis_v1",
+      "available_protocol_route": ["gtrack_full_baseline", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_full_followup", "delayed_recheck"],
+      "target_functions_in_development": ["reasoning_evidence", "reasoning_calibration"],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_working_memory", "attention_signal", "wm_relational_signal", "wm_binding_signal", "gtrack_longitudinal_comparison"],
+      "workflow_support_ids": ["protected_focus_window", "source_claim_matrix", "visible_task_state", "separate_drafting_verification"],
+      "outcome_ids": ["training_task_change", "gtrack_attention_change", "gtrack_complex_span_change", "gtrack_binding_change", "source_attribution_error_rate", "workflow_completion", "delayed_recheck"],
       "governance_profile_id": "education_nonclinical_v1",
       "evidence_boundary_key": "education_outcome_not_established",
       "primary_cta": "Discuss an education pilot"
     },
     {
       "route_id": "objective_cognitive_progress_tracking_v1",
+      "route_builder_primary_need": "objective_progress_tracking",
       "audience": "individual_or_organisation",
-      "niche_ids": [
-        "individual_professional",
-        "education_higher",
-        "research_evidence"
-      ],
-      "user_goal_ids": [
-        "objective_progress_tracking"
-      ],
-      "route_status": [
-        "available_now",
-        "measurement_first"
-      ],
+      "niche_ids": ["individual_professional", "education_higher", "research_evidence"],
+      "user_goal_ids": ["objective_progress_tracking"],
+      "route_status": ["available_now", "measurement_first"],
       "heading_key": "measurement_route_available",
-      "available_protocol_route": [
-        "gtrack_full_baseline",
-        "matched_live_training_optional",
-        "gtrack_full_followup",
-        "delayed_recheck"
-      ],
+      "workflow_explanation_key": "objective_cognitive_progress_tracking_v1",
+      "available_protocol_route": ["gtrack_full_baseline", "matched_live_training_optional", "gtrack_full_followup", "delayed_recheck"],
       "target_functions_in_development": [],
+      "evidence_card_ids": ["gtrack_attention_battery", "gtrack_zone_check", "gtrack_working_memory", "gtrack_matrix_reasoning", "gtrack_longitudinal_comparison"],
       "workflow_support_ids": [],
-      "outcome_ids": [
-        "gtrack_attention_change",
-        "gtrack_complex_span_change",
-        "gtrack_binding_change",
-        "gtrack_matrix_change",
-        "zone_context_stability",
-        "delayed_recheck"
-      ],
+      "outcome_ids": ["gtrack_attention_change", "gtrack_complex_span_change", "gtrack_binding_change", "gtrack_matrix_change", "zone_context_stability", "delayed_recheck"],
       "governance_profile_id": "individual_nonclinical_v1",
       "evidence_boundary_key": "change_not_broad_proof",
       "primary_cta": "Take a G Track baseline"
