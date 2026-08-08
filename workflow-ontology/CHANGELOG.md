@@ -39,6 +39,10 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - `vertical-stack-mode-matrix.candidate.json` with the 20 capacity-by-mode cells across Signal, Evidence, Predictive Calibration and Commit.
 - `vertical-stack-sources.candidate.json` with peer-reviewed sources and an explicitly labelled prepublication watchlist for the full-stack review.
 - Candidate application records separating non-clinical evidence-sensitive reframing, professional belief calibration and health/research interpretation-bias routes.
+- `LIVE_SIGNAL_AND_REASONING_MEASUREMENT_REVIEW_v0.1.md`, the first promotion-oriented audit of the three live Signal implementations and the explicit-reasoning measurement model.
+- `live-signal-reasoning-overrides.candidate.json` with literature-audited candidate overrides, protocol-variant separation and promotion recommendations.
+- `live-signal-reasoning-source-additions.candidate.json` with verified sources for adaptive MFT-M, n-back psychometrics, visual-working-memory reliability, swap-error modelling, metacognitive prompting, debiasing and belief updating.
+- `evidence/reviews/README.md` documenting the review and promotion workflow.
 
 ### Changed
 
@@ -49,6 +53,10 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - Predictive Calibration is fixed as a cross-cutting derived profile rather than a fourth gameplay component.
 - Explicit Reasoning is separated into formal validity, sequential evidence evaluation, belief calibration, conclusion timing and domain-semantic application.
 - Reframing is separated into a non-clinical evidence-sensitive reasoning route and a health/research-governed interpretation-bias or reappraisal route.
+- Attention Signal now requires separate evidence statuses for classic absolute MFT-M, adaptive absolute MFT-M, relative/polar extensions and optic-flow extensions.
+- Relational Memory Signal and Binding Memory Signal are recommended for downgrade from `exact_protocol: moderate` to `plausible_but_not_established` pending exact-task psychometrics.
+- The proposed Reasoning score is replaced by a multi-parameter model separating validity sensitivity, response bias, semantic/belief effects, cannot-tell discrimination, lure acceptance and confidence calibration.
+- Swap errors are no longer assumed to be pure binding failures; candidate cue, encoding, conjunction, retrieval, lag and response-strategy causes must be compared.
 
 ### Status
 
@@ -56,12 +64,13 @@ The initial ontology and route records are `draft` unless specifically marked `a
 
 The next evidence priorities are:
 
-1. structured review of the ten G Track measurement records;
-2. review of the fifteen initial training-fit mappings;
-3. expert review of the 20 full-stack capacity-by-mode cells;
-4. conversion of accepted candidate sources and judgements into canonical atomic records;
-5. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
-6. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning.
+1. human review of the live-Signal and Reasoning candidate overrides;
+2. structured review of the ten G Track measurement records;
+3. review of the fifteen initial training-fit mappings;
+4. promotion-oriented review of the remaining full-stack capacity-by-mode cells;
+5. conversion of accepted candidate sources and judgements into canonical atomic records;
+6. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
+7. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning.
 
 The next workflow-research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
 
