@@ -1,0 +1,141 @@
+{
+  "config_version": "0.1.0-rc2",
+  "status": "release_candidate",
+  "purpose": "Deterministic first-release questionnaire and route-selection policy for the IQMindware.com homepage.",
+  "data_policy": {
+    "runs_client_side_by_default": true,
+    "show_result_before_contact_capture": true,
+    "do_not_send_answers_to_advertising_platforms": true,
+    "server_required_only_for": [
+      "save route",
+      "download route summary",
+      "submit pilot enquiry",
+      "authenticated organisation workspace"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "audience_context",
+      "prompt": "Who are you configuring this for?",
+      "type": "single",
+      "required": true,
+      "options": [
+        {"option_id": "individual_professional", "label": "Myself"},
+        {"option_id": "organisation_professional", "label": "A team or professional programme"},
+        {"option_id": "higher_education", "label": "Learners or students"},
+        {"option_id": "research_evidence", "label": "Research participants or evidence work"}
+      ]
+    },
+    {
+      "question_id": "primary_need",
+      "prompt": "What are you trying to accomplish?",
+      "type": "single",
+      "required": true,
+      "options": [
+        {"option_id": "focus_under_competing_information", "label": "Stay focused despite competing information"},
+        {"option_id": "multi_source_synthesis", "label": "Compare and integrate several sources"},
+        {"option_id": "review_and_verify", "label": "Review and verify an output"},
+        {"option_id": "resume_after_interruption", "label": "Recover complex work after interruption"},
+        {"option_id": "higher_education_source_synthesis", "label": "Build an evidence-based assignment"},
+        {"option_id": "objective_progress_tracking", "label": "Establish a baseline and track objective change"}
+      ]
+    },
+    {
+      "question_id": "observed_friction",
+      "prompt": "What tends to happen when this becomes difficult?",
+      "type": "multi",
+      "required": false,
+      "max_selections": 3,
+      "options": [
+        {"option_id": "signal_loss", "label": "Important information gets missed"},
+        {"option_id": "attention_dispersal", "label": "Focus fragments across several streams"},
+        {"option_id": "vigilance_lapse", "label": "Engagement drops during repetitive work"},
+        {"option_id": "task_set_loss", "label": "The governing rule is lost after a switch"},
+        {"option_id": "relation_loss", "label": "Dependencies or comparisons are lost"},
+        {"option_id": "wrong_lag_or_sequence", "label": "A recent step is confused with the required earlier step"},
+        {"option_id": "source_context_swap", "label": "Correct information is attached to the wrong source or context"},
+        {"option_id": "partial_match_acceptance", "label": "A plausible partial match is accepted as complete"},
+        {"option_id": "poor_reentry", "label": "Context must be rebuilt after interruption"},
+        {"option_id": "premature_closure", "label": "A conclusion is reached before enough evidence"},
+        {"option_id": "excessive_checking", "label": "Review continues after the evidence is sufficient"},
+        {"option_id": "over_inference", "label": "The conclusion exceeds what the evidence supports"}
+      ]
+    }
+  ],
+  "route_rules": [
+    {
+      "route_id": "individual_focus_under_competing_information_v1",
+      "priority": 60,
+      "required_answers": {"primary_need": ["focus_under_competing_information"]},
+      "score_weights": {
+        "audience_context": {"individual_professional": 10},
+        "observed_friction": {"signal_loss": 20, "attention_dispersal": 20, "vigilance_lapse": 10}
+      }
+    },
+    {
+      "route_id": "professional_multi_source_synthesis_v1",
+      "priority": 50,
+      "required_answers": {"primary_need": ["multi_source_synthesis"]},
+      "score_weights": {
+        "audience_context": {"individual_professional": 10, "organisation_professional": 15, "research_evidence": 10},
+        "observed_friction": {"attention_dispersal": 10, "relation_loss": 20, "source_context_swap": 20, "over_inference": 5}
+      }
+    },
+    {
+      "route_id": "report_review_and_verification_v1",
+      "priority": 50,
+      "required_answers": {"primary_need": ["review_and_verify"]},
+      "score_weights": {
+        "audience_context": {"organisation_professional": 15, "research_evidence": 10},
+        "observed_friction": {"source_context_swap": 20, "partial_match_acceptance": 15, "premature_closure": 15, "excessive_checking": 10, "over_inference": 15}
+      }
+    },
+    {
+      "route_id": "complex_task_reentry_v1",
+      "priority": 50,
+      "required_answers": {"primary_need": ["resume_after_interruption"]},
+      "score_weights": {
+        "audience_context": {"individual_professional": 10, "organisation_professional": 15},
+        "observed_friction": {"poor_reentry": 25, "task_set_loss": 20, "relation_loss": 10, "source_context_swap": 5}
+      }
+    },
+    {
+      "route_id": "higher_education_source_synthesis_v1",
+      "priority": 55,
+      "required_answers": {"primary_need": ["higher_education_source_synthesis"]},
+      "score_weights": {
+        "audience_context": {"higher_education": 25},
+        "observed_friction": {"attention_dispersal": 10, "relation_loss": 20, "source_context_swap": 20, "over_inference": 10}
+      }
+    },
+    {
+      "route_id": "objective_cognitive_progress_tracking_v1",
+      "priority": 70,
+      "required_answers": {"primary_need": ["objective_progress_tracking"]},
+      "score_weights": {
+        "audience_context": {"individual_professional": 5, "organisation_professional": 5, "higher_education": 5, "research_evidence": 5}
+      }
+    }
+  ],
+  "selection_policy": {
+    "required_question_ids": ["audience_context", "primary_need"],
+    "base_score_for_required_match": 100,
+    "select": "highest_score",
+    "tie_break_order": ["priority", "route_id"],
+    "max_primary_results": 1,
+    "allow_secondary_routes": false,
+    "abstain_when_no_required_match": true
+  },
+  "eligibility_policy": {
+    "health_or_treatment_intent": {
+      "status": "research_collaboration",
+      "governance_profile_id": "health_partner_research_v1",
+      "message": "Health or treatment uses require a partner-led, condition-specific research and governance route."
+    },
+    "selection_or_punitive_intent": {
+      "status": "not_eligible",
+      "message": "IQ Mindware cognitive-support data must not be used for recruitment, promotion, discipline, grading or covert productivity ranking."
+    },
+    "free_text_policy": "Free-text interpretation is excluded from the first deterministic release. Add only after a separately tested and governed intent classifier exists."
+  }
+}
