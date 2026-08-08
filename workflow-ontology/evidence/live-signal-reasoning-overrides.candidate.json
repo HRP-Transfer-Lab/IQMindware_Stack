@@ -1,0 +1,328 @@
+{
+  "registry_version": "0.2.0-candidate",
+  "status": "literature_audited_human_approval_pending",
+  "review_cutoff": "2026-08-08",
+  "applies_to": "vertical-stack-mode-matrix.candidate.json@0.1.0-candidate",
+  "purpose": "Promotion-oriented evidence overrides for the three live Signal implementations and the proposed explicit-reasoning measurement model.",
+  "merge_policy": "These records override matching fields in the parent candidate matrix only after human scientific review. They are not production records and do not change canonical approval status.",
+  "record_overrides": [
+    {
+      "id": "attention_signal",
+      "decision": "retain_with_protocol_variant_split",
+      "construct_basis": "strong",
+      "task_family_basis": "strong",
+      "exact_protocol": "moderate",
+      "training_evidence": "moderate",
+      "workflow_transfer": "not_established",
+      "product_status": "available_now",
+      "protocol_variants": [
+        {
+          "variant_id": "classic_absolute_mftm",
+          "status": "published_anchor",
+          "basis": "Closest match to the original backward-masked Majority Function Task."
+        },
+        {
+          "variant_id": "adaptive_absolute_mftm",
+          "status": "adapted_published_model",
+          "basis": "Direct adaptive-assessment evidence exists, subject to software and scoring equivalence."
+        },
+        {
+          "variant_id": "relative_polar_mftm",
+          "status": "principled_extension",
+          "basis": "Adds a reference-frame transformation not directly validated in the MFT-M literature."
+        },
+        {
+          "variant_id": "optic_flow_mftm",
+          "status": "principled_transfer_extension",
+          "basis": "Changes the perceptual carrier and introduces device/timing dependencies; exact task unvalidated."
+        }
+      ],
+      "source_ids": [
+        "wu_2016_mftm",
+        "he_2022_adaptive_mftm",
+        "zhang_2024_attention_training"
+      ],
+      "public_claim": "Attention Coach Signal uses the masked Majority Function approach to train controlled extraction of a majority relation under visual interference and time pressure.",
+      "caveat": "The classic task has a published measurement and emerging training basis. IQ Mindware's relative-frame, optic-flow and browser-based implementations require their own validation, and everyday or workflow benefits are not established.",
+      "measurement_requirements": [
+        "frame-counted timing fidelity",
+        "browser and device transport",
+        "expected entropy-by-exposure response function",
+        "reliability of fitted capacity estimates",
+        "concordance with a reference adaptive MFT-M implementation",
+        "wrapper-specific estimates",
+        "separate reporting of classic and original variants"
+      ],
+      "promotion_recommendation": "expert_review_candidate_after_implementation_equivalence",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "relational_signal",
+      "decision": "downgrade_exact_protocol_retain_construct",
+      "construct_basis": "strong",
+      "task_family_basis": "moderate",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "not_established",
+      "adjacent_training_evidence": "moderate_but_mixed_and_task_similarity_sensitive",
+      "workflow_transfer": "not_established",
+      "product_status": "available_now",
+      "source_ids": [
+        "chuderski_2014_relational",
+        "cho_2007_analogical_wm",
+        "jaeggi_2010_nback_validity",
+        "redick_lindsey_2013_nback_meta",
+        "de_simoni_2018_wm_binding_no_transfer",
+        "ripp_2022_wm_no_transfer",
+        "rodas_2024_wm_meta"
+      ],
+      "public_claim": "WM Coach Relational Memory practises maintaining and comparing visual relations across delay and interference.",
+      "caveat": "The trained operation is clearly defined, but the exact task's reliability and benefits on untrained memory, reasoning or professional workflows have not yet been established.",
+      "measurement_model": {
+        "required_separation": [
+          "clean_relation_nback",
+          "majority_relation_nback"
+        ],
+        "interpretation": {
+          "clean_relation_nback": "relation maintenance and comparison with minimal perceptual uncertainty",
+          "majority_relation_nback": "compound extraction, maintenance, comparison and lure-resistance performance under uncertainty"
+        },
+        "prohibited_collapse": "Do not treat either score as interchangeable with G Track complex span or as a complete working-memory-capacity estimate."
+      },
+      "measurement_requirements": [
+        "internal consistency and reliability curves",
+        "7-to-14-day test-retest reliability",
+        "wrong-lag lure discrimination",
+        "relation-reversal errors",
+        "match-frequency and response-bias analysis",
+        "convergence with relational integration and complex span",
+        "separation from perceptual extraction performance",
+        "practice-effect and adaptive-level stability"
+      ],
+      "promotion_recommendation": "retain_draft_until_exact_task_psychometrics",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "binding_signal",
+      "decision": "downgrade_exact_protocol_add_error_model",
+      "construct_basis": "strong",
+      "task_family_basis": "strong",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "not_established",
+      "adjacent_training_evidence": "conflicting_with_direct_null_transfer_evidence",
+      "workflow_transfer": "not_established",
+      "product_status": "available_now",
+      "source_ids": [
+        "luck_vogel_1997_vwm",
+        "wheeler_treisman_2002_binding",
+        "johnson_1993_source_monitoring",
+        "dai_2019_vwm_reliability",
+        "zhao_2023_change_localization",
+        "mcmaster_2022_swap_cue_variability",
+        "radmard_2025_swap_preprint",
+        "de_simoni_2018_wm_binding_no_transfer"
+      ],
+      "public_claim": "WM Coach Binding Memory practises remembering which visual feature, location or context belongs with which other element.",
+      "caveat": "The paradigm basis is strong, but the exact app's reliability, error model and benefits for source memory or real workflows remain under validation.",
+      "error_model": {
+        "candidate_sources": [
+          "cue_or_location_uncertainty",
+          "feature_encoding_noise",
+          "conjunction_loss",
+          "retrieval_selection_error",
+          "wrong_lag_intrusion",
+          "response_strategy"
+        ],
+        "rule": "A swap response must not automatically be labelled a pure binding failure."
+      },
+      "measurement_requirements": [
+        "internal consistency and reliability curves",
+        "7-to-14-day test-retest reliability",
+        "partial-match and swap-error model comparison",
+        "comparison of binary detection with change localisation",
+        "convergence with an established visual-binding task",
+        "separation of feature memory from conjunction memory",
+        "set-size and lure-balance optimisation",
+        "practice effects",
+        "source-context transfer as a separate outcome"
+      ],
+      "promotion_recommendation": "retain_draft_until_exact_task_psychometrics_and_error_model",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "reasoning_signal",
+      "decision": "retain_construct_replace_single_accuracy_model",
+      "construct_basis": "strong",
+      "task_family_basis": "strong_for_formal_reasoning_moderate_for_cross_wrapper_measurement",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "not_established",
+      "adjacent_training_evidence": "moderate",
+      "workflow_transfer": "not_established",
+      "product_status": "in_development",
+      "source_ids": [
+        "trippas_2018_belief_bias",
+        "chuderski_2014_relational",
+        "nesbit_liu_2025_argument_mapping",
+        "swaryandini_2025_debiasing_meta",
+        "kean_2026_logic_preprint"
+      ],
+      "public_claim": "The planned Reasoning task measures whether a relational structure can be recovered across symbolic, unfamiliar-semantic and meaningful verbal forms.",
+      "caveat": "Formal-reasoning and educational evidence do not validate the exact item bank, broad critical-thinking improvement or consequential workflow transfer.",
+      "required_outputs": [
+        "formal_validity_sensitivity",
+        "acceptance_criterion",
+        "cannot_tell_discrimination",
+        "semantic_believability_effect",
+        "lure_false_acceptance",
+        "wrapper_specific_performance",
+        "wrapper_recovery",
+        "delayed_recovery"
+      ],
+      "promotion_recommendation": "prototype_measurement_model_then_psychometric_validation",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "reasoning_evidence",
+      "decision": "retain_as_adjacent_evidence_based_extension",
+      "construct_basis": "strong",
+      "task_family_basis": "moderate_to_strong_adjacent_instructional",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "not_established",
+      "adjacent_training_evidence": "moderate",
+      "workflow_transfer": "not_established",
+      "product_status": "in_development",
+      "source_ids": [
+        "nesbit_liu_2025_argument_mapping",
+        "kim_2024_natural_frequencies",
+        "oleary_fletcher_2024_belief_updating",
+        "swaryandini_2025_debiasing_meta",
+        "guo_2022_metacognitive_prompts",
+        "gesiarz_2019_motivation"
+      ],
+      "public_claim": "The planned mode presents evidence, counterevidence and alternatives sequentially to measure diagnostic evidence use and proportionate belief revision.",
+      "caveat": "Evidence supports selected instructional and debiasing methods, not a general claim that a short app task improves real-world judgement.",
+      "required_outputs": [
+        "diagnostic_evidence_weighting",
+        "independent_versus_repeated_evidence_sensitivity",
+        "disconfirmation_response",
+        "belief_revision_after_counterevidence",
+        "alternative_model_comparison",
+        "cannot_tell_preservation"
+      ],
+      "promotion_recommendation": "prototype_sequential_argument_task",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "reasoning_calibration",
+      "decision": "retain_as_derived_profile_with_proper_scoring",
+      "construct_basis": "strong",
+      "task_family_basis": "strong_measurement_basis",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "moderate",
+      "exact_training_evidence": "not_established",
+      "workflow_transfer": "not_established",
+      "product_status": "planned_derived_profile",
+      "source_ids": [
+        "carpenter_2019_metacognition",
+        "trippas_2018_belief_bias",
+        "conte_2023_wm_metacognition",
+        "guo_2022_metacognitive_prompts"
+      ],
+      "public_claim": "Belief Calibration will estimate whether confidence in a conclusion is proportionate to the validity, independence and diagnostic quality of its evidence.",
+      "caveat": "This is not a truth detector, ideology score or clinical belief assessment. Confidence, discriminability and response bias must be modelled separately.",
+      "required_outputs": [
+        "brier_or_proper_probability_score",
+        "calibration_intercept",
+        "calibration_slope",
+        "confidence_resolution",
+        "meta_d_prime_over_d_prime_where_valid",
+        "lure_conditioned_overconfidence",
+        "confidence_update_after_diagnostic_evidence"
+      ],
+      "promotion_recommendation": "derived_profile_after_reasoning_item_validation",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    },
+    {
+      "id": "reasoning_commit",
+      "decision": "retain_but_sequence_after_evidence_mode",
+      "construct_basis": "moderate",
+      "task_family_basis": "moderate_adjacent_decision_sampling",
+      "exact_protocol": "plausible_but_not_established",
+      "training_evidence": "not_established",
+      "workflow_transfer": "not_established",
+      "product_status": "in_development",
+      "source_ids": [
+        "appelhoff_2022_sampling",
+        "balsdon_2020_confidence",
+        "gesiarz_2019_motivation"
+      ],
+      "public_claim": "The planned mode measures proportionate closure: accept, reject, defer or test according to evidence, cost and reversibility.",
+      "caveat": "There is no direct evidence that the exact task reduces overthinking, indecision or premature conclusions in real workflows.",
+      "required_outputs": [
+        "samples_to_closure",
+        "premature_acceptance_or_rejection",
+        "excess_sampling",
+        "appropriate_defer_or_test_choices",
+        "threshold_adaptation_to_cost_risk_and_reversibility",
+        "forced_choice_at_maximum_samples"
+      ],
+      "dependency": "reasoning_evidence_measurement_must_be_stable_first",
+      "promotion_recommendation": "prototype_after_reasoning_evidence_validation",
+      "literature_review_status": "completed",
+      "human_approval_required": true,
+      "review_status": "draft"
+    }
+  ],
+  "reasoning_measurement_model": {
+    "status": "candidate_for_prototype_validation",
+    "item_factors": [
+      "graph_family",
+      "operation_tags",
+      "premise_count",
+      "relation_count",
+      "identity_binding_count",
+      "operation_mix_count",
+      "delay_condition",
+      "lure_type",
+      "formal_status",
+      "wrapper",
+      "semantic_congruence",
+      "believability",
+      "outcome_desirability_where_eligible",
+      "domain_familiarity",
+      "reading_demand"
+    ],
+    "response_models": {
+      "deductive": ["follows", "contradicted", "underdetermined"],
+      "analogy": ["same_relation", "different_relation", "underdetermined"],
+      "probabilistic_path": ["probability_estimate", "likely", "rare", "impossible", "cannot_tell"]
+    },
+    "candidate_statistical_models": [
+      "hierarchical_item_response_model",
+      "hierarchical_signal_detection_model",
+      "multinomial_processing_tree_model",
+      "joint_accuracy_confidence_model",
+      "sequential_sampling_model_for_evidence_and_commit"
+    ],
+    "primary_model_comparison": "participant_isolated_held_out_predictive_log_density",
+    "secondary_checks": [
+      "probability_calibration",
+      "parameter_recovery",
+      "bootstrap_stability",
+      "whole_dataset_transport",
+      "next_session_prediction"
+    ],
+    "prohibited_summary": "one_percentage_correct_or_one_critical_thinking_score"
+  }
+}
