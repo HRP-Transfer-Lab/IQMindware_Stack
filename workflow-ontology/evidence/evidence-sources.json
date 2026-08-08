@@ -1,5 +1,6 @@
 {
   "ontology_version": "0.1.0",
+  "registry_version": "0.2.0-draft",
   "records": [
     {
       "source_id": "wu_2016_mftm",
@@ -7,10 +8,22 @@
       "doi_or_url": "https://doi.org/10.1038/srep34025",
       "study_type": "task-development-and-capacity-study",
       "population": "healthy young adults",
-      "constructs": ["masked majority function", "cognitive control capacity", "information rate"],
-      "outcomes": ["MFT-M performance", "capacity estimate"],
-      "limitations": ["laboratory task", "does not establish workplace transfer"],
-      "review_status": "approved"
+      "constructs": [
+        "masked majority function",
+        "cognitive control capacity",
+        "information rate"
+      ],
+      "outcomes": [
+        "MFT-M performance",
+        "capacity estimate"
+      ],
+      "limitations": [
+        "laboratory task",
+        "does not establish workplace transfer",
+        "does not validate IQ Mindware extensions"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "zhang_2024_attention_training",
@@ -18,10 +31,22 @@
       "doi_or_url": "https://doi.org/10.1016/j.neuropsychologia.2024.108910",
       "study_type": "randomised-training-study",
       "population": "healthy young adults",
-      "constructs": ["MFT-M attention-control training"],
-      "outcomes": ["selected attention outcomes", "verbal-learning acquisition", "ERP outcomes"],
-      "limitations": ["single direct training study", "not uniform across all executive outcomes", "everyday focus not established"],
-      "review_status": "approved"
+      "constructs": [
+        "MFT-M attention-control training"
+      ],
+      "outcomes": [
+        "selected ANT-R outcomes",
+        "verbal-learning acquisition",
+        "ERP outcomes"
+      ],
+      "limitations": [
+        "single direct training study",
+        "not uniform across all executive outcomes",
+        "everyday focus not established",
+        "replication and delayed follow-up needed"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "koch_2022_omib",
@@ -29,10 +54,22 @@
       "doi_or_url": "https://doi.org/10.3390/jintelligence10030041",
       "study_type": "item-bank-development-and-validation",
       "population": "medical-school applicants",
-      "constructs": ["figural matrix reasoning", "fluid reasoning", "IRT"],
-      "outcomes": ["220 calibrated royalty-free matrix items", "2PL parameters", "internal consistency"],
-      "limitations": ["exact G Track form and longitudinal change sensitivity require separate validation"],
-      "review_status": "approved"
+      "constructs": [
+        "figural matrix reasoning",
+        "fluid reasoning",
+        "IRT"
+      ],
+      "outcomes": [
+        "220 calibrated royalty-free matrix items",
+        "2PL parameters",
+        "internal consistency"
+      ],
+      "limitations": [
+        "exact G Track form and longitudinal change sensitivity require separate validation",
+        "validation sample is not a representative general-population norm sample"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "unsworth_2005_automated_span",
@@ -40,10 +77,21 @@
       "doi_or_url": "https://doi.org/10.3758/BF03192720",
       "study_type": "task-method-study",
       "population": "adults",
-      "constructs": ["complex span", "working memory capacity"],
-      "outcomes": ["automated complex-span method"],
-      "limitations": ["G Track uses a custom symmetry-span-style implementation"],
-      "review_status": "approved"
+      "constructs": [
+        "complex span",
+        "working memory capacity"
+      ],
+      "outcomes": [
+        "automated complex-span method",
+        "internal consistency",
+        "test-retest reliability",
+        "convergent validity"
+      ],
+      "limitations": [
+        "operation span is not the exact G Track symmetry-span-style implementation"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "conway_2005_span_review",
@@ -51,10 +99,18 @@
       "doi_or_url": "https://doi.org/10.3758/BF03196772",
       "study_type": "methodological-review",
       "population": "general",
-      "constructs": ["complex span", "working memory capacity"],
-      "outcomes": ["methodological guidance"],
-      "limitations": ["does not validate the exact G Track implementation"],
-      "review_status": "approved"
+      "constructs": [
+        "complex span",
+        "working memory capacity"
+      ],
+      "outcomes": [
+        "methodological guidance"
+      ],
+      "limitations": [
+        "does not validate the exact G Track implementation"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "luck_vogel_1997_vwm",
@@ -62,10 +118,19 @@
       "doi_or_url": "https://doi.org/10.1038/36846",
       "study_type": "experimental-paradigm-study",
       "population": "adults",
-      "constructs": ["visual working memory", "feature conjunctions"],
-      "outcomes": ["change-detection performance"],
-      "limitations": ["exact G Track implementation requires validation"],
-      "review_status": "approved"
+      "constructs": [
+        "visual working memory",
+        "feature conjunctions"
+      ],
+      "outcomes": [
+        "change-detection performance"
+      ],
+      "limitations": [
+        "exact G Track implementation requires validation",
+        "later literature refines the interpretation of object and feature capacity"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "wheeler_treisman_2002_binding",
@@ -73,10 +138,240 @@
       "doi_or_url": "https://doi.org/10.1037/0096-3445.131.1.48",
       "study_type": "experimental-paradigm-study",
       "population": "adults",
-      "constructs": ["visual binding", "short-term memory"],
-      "outcomes": ["binding and change-detection performance"],
-      "limitations": ["does not establish workflow or training transfer"],
-      "review_status": "approved"
+      "constructs": [
+        "visual binding",
+        "short-term memory"
+      ],
+      "outcomes": [
+        "binding and change-detection performance"
+      ],
+      "limitations": [
+        "does not establish workflow or training transfer",
+        "does not validate the exact G Track or WM Coach task"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "robertson_1997_sart",
+      "citation": "Robertson, I. H., Manly, T., Andrade, J., Baddeley, B. T., & Yiend, J. (1997). 'Oops!': Performance correlates of everyday attentional failures in traumatic brain injured and normal subjects. Neuropsychologia, 35(6), 747–758.",
+      "doi_or_url": "https://doi.org/10.1016/S0028-3932(97)00015-8",
+      "study_type": "task-development-and-validation",
+      "population": "adults including healthy controls and people with traumatic brain injury",
+      "constructs": [
+        "sustained attention",
+        "response control",
+        "everyday attentional failures"
+      ],
+      "outcomes": [
+        "SART performance",
+        "associations with sustained-attention measures and everyday attentional failures"
+      ],
+      "limitations": [
+        "SART performance is also influenced by response strategy and speed-accuracy trade-offs",
+        "exact G Track short form requires validation"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "hedge_2018_reliability_paradox",
+      "citation": "Hedge, C., Powell, G., & Sumner, P. (2018). The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences. Behavior Research Methods, 50, 1166–1186.",
+      "doi_or_url": "https://doi.org/10.3758/s13428-017-0935-1",
+      "study_type": "test-retest-methodology-study",
+      "population": "healthy adults",
+      "constructs": [
+        "Stroop",
+        "Eriksen Flanker",
+        "individual-difference reliability"
+      ],
+      "outcomes": [
+        "test-retest reliability estimates across classic cognitive tasks"
+      ],
+      "limitations": [
+        "does not invalidate group-level experimental effects",
+        "task-specific scoring and calibration can alter reliability"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "rodas_2024_wm_meta",
+      "citation": "Rodas, J. A., Asimakopoulou, A. A., & Greene, C. M. (2024). Can we enhance working memory? Bias and effectiveness in cognitive training studies. Psychonomic Bulletin & Review, 31, 1891–1914.",
+      "doi_or_url": "https://doi.org/10.3758/s13423-024-02466-8",
+      "study_type": "systematic-review-and-meta-analysis",
+      "population": "mixed cognitive-training samples",
+      "constructs": [
+        "working memory training",
+        "near transfer",
+        "fluid intelligence",
+        "executive functions"
+      ],
+      "outcomes": [
+        "small overall improvement in working memory",
+        "larger effects for similar assessment tasks",
+        "no fluid-intelligence improvement"
+      ],
+      "limitations": [
+        "risk of measurement similarity bias",
+        "some randomisation and selective-reporting concerns",
+        "does not validate WM Coach"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "de_simoni_2018_wm_binding_no_transfer",
+      "citation": "De Simoni, C., & von Bastian, C. C. (2018). Working memory updating and binding training: Bayesian evidence supporting the absence of transfer. Journal of Experimental Psychology: General, 147(6), 829–858.",
+      "doi_or_url": "https://doi.org/10.1037/xge0000453",
+      "study_type": "controlled-training-study",
+      "population": "healthy adults",
+      "constructs": [
+        "working memory updating training",
+        "binding training",
+        "transfer"
+      ],
+      "outcomes": [
+        "training gains",
+        "Bayesian evidence against broad transfer"
+      ],
+      "limitations": [
+        "specific protocols and outcomes may not generalise to every WM training design",
+        "does not test Trident-G wrapper or workflow routes"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "peng_miller_2016_attention_meta",
+      "citation": "Peng, P., & Miller, A. C. (2016). Does attention training work? A selective meta-analysis to explore the effects of attention training and moderators. Learning and Individual Differences, 45, 77–87.",
+      "doi_or_url": "https://doi.org/10.1016/j.lindif.2015.11.012",
+      "study_type": "selective-meta-analysis",
+      "population": "children and mixed developmental samples",
+      "constructs": [
+        "attention training",
+        "near transfer",
+        "non-trained cognitive and academic outcomes"
+      ],
+      "outcomes": [
+        "small positive attention and transfer effects"
+      ],
+      "limitations": [
+        "heterogeneous interventions and populations",
+        "not specific to adults or MFT-M",
+        "selective meta-analysis"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "slattery_2022_sustained_attention_review",
+      "citation": "Slattery, E. J., O'Callaghan, E., Ryan, P., Fortune, D. G., & McAvinue, L. P. (2022). Popular interventions to enhance sustained attention in children and adolescents: A critical systematic review. Neuroscience & Biobehavioral Reviews, 137, 104633.",
+      "doi_or_url": "https://doi.org/10.1016/j.neubiorev.2022.104633",
+      "study_type": "critical-systematic-review",
+      "population": "children and adolescents",
+      "constructs": [
+        "sustained attention",
+        "computerised attention training"
+      ],
+      "outcomes": [
+        "limited reliable sustained-attention and transfer effects"
+      ],
+      "limitations": [
+        "developmental population",
+        "not specific to MFT-M or adult professional workflows"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "lampit_2014_healthy_older_cct",
+      "citation": "Lampit, A., Hallock, H., & Valenzuela, M. (2014). Computerized cognitive training in cognitively healthy older adults: A systematic review and meta-analysis of effect modifiers. PLoS Medicine, 11(11), e1001756.",
+      "doi_or_url": "https://doi.org/10.1371/journal.pmed.1001756",
+      "study_type": "systematic-review-and-meta-analysis",
+      "population": "cognitively healthy older adults",
+      "constructs": [
+        "computerised cognitive training",
+        "cognitive transfer"
+      ],
+      "outcomes": [
+        "small overall cognitive effects",
+        "no significant pooled attention or executive-function effect in the cited synthesis"
+      ],
+      "limitations": [
+        "older-adult population",
+        "heterogeneous interventions",
+        "not specific to IQ Mindware"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "westwood_2023_adhd_cct",
+      "citation": "Westwood, S. J., Parlatini, V., Rubia, K., Cortese, S., Sonuga-Barke, E. J. S., & European ADHD Guidelines Group. (2023). Computerized cognitive training in attention-deficit/hyperactivity disorder (ADHD): A meta-analysis of randomized controlled trials with blinded and objective outcomes. Molecular Psychiatry, 28, 1402–1414.",
+      "doi_or_url": "https://doi.org/10.1038/s41380-023-02000-7",
+      "study_type": "systematic-review-and-meta-analysis-of-rcts",
+      "population": "people with ADHD, predominantly children and adolescents",
+      "constructs": [
+        "computerised cognitive training",
+        "working memory",
+        "inattention",
+        "ADHD symptoms"
+      ],
+      "outcomes": [
+        "small probably-blinded inattention effect",
+        "verbal and visuospatial WM effects",
+        "no pooled attention or inhibition benefit",
+        "no total ADHD or hyperactivity-impulsivity benefit"
+      ],
+      "limitations": [
+        "setting-specific clinical effects",
+        "limited longer-term trials",
+        "does not establish efficacy of IQ Mindware apps"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "wang_2023_wm_anxiety",
+      "citation": "Wang, Y.-F., Bian, W., Wei, J., & Hu, S. (2023). Anxiety-reducing effects of working memory training: A systematic review and meta-analysis. Journal of Affective Disorders, 331, 269–278.",
+      "doi_or_url": "https://doi.org/10.1016/j.jad.2023.03.045",
+      "study_type": "systematic-review-and-meta-analysis",
+      "population": "anxiety and stress-related samples",
+      "constructs": [
+        "working memory training",
+        "anxiety"
+      ],
+      "outcomes": [
+        "small post-training anxiety reduction"
+      ],
+      "limitations": [
+        "does not test Attention Coach or WM Coach",
+        "clinical and intervention heterogeneity",
+        "not sufficient for treatment claims"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "source_id": "barnett_ceci_2002_transfer_taxonomy",
+      "citation": "Barnett, S. M., & Ceci, S. J. (2002). When and where do we apply what we learn? A taxonomy for far transfer. Psychological Bulletin, 128(4), 612–637.",
+      "doi_or_url": "https://doi.org/10.1037/0033-2909.128.4.612",
+      "study_type": "theoretical-review-and-taxonomy",
+      "population": "general",
+      "constructs": [
+        "far transfer",
+        "transfer distance",
+        "training and test dimensions"
+      ],
+      "outcomes": [
+        "transfer taxonomy"
+      ],
+      "limitations": [
+        "does not validate any specific IQ Mindware protocol"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "source_id": "hrp_paired_control_vigilance_2026",
@@ -84,10 +379,22 @@
       "doi_or_url": "https://github.com/HRP-Transfer-Lab/flow-zone-zone-validation",
       "study_type": "secondary-analysis-internal-recovery",
       "population": "public paired-task dataset",
-      "constructs": ["control profiles", "engagement-vigilance", "short-task recovery"],
-      "outcomes": ["four-component exploratory model", "abbreviation concordance", "mixed trait-state structure"],
-      "limitations": ["not independent prospective validation", "not a diagnosis or intervention selector"],
-      "review_status": "approved"
+      "constructs": [
+        "control profiles",
+        "engagement-vigilance",
+        "short-task recovery"
+      ],
+      "outcomes": [
+        "four-component exploratory model",
+        "abbreviation concordance",
+        "mixed trait-state structure"
+      ],
+      "limitations": [
+        "not independent prospective validation",
+        "not a diagnosis or intervention selector"
+      ],
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     }
   ]
 }
