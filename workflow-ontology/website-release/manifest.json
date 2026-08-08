@@ -1,0 +1,49 @@
+{
+  "release_id": "iqm-website-slice-v0.1.0-rc1",
+  "status": "release_candidate_not_for_production",
+  "created_at": "2026-08-08",
+  "ontology_version": "0.1.0",
+  "evidence_registry_version": "0.2.0-draft",
+  "product_availability_version": "0.1.0-rc1",
+  "route_template_version": "0.1.0-rc1",
+  "copy_version": "0.1.0-rc1",
+  "scope": {
+    "commercially_available_now": [
+      "G Track with Zone Check",
+      "Attention Coach Signal",
+      "WM Coach Relational Memory Signal",
+      "WM Coach Binding Memory Signal"
+    ],
+    "coming_soon": [
+      "Evidence modes",
+      "Predictive Calibration",
+      "Commit / Decision Timing",
+      "Path Prediction",
+      "Explicit Reasoning"
+    ],
+    "curated_route_count": 6
+  },
+  "included_files": [
+    "product-availability.json",
+    "route-templates.json",
+    "route-copy.json",
+    "tests/website-route-cases.json"
+  ],
+  "production_gates": [
+    "Human scientific review of current-product evidence records",
+    "Human copy and claims review",
+    "Validation of all cross-references and route availability",
+    "Approval of the curated workflow records",
+    "Pinned evidence release and checksums",
+    "Import into the IQ Mindware website repository with a lock file",
+    "Preview route testing before public launch"
+  ],
+  "known_limitations": [
+    "Current routes are evidence-informed configurations, not established workflow-effect claims.",
+    "WM Coach exact-task psychometrics and transfer remain under validation.",
+    "Zone Check remains provisional and non-diagnostic.",
+    "Future modules are coming soon but are not live route steps.",
+    "The curated workflow catalogue is deliberately narrow."
+  ],
+  "approved_by": []
+}
