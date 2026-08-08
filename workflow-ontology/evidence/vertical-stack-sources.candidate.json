@@ -1,0 +1,224 @@
+{
+  "registry_version": "0.1.0-candidate",
+  "status": "candidate_not_for_production",
+  "extends": "evidence-sources.json",
+  "purpose": "Candidate peer-reviewed and prepublication sources supporting the full vertical stack and control-mode review.",
+  "records": [
+    {
+      "source_id": "appelhoff_2022_sampling",
+      "citation": "Appelhoff, S., Hertwig, R., & Spitzer, B. (2022). Control over sampling boosts numerical evidence processing in human decisions from experience. Cerebral Cortex, 33(1), 207–221.",
+      "doi_or_url": "https://doi.org/10.1093/cercor/bhac062",
+      "publication_status": "peer_reviewed",
+      "role": ["active sampling", "stopping control", "evidence processing"],
+      "limitations": ["numerical sampling task", "does not validate IQ Mindware training"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "balsdon_2020_confidence",
+      "citation": "Balsdon, T., Wyart, V., & Mamassian, P. (2020). Confidence controls perceptual evidence accumulation. Nature Communications, 11, 1753.",
+      "doi_or_url": "https://doi.org/10.1038/s41467-020-15561-w",
+      "publication_status": "peer_reviewed",
+      "role": ["confidence", "accumulation bounds", "perceptual decisions"],
+      "limitations": ["perceptual task", "does not establish calibration training transfer"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "foucault_meyniel_2024_learning",
+      "citation": "Foucault, C., & Meyniel, F. (2024). Two determinants of dynamic adaptive learning for magnitudes and probabilities. Journal of Neuroscience, 44.",
+      "doi_or_url": "https://pubmed.ncbi.nlm.nih.gov/38746853/",
+      "publication_status": "peer_reviewed",
+      "role": ["change-point learning", "prior uncertainty", "adaptive learning rate"],
+      "limitations": ["learning task rather than intervention", "exact IQ Mindware mapping untested"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "carpenter_2019_metacognition",
+      "citation": "Carpenter, J., Sherman, M. T., Kievit, R. A., Seth, A. K., Lau, H., & Fleming, S. M. (2019). Domain-general enhancements of metacognitive ability through adaptive training. Journal of Experimental Psychology: General, 148(1), 51–64.",
+      "doi_or_url": "https://doi.org/10.1037/xge0000505",
+      "publication_status": "peer_reviewed",
+      "role": ["adaptive metacognitive training", "calibration", "cross-task generalisation"],
+      "limitations": ["not an IQ Mindware protocol", "does not validate every calibration construct"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "gesiarz_2019_motivation",
+      "citation": "Gesiarz, F., Cahill, D., & Sharot, T. (2019). Evidence accumulation is biased by motivation: A computational account. PLOS Computational Biology, 15(6), e1007089.",
+      "doi_or_url": "https://doi.org/10.1371/journal.pcbi.1007089",
+      "publication_status": "peer_reviewed",
+      "role": ["motivated evidence accumulation", "desired conclusions", "stopping bias"],
+      "limitations": ["single laboratory paradigm", "does not show that generic training removes motivated reasoning"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "chuderski_2014_relational",
+      "citation": "Chuderski, A. (2014). The relational integration task explains fluid reasoning above and beyond other working memory tasks. Memory & Cognition, 42, 448–463.",
+      "doi_or_url": "https://doi.org/10.3758/s13421-013-0366-x",
+      "publication_status": "peer_reviewed",
+      "role": ["relational integration", "working memory", "fluid reasoning"],
+      "limitations": ["predictive association is not training transfer", "does not validate WM Coach"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "cho_2007_analogical_wm",
+      "citation": "Cho, S., Holyoak, K. J., & Cannon, T. D. (2007). Analogical reasoning in working memory: Resources shared among relational integration, interference resolution, and maintenance. Memory & Cognition, 35(6), 1445–1455.",
+      "doi_or_url": "https://doi.org/10.3758/BF03193614",
+      "publication_status": "peer_reviewed",
+      "role": ["analogical reasoning", "relational integration", "interference resolution", "maintenance"],
+      "limitations": ["mechanism study rather than training trial"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "kurtz_2013_relational_categories",
+      "citation": "Kurtz, K. J., Boukrina, O., & Gentner, D. (2013). Comparison promotes learning and transfer of relational categories. Journal of Experimental Psychology: Learning, Memory, and Cognition, 39(4), 1303–1310.",
+      "doi_or_url": "https://doi.org/10.1037/a0031847",
+      "publication_status": "peer_reviewed",
+      "role": ["comparison", "relational category learning", "surface-dissimilar transfer"],
+      "limitations": ["category-learning paradigm", "does not validate the exact vertical stack"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "conte_2023_wm_metacognition",
+      "citation": "Conte, N., Fairfield, B., Padulo, C., & Pelegrina, S. (2023). Metacognition in working memory: Confidence judgments during an n-back task. Consciousness and Cognition, 111, 103522.",
+      "doi_or_url": "https://doi.org/10.1016/j.concog.2023.103522",
+      "publication_status": "peer_reviewed",
+      "role": ["n-back confidence", "load", "lure interference", "overconfidence"],
+      "limitations": ["verbal n-back", "confidence sensitivity did not imply high metacognitive accuracy"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "jondani_2023_repeated_checking",
+      "citation": "Abbasi Jondani, J., Yazdkhasti, F., & Abedi, A. (2023). Memory confidence and memory accuracy deterioration following repeated checking: A systematic review and meta-analysis. Journal of Behavior Therapy and Experimental Psychiatry, 81, 101855.",
+      "doi_or_url": "https://doi.org/10.1016/j.jbtep.2023.101855",
+      "publication_status": "peer_reviewed",
+      "role": ["repeated checking", "memory confidence", "accuracy-confidence dissociation"],
+      "limitations": ["largely analogue checking paradigms", "does not validate a non-clinical commitment intervention"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "johnson_1993_source_monitoring",
+      "citation": "Johnson, M. K., Hashtroudi, S., & Lindsay, D. S. (1993). Source monitoring. Psychological Bulletin, 114(1), 3–28.",
+      "doi_or_url": "https://doi.org/10.1037/0033-2909.114.1.3",
+      "publication_status": "peer_reviewed",
+      "role": ["source monitoring", "context attribution", "misattribution"],
+      "limitations": ["broad framework", "does not validate the exact Binding Memory task"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "geerts_2024_probabilistic_sr",
+      "citation": "Geerts, J. P., Gershman, S. J., Burgess, N., & Stachenfeld, K. L. (2024). A probabilistic successor representation for context-dependent learning. Psychological Review, 131(2), 578–597.",
+      "doi_or_url": "https://doi.org/10.1037/rev0000414",
+      "publication_status": "peer_reviewed",
+      "role": ["successor representation", "uncertainty", "context inference", "generalisation"],
+      "limitations": ["computational/theoretical model with animal-task fits", "not a cognitive-training trial"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "kahn_daw_2025_world_models",
+      "citation": "Kahn, A. E., & Daw, N. D. (2025). Humans rationally balance detailed and temporally abstract world models. Communications Psychology, 3.",
+      "doi_or_url": "https://doi.org/10.1038/s44271-024-00169-3",
+      "publication_status": "peer_reviewed",
+      "role": ["successor representation", "model-based learning", "predictability", "resource-rational arbitration"],
+      "limitations": ["learning strategy study", "does not validate Path Prediction training"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "trippas_2018_belief_bias",
+      "citation": "Trippas, D., Kellen, D., Singmann, H., Pennycook, G., Koehler, D. J., Fugelsang, J. A., & Dubé, C. (2018). Characterizing belief bias in syllogistic reasoning: A hierarchical Bayesian meta-analysis of ROC data. Psychonomic Bulletin & Review, 25, 2141–2174.",
+      "doi_or_url": "https://doi.org/10.3758/s13423-018-1460-7",
+      "publication_status": "peer_reviewed",
+      "role": ["belief bias", "validity discriminability", "response bias", "ROC modelling"],
+      "limitations": ["syllogistic reasoning literature", "does not establish training effects"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "nesbit_liu_2025_argument_mapping",
+      "citation": "Nesbit, J. C., & Liu, Q. (2025). Argument Mapping in Higher Education: A Systematic Review. Higher Education Quarterly, 79(4), e70063.",
+      "doi_or_url": "https://doi.org/10.1111/hequ.70063",
+      "publication_status": "peer_reviewed",
+      "role": ["argument mapping", "critical thinking", "higher education", "instructional design"],
+      "limitations": ["heterogeneous studies and outcomes", "not evidence for a short cognitive game"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "weber_2018_natural_frequencies",
+      "citation": "Weber, P., Binder, K., & Krauss, S. (2018). Why can only 24% solve Bayesian reasoning problems in natural frequencies? Frontiers in Psychology, 9, 1833.",
+      "doi_or_url": "https://doi.org/10.3389/fpsyg.2018.01833",
+      "publication_status": "peer_reviewed",
+      "role": ["Bayesian reasoning", "natural frequencies", "representation format"],
+      "limitations": ["instructional representation study", "does not validate broad belief-calibration transfer"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "oleary_fletcher_2024_belief_updating",
+      "citation": "O'Leary, A. P., & Fletcher, W. (2024). Thinking about believing: Can metacognitive reflection encourage belief updating? Journal of Intelligence, 12(5), 47.",
+      "doi_or_url": "https://doi.org/10.3390/jintelligence12050047",
+      "publication_status": "peer_reviewed",
+      "role": ["metacognitive reflection", "belief updating"],
+      "limitations": ["added reflection manipulation produced limited evidence", "not an app validation study"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "bosshard_gomez_2024_reappraisal",
+      "citation": "Bosshard, M., & Gomez, P. (2024). Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: A meta-analysis of randomized controlled trials. Scientific Reports, 14, 7923.",
+      "doi_or_url": "https://doi.org/10.1038/s41598-024-58408-w",
+      "publication_status": "peer_reviewed",
+      "role": ["stress reappraisal", "mindset", "task performance", "meta-analysis"],
+      "limitations": ["small heterogeneous effects", "not evidence for the exact Reasoning Coach"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "cui_2024_reappraisal",
+      "citation": "Cui, X., Ding, Q., Yu, S., Zhang, S., & Li, X. (2024). The deficit in cognitive reappraisal capacity in individuals with anxiety or depressive disorders: Meta-analyses of behavioral and neuroimaging studies. Clinical Psychology Review, 114, 102480.",
+      "doi_or_url": "https://doi.org/10.1016/j.cpr.2024.102480",
+      "publication_status": "peer_reviewed",
+      "role": ["cognitive reappraisal", "anxiety", "depression", "behaviour and neuroimaging"],
+      "limitations": ["clinical category evidence", "does not validate self-service IQ Mindware use"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "marciniak_2024_reapp_delivery",
+      "citation": "Marciniak, M. A., et al. (2024). Burst versus continuous delivery design in digital mental health interventions: Evidence from a randomized clinical trial. Digital Health, 10.",
+      "doi_or_url": "https://doi.org/10.1177/20552076241249267",
+      "publication_status": "peer_reviewed",
+      "role": ["digital reappraisal", "delivery design", "burden", "adherence"],
+      "limitations": ["comparison focused on delivery schedules", "does not establish efficacy against an untreated control in this report"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "sicouri_2024_cbmi",
+      "citation": "Sicouri, G., Daniel, E. K., Spoelma, M. J., Salemink, E., McDermott, E. A., & Hudson, J. L. (2024). Cognitive bias modification of interpretations for anxiety and depression in children and adolescents: A meta-analysis. JCPP Advances, 4(1), e12207.",
+      "doi_or_url": "https://doi.org/10.1002/jcv2.12207",
+      "publication_status": "peer_reviewed",
+      "role": ["interpretation bias", "CBM-I", "anxiety", "depression"],
+      "limitations": ["interpretation-bias changes did not translate into significant mental-health outcomes", "youth literature", "not an IQ Mindware trial"],
+      "review_status": "candidate"
+    },
+    {
+      "source_id": "kean_2026_logic_preprint",
+      "citation": "Kean, H., et al. (2026). Evidence from formal logical reasoning reveals that the language of thought is not natural language. bioRxiv.",
+      "doi_or_url": "https://doi.org/10.1101/2025.07.26.666979",
+      "publication_status": "preprint",
+      "role": ["formal logical reasoning", "language network", "wrapper separation"],
+      "limitations": ["not peer reviewed", "neural dissociation does not establish training transfer"],
+      "review_status": "prepublication_watchlist"
+    },
+    {
+      "source_id": "baram_2026_relational_map_preprint",
+      "citation": "Baram, A. B., Nili, H., Barreiros, I., Samborska, V., Behrens, T. E. J., & Garvert, M. M. (2026). An abstract relational map emerges in the human medial prefrontal cortex with consolidation. bioRxiv.",
+      "doi_or_url": "https://doi.org/10.1101/2024.10.11.617652",
+      "publication_status": "preprint",
+      "role": ["abstract relational map", "consolidation", "mPFC"],
+      "limitations": ["not peer reviewed", "neural representation study rather than intervention evidence"],
+      "review_status": "prepublication_watchlist"
+    },
+    {
+      "source_id": "hyland_albarracin_2025_preprint",
+      "citation": "Hyland, D., & Albarracin, M. (2025). On the variational costs of changing our minds. arXiv:2509.17957.",
+      "doi_or_url": "https://arxiv.org/abs/2509.17957",
+      "publication_status": "preprint",
+      "role": ["belief revision", "resource-rational cost", "motivated cognition"],
+      "limitations": ["computational framework", "not peer reviewed", "no direct product evidence"],
+      "review_status": "prepublication_watchlist"
+    }
+  ]
+}
