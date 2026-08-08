@@ -1,65 +1,181 @@
 {
   "ontology_version": "0.1.0",
+  "registry_version": "0.2.0-draft",
   "records": [
     {
       "claim_id": "attention_signal_mftm_construct",
       "claim": "Masked Majority Function training directly exercises extraction of a majority relation under visual interference, uncertainty and limited exposure time.",
       "claim_type": "mechanism_fit",
       "evidence_level": "strong",
-      "source_ids": ["wu_2016_mftm"],
+      "source_ids": [
+        "wu_2016_mftm"
+      ],
       "approved_public_wording": "Attention Coach is closely aligned with goals involving signal extraction under visual interference and time pressure.",
       "required_caveat": "This construct fit does not establish improvement in every form of attention or everyday focus.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "claim_id": "attention_training_selected_transfer",
       "claim": "MFT-M attention-control training has initial randomised evidence of transfer to selected attention-task conditions and verbal-learning acquisition trials.",
       "claim_type": "training_benefit",
       "evidence_level": "moderate",
-      "source_ids": ["zhang_2024_attention_training"],
+      "source_ids": [
+        "zhang_2024_attention_training"
+      ],
       "approved_public_wording": "Initial controlled research found transfer to selected attention measures and verbal-learning trials.",
       "required_caveat": "Independent replication, delayed follow-up and workflow outcomes remain needed.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "attention_everyday_focus_not_established",
+      "claim": "Current direct and broader evidence does not establish consistent improvement in sustained everyday focus from MFT-M training.",
+      "claim_type": "claims_boundary",
+      "evidence_level": "plausible_but_not_established",
+      "source_ids": [
+        "zhang_2024_attention_training",
+        "peng_miller_2016_attention_meta",
+        "slattery_2022_sustained_attention_review",
+        "lampit_2014_healthy_older_cct"
+      ],
+      "approved_public_wording": "Attention Coach is designed to train controlled attention, while everyday focus improvement remains an outcome to test rather than a promised effect.",
+      "required_caveat": "The broader literature is heterogeneous across populations, tasks and outcome measures.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "sart_construct_and_strategy",
+      "claim": "The SART provides a task-based index relevant to sustained engagement and response control, but performance also reflects response strategy and speed-accuracy trade-offs.",
+      "claim_type": "measurement_source",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "robertson_1997_sart"
+      ],
+      "approved_public_wording": "G Track uses the SART to estimate engagement stability and response-control performance during a repetitive task.",
+      "required_caveat": "No single SART error score should be interpreted as pure inattention or as identifying the cause of poor performance.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "stroop_flanker_construct_with_reliability_boundary",
+      "claim": "Stroop and Flanker tasks have strong experimental construct bases for conflict and selective-attention effects, but conventional difference scores may have limited reliability for individual-difference assessment.",
+      "claim_type": "measurement_source",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "hedge_2018_reliability_paradox"
+      ],
+      "approved_public_wording": "G Track combines condition-level Stroop and Flanker performance with other indicators rather than relying on one interference difference score.",
+      "required_caveat": "The exact short forms, scoring model and test-retest performance require prospective validation.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "claim_id": "omib_matrix_source_validity",
       "claim": "The Open Matrices Item Bank provides a validated, calibrated source of figural matrix items.",
       "claim_type": "measurement_source",
       "evidence_level": "strong",
-      "source_ids": ["koch_2022_omib"],
+      "source_ids": [
+        "koch_2022_omib"
+      ],
       "approved_public_wording": "G Track uses matrix items from the validated Open Matrices Item Bank.",
       "required_caveat": "The selected G Track form, longitudinal sensitivity and score interpretation require implementation-specific validation; it is not an official IQ test.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "claim_id": "complex_span_paradigm_basis",
       "claim": "Complex-span tasks provide an established paradigm for maintaining information while performing an interleaved processing task.",
       "claim_type": "measurement_source",
       "evidence_level": "strong",
-      "source_ids": ["unsworth_2005_automated_span", "conway_2005_span_review"],
+      "source_ids": [
+        "unsworth_2005_automated_span",
+        "conway_2005_span_review"
+      ],
       "approved_public_wording": "The G Track complex-span-style task is based on established working-memory methods.",
       "required_caveat": "The exact G Track symmetry-span-style implementation remains provisional and non-diagnostic.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "claim_id": "visual_binding_paradigm_basis",
       "claim": "Visual change-detection and binding paradigms provide an established basis for measuring feature and feature-location conjunction memory.",
       "claim_type": "measurement_source",
       "evidence_level": "strong",
-      "source_ids": ["luck_vogel_1997_vwm", "wheeler_treisman_2002_binding"],
+      "source_ids": [
+        "luck_vogel_1997_vwm",
+        "wheeler_treisman_2002_binding"
+      ],
       "approved_public_wording": "The G Track binding task is based on established visual working-memory binding paradigms.",
       "required_caveat": "The exact digital implementation and workflow relevance require separate validation.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "wm_training_small_near_transfer_no_gf",
+      "claim": "Working-memory training can produce small improvements on untrained working-memory measures, with larger effects when assessment tasks resemble the training task; current meta-analytic evidence does not support fluid-intelligence improvement.",
+      "claim_type": "training_benefit",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "rodas_2024_wm_meta"
+      ],
+      "approved_public_wording": "Working-memory training can improve some working-memory outcomes, but broader reasoning gains are not established.",
+      "required_caveat": "Task similarity can inflate apparent transfer, and this evidence does not validate the exact WM Coach implementation.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "wm_binding_broad_transfer_conflicting",
+      "claim": "Controlled evidence includes findings that updating and binding training do not transfer broadly, so WM Coach workflow and far-transfer benefits remain hypotheses to test.",
+      "claim_type": "conflicting_evidence",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "de_simoni_2018_wm_binding_no_transfer",
+        "rodas_2024_wm_meta"
+      ],
+      "approved_public_wording": "WM Coach targets defined relational and binding-memory operations; broader transfer is measured separately and is not guaranteed.",
+      "required_caveat": "Training-task gains should be reported separately from untrained working-memory, reasoning and workflow outcomes.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     },
     {
       "claim_id": "zone_profile_internal_status",
       "claim": "The current paired-task secondary analysis supports an exploratory four-component description of task-active control and a related but non-identical engagement-vigilance dimension.",
       "claim_type": "internal_validation",
       "evidence_level": "moderate",
-      "source_ids": ["hrp_paired_control_vigilance_2026"],
+      "source_ids": [
+        "hrp_paired_control_vigilance_2026"
+      ],
       "approved_public_wording": "G Track provides a provisional behavioural context estimate that becomes more informative across repeated sessions.",
       "required_caveat": "The profiles are not validated natural kinds, diagnoses, brain states or proven intervention selectors.",
-      "review_status": "approved"
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "adhd_cct_category_boundary",
+      "claim": "Computerised cognitive training in ADHD shows short-term working-memory benefits and a small, setting-sensitive inattention effect, but not consistent total-symptom, hyperactivity-impulsivity, laboratory-attention or inhibition benefits.",
+      "claim_type": "clinical_adjacent_category",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "westwood_2023_adhd_cct"
+      ],
+      "approved_public_wording": "IQ Mindware may be relevant to non-clinical attention and working-memory goals associated with ADHD-style difficulties.",
+      "required_caveat": "The apps do not diagnose or treat ADHD, and category-level evidence does not establish efficacy of the exact IQ Mindware protocols.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
+    },
+    {
+      "claim_id": "anxiety_wm_category_boundary",
+      "claim": "Working-memory training has a small meta-analytic anxiety-reduction signal, but this does not establish Attention Coach or WM Coach as anxiety interventions.",
+      "claim_type": "clinical_adjacent_category",
+      "evidence_level": "moderate",
+      "source_ids": [
+        "wang_2023_wm_anxiety"
+      ],
+      "approved_public_wording": "A non-clinical cognitive route may be relevant when worry competes with focused performance.",
+      "required_caveat": "Do not claim anxiety treatment or symptom reduction from the current apps.",
+      "review_status": "approved",
+      "last_reviewed": "2026-08-08"
     }
   ]
 }
