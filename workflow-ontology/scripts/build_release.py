@@ -26,6 +26,8 @@ DEFAULT_FILES = [
     "mappings/workflow-supports.json",
     "evidence/evidence-sources.json",
     "evidence/evidence-claims.json",
+    "evidence/measurement-registry.json",
+    "evidence/training-fit-mappings.json",
 ]
 
 
@@ -87,7 +89,8 @@ def main() -> int:
         "approved_by": [],
         "known_limitations": [
             "Approval fields must be completed before production import.",
-            "Relevance weights are ontology annotations, not effect estimates."
+            "Relevance weights are ontology annotations, not effect estimates.",
+            "Training-fit mappings must not be published until their review_status is approved."
         ],
         "sha256sums_file": "SHA256SUMS"
     }
