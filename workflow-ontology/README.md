@@ -71,29 +71,50 @@ Where avoidable workflow design is the primary source of cognitive strain, redes
 
 The ontology may identify functions whose product modules are not yet available. Product availability is applied by the commercial website layer, not encoded as scientific truth here.
 
-Current IQ Mindware coverage includes:
+The owner-confirmed commercial catalogue available for sale now is:
 
-- G Track measurement: attention, working memory, OMIB matrix reasoning and provisional zone context;
-- Attention Coach Signal Control;
-- WM Coach Relational Memory Signal;
-- WM Coach Binding Memory Signal.
+```text
+G Track
+├─ attention battery
+├─ Zone Check
+├─ working-memory measures
+├─ OMIB Matrix Reasoning Benchmark
+└─ baseline / follow-up comparison
 
-Evidence, Commit, Path Prediction and explicit Reasoning modules remain under development unless a separate approved beta or research protocol exists.
+Attention Coach
+└─ Signal Control
+
+WM Coach
+├─ Relational Memory — Signal
+└─ Binding Memory — Signal
+```
+
+The following are coming soon and must not appear as live route steps:
+
+```text
+Evidence modes
+Predictive Calibration profiles
+Commit / Decision Timing modes
+Path Prediction
+Explicit Reasoning
+Applied reasoning and restructuring routes
+```
 
 ## Directory map
 
 ```text
 workflow-ontology/
-├── docs/        method, evidence, validation, commercial translation, release and website-import rules
-├── schemas/     JSON Schema contracts
-├── ontology/    canonical concepts and dimensions
-├── mappings/    many-to-many workflow, function and governance mappings
-├── evidence/    source, claim, measurement and training-fit registries
-├── examples/    worked workflow-stage records
-├── tests/       expected routes and boundary cases
-├── scripts/     validation and release tooling
-├── studies/     staged content, behavioural and intervention validation
-└── releases/    immutable release manifests
+├── docs/             method, evidence, validation, commercial translation, release and website-import rules
+├── schemas/          JSON Schema contracts
+├── ontology/         canonical concepts and dimensions
+├── mappings/         many-to-many workflow, function and governance mappings
+├── evidence/         source, claim, measurement and training-fit registries
+├── examples/         worked workflow-stage records
+├── tests/            expected routes and boundary cases
+├── scripts/          validation and release tooling
+├── studies/          staged content, behavioural and intervention validation
+├── releases/         immutable scientific release manifests
+└── website-release/  narrow commercial release candidate for IQMindware.com
 ```
 
 ## Evidence registry
@@ -207,6 +228,27 @@ CTA policy
 
 It must not alter the scientific mappings to favour whichever product is currently available.
 
+## Narrow website release candidate
+
+The first bounded website package is:
+
+- [`website-release/README.md`](website-release/README.md)
+
+It contains:
+
+```text
+product-availability.json
+route-templates.json
+route-copy.json
+website-route boundary tests
+release manifest
+validation and bundle-building scripts
+```
+
+Its six curated routes use only the current live products. Future modules are displayed separately as **coming soon** and may be named as the most relevant target, but cannot appear in the available protocol route.
+
+The package is a release candidate rather than a production import. It still requires scientific review, claims review, workflow-route approval, checksum generation and import into a non-production website preview.
+
 ## First target niches
 
 1. Professional and AI-assisted work
@@ -216,7 +258,7 @@ It must not alter the scientific mappings to favour whichever product is current
 
 ## Release principle
 
-Production websites and apps must import a tagged, validated release. They must not read the latest `main` branch dynamically.
+Production websites and apps must import a tagged, validated release. They must not read the latest branch dynamically.
 
 Every derived website route should retain:
 
