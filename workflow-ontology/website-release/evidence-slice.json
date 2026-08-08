@@ -1,0 +1,293 @@
+{
+  "registry_version": "0.1.0-rc2",
+  "status": "release_candidate_human_scientific_review_pending",
+  "review_cutoff": "2026-08-08",
+  "scope": "Compact website-safe evidence cards for products and components confirmed as available for sale now.",
+  "display_policy": {
+    "lead_with_supported_basis": true,
+    "show_exact_implementation_status": true,
+    "show_workflow_transfer_boundary": true,
+    "never_collapse_dimensions": true,
+    "allowed_public_levels": [
+      "published_foundation",
+      "established_paradigm_basis",
+      "initial_controlled_evidence",
+      "under_staged_validation",
+      "pilot_supported",
+      "applied_outcome_to_be_tested",
+      "not_applicable"
+    ]
+  },
+  "records": [
+    {
+      "evidence_card_id": "gtrack_attention_battery",
+      "public_name": "G Track attention battery",
+      "component_ids": ["gtrack_attention_battery"],
+      "measurement_ids": [
+        "gtrack_sart_engagement_vigilance",
+        "gtrack_sart_inhibitory_stability",
+        "gtrack_stroop_conflict_control",
+        "gtrack_flanker_selective_attention",
+        "gtrack_attention_combined_profile"
+      ],
+      "claim_ids": [
+        "sart_construct_and_strategy",
+        "stroop_flanker_construct_with_reliability_boundary",
+        "zone_profile_internal_status"
+      ],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "published_foundation",
+          "label": "Published task foundations",
+          "summary": "SART, Stroop and Flanker provide complementary experimental foundations for engagement, response control, conflict and selective attention."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Exact G Track implementation under validation",
+          "summary": "The short forms, timing, scoring and combined profile require implementation-specific reliability and validity evidence."
+        },
+        "training_benefit": {
+          "level": "not_applicable",
+          "label": "Measurement component",
+          "summary": "This card describes measurement evidence rather than a training-effect claim."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Workflow relevance tested separately",
+          "summary": "Attention-task scores do not by themselves establish improvement in work, study or daily focus."
+        }
+      },
+      "supported_public_claim": "G Track combines complementary attention-task indicators rather than relying on one score.",
+      "required_boundary": "The exact short forms and combined profile remain provisional and non-diagnostic.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "gtrack_zone_check",
+      "public_name": "G Track Zone Check",
+      "component_ids": ["gtrack_zone_check"],
+      "measurement_ids": ["gtrack_zone_estimate"],
+      "claim_ids": ["zone_profile_internal_status"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "pilot_supported",
+          "label": "Pilot-supported behavioural profile",
+          "summary": "Internal paired-task analyses support an exploratory task-active profile and a related engagement-vigilance dimension."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Prospective validation required",
+          "summary": "Repeated personal baselines, prospective reliability, independent prediction and routing experiments remain required."
+        },
+        "training_benefit": {
+          "level": "not_applicable",
+          "label": "Context measure",
+          "summary": "Zone Check contextualises a session; it is not itself a treatment or training-effect claim."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Not a consequential selector",
+          "summary": "The estimate must not determine employment, educational, clinical or other consequential decisions."
+        }
+      },
+      "supported_public_claim": "Zone Check gives a provisional estimate of how today's task-performance pattern compares with a developing personal baseline.",
+      "required_boundary": "It is not a diagnosis, brain-state detector, cause attribution or proven intervention selector.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "gtrack_working_memory",
+      "public_name": "G Track working-memory measures",
+      "component_ids": ["gtrack_working_memory"],
+      "measurement_ids": ["gtrack_wm_complex_span", "gtrack_wm_visual_binding"],
+      "claim_ids": ["complex_span_paradigm_basis", "visual_binding_paradigm_basis"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "established_paradigm_basis",
+          "label": "Established paradigm basis",
+          "summary": "The measures are based on complex-span and visual-binding paradigms with established scientific foundations."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Custom implementations under validation",
+          "summary": "The exact stimuli, timing, scoring, reliability and practice effects require G Track-specific validation."
+        },
+        "training_benefit": {
+          "level": "not_applicable",
+          "label": "Separate progress measures",
+          "summary": "These measures can test transfer but are not evidence that a training programme caused change."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Applied meaning remains bounded",
+          "summary": "Scores do not diagnose a memory deficit or establish better performance in a particular workflow."
+        }
+      },
+      "supported_public_claim": "G Track provides provisional estimates of visuospatial working memory under processing load and visual binding.",
+      "required_boundary": "The tasks are custom non-diagnostic implementations based on established paradigms.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "gtrack_matrix_reasoning",
+      "public_name": "G Track Matrix Reasoning Benchmark",
+      "component_ids": ["gtrack_matrix_reasoning"],
+      "measurement_ids": ["gtrack_matrix_omib"],
+      "claim_ids": ["omib_matrix_source_validity"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "published_foundation",
+          "label": "Validated item-bank foundation",
+          "summary": "The item materials come from the calibrated Open Matrices Item Bank."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "G Track form under validation",
+          "summary": "Selected forms, alternate forms, norms, practice effects and longitudinal sensitivity require implementation-specific evidence."
+        },
+        "training_benefit": {
+          "level": "not_applicable",
+          "label": "External benchmark",
+          "summary": "Matrix Reasoning is a benchmark outcome, not a promised effect of Attention Coach or WM Coach."
+        },
+        "workflow_transfer": {
+          "level": "not_applicable",
+          "label": "Not an official IQ score",
+          "summary": "The benchmark should not be presented as an official IQ test or guaranteed IQ-change measure."
+        }
+      },
+      "supported_public_claim": "G Track uses matrix items from the validated Open Matrices Item Bank.",
+      "required_boundary": "It is a matrix-reasoning benchmark, not an official IQ score or promised training gain.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "gtrack_longitudinal_comparison",
+      "public_name": "G Track baseline and follow-up",
+      "component_ids": ["gtrack_longitudinal_comparison"],
+      "measurement_ids": ["gtrack_prepost_change"],
+      "claim_ids": ["wm_training_small_near_transfer_no_gf", "attention_everyday_focus_not_established"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "established_paradigm_basis",
+          "label": "Separate measurement principle",
+          "summary": "Baseline and follow-up measures can distinguish app learning from change on separate cognitive tasks."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Longitudinal interpretation under validation",
+          "summary": "Practice effects, regression to the mean, alternate forms, timing and uncertainty require explicit controls."
+        },
+        "training_benefit": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Change is tested, not assumed",
+          "summary": "A difference across sessions is evidence to interpret, not automatic proof of broad cognitive improvement."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Workflow outcomes remain separate",
+          "summary": "Cognitive-task change must be reported separately from functional and organisational outcomes."
+        }
+      },
+      "supported_public_claim": "G Track can compare performance before and after a defined programme using separate measures.",
+      "required_boundary": "Change is not guaranteed and must be interpreted with practice effects and measurement uncertainty.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "attention_signal",
+      "public_name": "Attention Coach — Signal Control",
+      "component_ids": ["attention_signal"],
+      "measurement_ids": [],
+      "claim_ids": [
+        "attention_signal_mftm_construct",
+        "attention_training_selected_transfer",
+        "attention_everyday_focus_not_established"
+      ],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "published_foundation",
+          "label": "Published MFT-M foundation",
+          "summary": "The masked Majority Function Task directly supports the trained operation of extracting a majority relation under interference and limited exposure."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Classic implementation closest to the published anchor",
+          "summary": "Browser timing and IQ Mindware's relative-frame and optic-flow extensions require separate validation."
+        },
+        "training_benefit": {
+          "level": "initial_controlled_evidence",
+          "label": "Initial controlled transfer evidence",
+          "summary": "One randomised MFT-M study reported transfer to selected attention-task conditions and verbal-learning acquisition trials."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Everyday and workflow benefit not established",
+          "summary": "Sustained everyday focus and professional or educational workflow improvements remain outcomes to test."
+        }
+      },
+      "supported_public_claim": "Attention Coach Signal trains controlled extraction of a majority relation under visual interference and time pressure.",
+      "required_boundary": "Evidence is strongest for the trained mechanism and selected cognitive-task transfer, not sustained everyday focus or workflow performance.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "wm_relational_signal",
+      "public_name": "WM Coach — Relational Memory Signal",
+      "component_ids": ["wm_relational_signal"],
+      "measurement_ids": [],
+      "claim_ids": ["wm_training_small_near_transfer_no_gf", "wm_binding_broad_transfer_conflicting"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "established_paradigm_basis",
+          "label": "Strong relational-memory construct basis",
+          "summary": "Relational integration, maintenance and interference control are established cognitive operations."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Exact WM Coach task not yet validated",
+          "summary": "Reliability, lure validity, construct convergence and adaptive-score stability require direct study."
+        },
+        "training_benefit": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Exact training benefit not established",
+          "summary": "Adjacent working-memory evidence is mixed and sensitive to similarity between trained and outcome tasks."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Reasoning and workflow transfer not established",
+          "summary": "The operation is directly practised, but broader memory, reasoning and workflow benefits must be tested separately."
+        }
+      },
+      "supported_public_claim": "WM Coach Relational Memory practises maintaining and comparing visual relations across delay and interference.",
+      "required_boundary": "The exact task's reliability and benefits on untrained memory, reasoning or workflows have not yet been established.",
+      "review_status": "release_candidate"
+    },
+    {
+      "evidence_card_id": "wm_binding_signal",
+      "public_name": "WM Coach — Binding Memory Signal",
+      "component_ids": ["wm_binding_signal"],
+      "measurement_ids": [],
+      "claim_ids": ["visual_binding_paradigm_basis", "wm_binding_broad_transfer_conflicting"],
+      "evidence_profile": {
+        "scientific_basis": {
+          "level": "established_paradigm_basis",
+          "label": "Established visual-binding foundation",
+          "summary": "Visual working-memory and source-monitoring research support maintaining which feature, location or context belongs with which element."
+        },
+        "exact_implementation": {
+          "level": "under_staged_validation",
+          "label": "Exact WM Coach task not yet validated",
+          "summary": "Reliability, partial-match, swap, lag and retrieval-error models require direct evaluation."
+        },
+        "training_benefit": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Broad transfer evidence is conflicting",
+          "summary": "Controlled training evidence includes strong null findings for broad updating and binding transfer."
+        },
+        "workflow_transfer": {
+          "level": "applied_outcome_to_be_tested",
+          "label": "Source-memory and workflow benefit not established",
+          "summary": "The current task directly practises binding, but functional source-tracking outcomes must be measured separately."
+        }
+      },
+      "supported_public_claim": "WM Coach Binding Memory practises maintaining which feature, location or context belongs with which other element.",
+      "required_boundary": "The paradigm basis is strong, but exact-app reliability and broader source-memory or workflow benefits are not established.",
+      "review_status": "release_candidate"
+    }
+  ]
+}
