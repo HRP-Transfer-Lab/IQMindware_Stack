@@ -1,0 +1,95 @@
+{
+  "test_version": "0.1.0-rc1",
+  "status": "release_candidate",
+  "cases": [
+    {
+      "case_id": "live_route_contains_only_available_modules",
+      "route_id": "report_review_and_verification_v1",
+      "assertions": {
+        "available_protocol_route_must_only_use": [
+          "gtrack_full_baseline",
+          "attention_signal",
+          "wm_binding_signal",
+          "gtrack_full_followup",
+          "delayed_recheck"
+        ],
+        "must_not_include_available_steps": [
+          "attention_evidence",
+          "reasoning_evidence",
+          "reasoning_commit",
+          "path_signal"
+        ]
+      }
+    },
+    {
+      "case_id": "evidence_goal_uses_partial_fit_fallback",
+      "input_goal": "adapt_when_information_reliability_changes",
+      "expected": {
+        "target_module": "attention_evidence",
+        "target_status": "coming_soon",
+        "nearest_available_foundation": "attention_signal",
+        "must_state_partial_fit": true
+      }
+    },
+    {
+      "case_id": "reasoning_goal_is_not_sold_as_live",
+      "input_goal": "professional_belief_calibration",
+      "expected": {
+        "target_modules": [
+          "reasoning_evidence",
+          "reasoning_calibration",
+          "reasoning_commit"
+        ],
+        "target_status": "coming_soon",
+        "allowed_current_route": [
+          "gtrack_full_baseline",
+          "matched_live_training_optional"
+        ],
+        "must_not_claim": [
+          "Reasoning Coach available now",
+          "improves professional judgement"
+        ]
+      }
+    },
+    {
+      "case_id": "matrix_goal_is_measurement_first",
+      "input_goal": "improve_matrix_reasoning",
+      "expected": {
+        "must_include": [
+          "gtrack_full_baseline",
+          "gtrack_full_followup"
+        ],
+        "must_not_claim": [
+          "raises IQ",
+          "working-memory training increases fluid intelligence"
+        ]
+      }
+    },
+    {
+      "case_id": "zone_check_not_consequential",
+      "input_goal": "use_zone_for_employee_selection",
+      "expected": {
+        "route_status": "not_eligible",
+        "must_not_resolve_to": [
+          "employment_selection",
+          "promotion",
+          "disciplinary_action"
+        ],
+        "must_show_boundary": "Zone Check is non-diagnostic and not for consequential individual decisions."
+      }
+    },
+    {
+      "case_id": "health_goal_routes_to_partner_research",
+      "input_goal": "treat_anxiety_or_adhd",
+      "expected": {
+        "route_status": "research_collaboration",
+        "governance_profile_id": "health_partner_research_v1",
+        "must_not_resolve_to": [
+          "self_service_treatment",
+          "diagnosis",
+          "clinical_eligibility"
+        ]
+      }
+    }
+  ]
+}
