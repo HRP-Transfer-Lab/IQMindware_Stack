@@ -2,7 +2,7 @@
 
 **Version:** draft v0.1.0  
 **Status:** research and website-routing ground truth  
-**Owner:** HRP Transfer Lab  
+**Owner:** HRP Transfer Lab
 
 This directory defines a versioned ontology linking real organisational, educational and health-pathway workflows to cognitive demands, observed friction signatures, intervention loci, IQ Mindware functions, evidence status and outcome plans.
 
@@ -105,16 +105,16 @@ Applied reasoning and restructuring routes
 ```text
 workflow-ontology/
 ├── docs/             method, evidence, validation, commercial translation, release and website-import rules
-├── schemas/          JSON Schema contracts
+├── schemas/          canonical JSON Schema contracts
 ├── ontology/         canonical concepts and dimensions
 ├── mappings/         many-to-many workflow, function and governance mappings
 ├── evidence/         source, claim, measurement and training-fit registries
 ├── examples/         worked workflow-stage records
-├── tests/            expected routes and boundary cases
-├── scripts/          validation and release tooling
+├── tests/            canonical expected routes and boundary cases
+├── scripts/          canonical validation and release tooling
 ├── studies/          staged content, behavioural and intervention validation
 ├── releases/         immutable scientific release manifests
-└── website-release/  narrow commercial release candidate for IQMindware.com
+└── website-release/  bounded commercial and homepage-route release candidate
 ```
 
 ## Evidence registry
@@ -123,7 +123,7 @@ The canonical current-product evidence layer is indexed at:
 
 - [`evidence/README.md`](evidence/README.md)
 
-Its machine-readable files are:
+Its machine-readable files include:
 
 ```text
 evidence/evidence-sources.json
@@ -228,26 +228,66 @@ CTA policy
 
 It must not alter the scientific mappings to favour whichever product is currently available.
 
-## Narrow website release candidate
+## Homepage website release candidate
 
-The first bounded website package is:
+The first bounded implementation package is:
 
 - [`website-release/README.md`](website-release/README.md)
 
-It contains:
+Current release candidate:
 
 ```text
-product-availability.json
-route-templates.json
-route-copy.json
-website-route boundary tests
-release manifest
-validation and bundle-building scripts
+iqm-website-slice-v0.1.0-rc2
 ```
 
-Its six curated routes use only the current live products. Future modules are displayed separately as **coming soon** and may be named as the most relevant target, but cannot appear in the available protocol route.
+Start implementation work with:
 
-The package is a release candidate rather than a production import. It still requires scientific review, claims review, workflow-route approval, checksum generation and import into a non-production website preview.
+- [`website-release/IMPLEMENTATION_HANDOFF.md`](website-release/IMPLEMENTATION_HANDOFF.md)
+- [`website-release/reference/route-builder.reference.ts`](website-release/reference/route-builder.reference.ts)
+- [`docs/WEBSITE_IMPORT_CONTRACT.md`](docs/WEBSITE_IMPORT_CONTRACT.md)
+
+The main runtime contracts are:
+
+```text
+website-release/product-availability.json
+    owner-confirmed live and coming-soon status
+
+website-release/evidence-slice.json
+    eight compact four-dimensional evidence cards
+
+website-release/route-builder-config.json
+    deterministic three-question homepage matcher
+
+website-release/route-templates.json
+    six curated live-product routes
+
+website-release/route-copy.json
+    headings, explanations, labels, evidence boundaries and CTAs
+```
+
+The implementation and assurance layer includes:
+
+```text
+schemas/
+    evidence, builder and rendered-route contracts
+
+ontology-lock.template.json
+    fail-closed version and approval template
+
+tests/website-route-cases.json
+    deterministic route and boundary cases
+
+scripts/validate_website_release.py
+scripts/run_website_route_cases.py
+scripts/render_route_result.py
+scripts/build_website_release.py
+```
+
+The first questionnaire is deliberately deterministic and client-side. Free-text or LLM interpretation is excluded until a separately tested and governed classifier exists.
+
+The six curated routes use only the current live products. Future modules are displayed separately as **coming soon** and may be named as the most relevant target, but cannot appear in the available protocol route.
+
+The package is suitable for a non-production homepage preview after import. Production still requires scientific review, claims review, workflow-route approval, an immutable canonical evidence release, checksums, a completed lock file and accessible preview testing.
 
 ## First target niches
 
