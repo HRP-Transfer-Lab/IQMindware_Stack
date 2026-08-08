@@ -43,6 +43,9 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - `live-signal-reasoning-overrides.candidate.json` with literature-audited candidate overrides, protocol-variant separation and promotion recommendations.
 - `live-signal-reasoning-source-additions.candidate.json` with verified sources for adaptive MFT-M, n-back psychometrics, visual-working-memory reliability, swap-error modelling, metacognitive prompting, debiasing and belief updating.
 - `evidence/reviews/README.md` documenting the review and promotion workflow.
+- `EXPLICIT_REASONING_COGNITIVE_RESTRUCTURING_REVIEW_v0.1.md` distinguishing formal relational reasoning, professional belief calibration, non-clinical evidence-sensitive reframing, clinical cognitive restructuring and cognitive reappraisal.
+- `explicit-reasoning-intervention-families.candidate.json` with separate candidate records for formal reasoning, belief calibration, reframing, behavioural experiments, condition-specific restructuring, reappraisal and LLM-assisted delivery.
+- `explicit-reasoning-cbt-sources.candidate.json` with peer-reviewed component, process and meta-analytic sources plus a clearly labelled prepublication dialogue-design watchlist.
 
 ### Changed
 
@@ -57,6 +60,11 @@ All notable changes to the Cognitive Workflow Ontology are recorded here.
 - Relational Memory Signal and Binding Memory Signal are recommended for downgrade from `exact_protocol: moderate` to `plausible_but_not_established` pending exact-task psychometrics.
 - The proposed Reasoning score is replaced by a multi-parameter model separating validity sensitivity, response bias, semantic/belief effects, cannot-tell discrimination, lure acceptance and confidence calibration.
 - Swap errors are no longer assumed to be pure binding failures; candidate cue, encoding, conjunction, retrieval, lag and response-strategy causes must be compared.
+- SMART-style relational training is now treated as one formal-reasoning evidence family rather than the entire basis of the Reasoning layer.
+- Cognitive restructuring is defined as a distinct applied explicit-reasoning intervention family involving appraisal identification, evidence examination, calibrated alternatives, behavioural testing and outcome-based model revision.
+- Cognitive reappraisal is kept separate from cognitive restructuring and from generic executive-function or reasoning training.
+- Clinical cognitive-restructuring evidence is retained as condition-specific category evidence and cannot be transferred directly to the generic IQ Mindware Reasoning app.
+- The non-clinical public route is labelled **Evidence-Sensitive Reframing** and explicitly excludes therapy, diagnosis and treatment claims.
 
 ### Status
 
@@ -65,12 +73,14 @@ The initial ontology and route records are `draft` unless specifically marked `a
 The next evidence priorities are:
 
 1. human review of the live-Signal and Reasoning candidate overrides;
-2. structured review of the ten G Track measurement records;
-3. review of the fifteen initial training-fit mappings;
-4. promotion-oriented review of the remaining full-stack capacity-by-mode cells;
-5. conversion of accepted candidate sources and judgements into canonical atomic records;
-6. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
-7. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning.
+2. CBT-qualified review of the cognitive-restructuring evidence and governance boundaries;
+3. structured review of the ten G Track measurement records;
+4. review of the fifteen initial training-fit mappings;
+5. promotion-oriented review of the remaining full-stack capacity-by-mode cells;
+6. conversion of accepted candidate sources and judgements into canonical atomic records;
+7. exact WM Coach metadata and relative-frame/optic-flow Attention Coach records;
+8. protocol records for Evidence, Commit, Path Prediction and explicit Reasoning;
+9. prototype validation of the low-risk Evidence-Sensitive Reframing scaffold before any clinical-route development.
 
 The next workflow-research priority is Phase 0 technical and conceptual validation followed by Study 001 content validation. The research plan does not treat current workflow-to-app mappings as established intervention effects.
 
