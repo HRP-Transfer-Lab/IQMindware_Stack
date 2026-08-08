@@ -33,3 +33,20 @@ jobs:
 
       - name: Execute website route and boundary cases
         run: python workflow-ontology/website-release/scripts/run_website_route_cases.py
+
+      - name: Render reference route payload
+        run: |
+          python workflow-ontology/website-release/scripts/render_route_result.py \
+            --route-id report_review_and_verification_v1 \
+            --output /tmp/report-review-route.json
+          python -m json.tool /tmp/report-review-route.json > /dev/null
+
+      - name: Build checksummed website bundle
+        run: |
+          python workflow-ontology/website-release/scripts/build_website_release.py \
+            --version 0.1.0-rc2 \
+            --source-commit "$GITHUB_SHA" \
+            --output /tmp/iqm-website-release
+          test -f /tmp/iqm-website-release/release-manifest.json
+          test -f /tmp/iqm-website-release/SHA256SUMS
+          test -f /tmp/iqm-website-release/ontology-lock.generated.json
