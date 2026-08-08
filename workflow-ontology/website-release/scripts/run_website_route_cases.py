@@ -16,13 +16,54 @@ def load(relative: str) -> dict[str, Any]:
     return json.loads((RELEASE / relative).read_text(encoding="utf-8"))
 
 
+def answer_values(value: Any) -> set[str]:
+    if value is None:
+        return set()
+    if isinstance(value, list):
+        return {str(item) for item in value}
+    return {str(value)}
+
+
+def select_route(
+    answers: dict[str, Any],
+    config: dict[str, Any],
+) -> str | None:
+    scored: list[tuple[int, int, str]] = []
+    base = int(config["selection_policy"]["base_score_for_required_match"])
+
+    for rule in config["route_rules"]:
+        eligible = True
+        for question_id, required_options in rule.get("required_answers", {}).items():
+            if not (answer_values(answers.get(question_id)) & set(required_options)):
+                eligible = False
+                break
+        if not eligible:
+            continue
+
+        score = base
+        for question_id, weights in rule.get("score_weights", {}).items():
+            for answer in answer_values(answers.get(question_id)):
+                score += int(weights.get(answer, 0))
+        scored.append((score, int(rule.get("priority", 0)), rule["route_id"]))
+
+    if not scored:
+        return None
+    scored.sort(key=lambda item: (-item[0], -item[1], item[2]))
+    return scored[0][2]
+
+
 def main() -> int:
     availability = load("product-availability.json")
+    evidence = load("evidence-slice.json")
+    builder = load("route-builder-config.json")
     routes_data = load("route-templates.json")
     copy = load("route-copy.json")
     tests = load("tests/website-route-cases.json")
 
     routes = {route["route_id"]: route for route in routes_data["routes"]}
+    evidence_cards = {
+        record["evidence_card_id"]: record for record in evidence["records"]
+    }
 
     live_components: set[str] = set()
     future_components: dict[str, dict[str, Any]] = {}
@@ -118,8 +159,37 @@ def main() -> int:
                     f"{case_id}: health routes present in self-service catalogue: "
                     f"{self_service_health_routes}"
                 )
-            if case["expected"]["governance_profile_id"] != "health_partner_research_v1":
-                errors.append(f"{case_id}: expected governance fixture is incorrect")
+            policy = builder["eligibility_policy"]["health_or_treatment_intent"]
+            if policy["governance_profile_id"] != case["expected"]["governance_profile_id"]:
+                errors.append(f"{case_id}: health governance policy mismatch")
+
+        elif case_id == "deterministic_primary_need_routes":
+            for example in case["examples"]:
+                actual = select_route(example["answers"], builder)
+                if actual != example["expected_route_id"]:
+                    errors.append(
+                        f"{case_id}: expected {example['expected_route_id']}, got {actual}"
+                    )
+
+        elif case_id == "evidence_cards_are_four_dimensional":
+            expected_dimensions = set(case["expected_dimensions"])
+            for card_id, card in evidence_cards.items():
+                actual = set(card["evidence_profile"])
+                if actual != expected_dimensions:
+                    errors.append(
+                        f"{case_id}: {card_id} dimensions {sorted(actual)} "
+                        f"do not match {sorted(expected_dimensions)}"
+                    )
+                non_live = set(card["component_ids"]) - live_components
+                if non_live:
+                    errors.append(
+                        f"{case_id}: {card_id} references non-live components {sorted(non_live)}"
+                    )
+
+        elif case_id == "free_text_is_excluded_from_first_release":
+            actual = builder["eligibility_policy"]["free_text_policy"]
+            if actual != case["expected_policy"]:
+                errors.append(f"{case_id}: free-text policy mismatch")
 
         else:
             errors.append(f"Unknown website route test case: {case_id}")
@@ -132,6 +202,7 @@ def main() -> int:
 
     print("IQ Mindware website route cases PASSED")
     print(f"Executed {len(tests['cases'])} release-candidate cases.")
+    print("Verified deterministic resolution for all six primary routes.")
     return 0
 
 
